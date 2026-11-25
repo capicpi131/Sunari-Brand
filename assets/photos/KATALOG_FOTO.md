@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (42 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (43 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -193,6 +193,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `40-pantai-barat-air-toska-awan` | Air toska sangat jernih, tanjung & pasir putih, tamu kecil di kejauhan, awan besar | ✅ | Sampul Pantai Bone Kidi/Bone Bakka, feed/story, Reels |
 | `41-pantai-barat-tamu-dan-pemandu` | Pemandu & tamu berdiri di air dangkal dekat tanjung (dari belakang/samping) | ✅ (wajah tidak jelas) | Feed/story suasana, konten pemandu |
 | `42-pantai-barat-rombongan-di-air` | Rombongan kecil di air dangkal biru, tanjung karang & awan putih | ✅ | Feed/story, latar teks |
+| `43-pintu-masuk-gua-lipang` | Pintu masuk Gua Lipang: tamu bersiap di bawah tebing batu kapur, kolam karang & laut di belakang | ✅ (wajah tidak jelas) | Feed/story Gua Lipang, Reels POV masuk gua |
 
 > Foto 38–42: **pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Pantai Bone Bakka)**, tempat makan siang (lunchbox) saat tur.
 
