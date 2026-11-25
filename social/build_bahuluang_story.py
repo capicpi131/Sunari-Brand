@@ -35,7 +35,7 @@ T.append(f'''<div class="s" id="story-01"><img class="bg" src="{P}bahuluang/13-b
 for k, (img, _, t, sub, jam) in enumerate(SL[1:], 2):
     T.append(f'''<div class="s" id="story-{k:02d}"><img class="bg" src="{P}{img}" style="object-position:{POS[k]}" alt="">
   <div class="vt"></div><div class="vb"></div><img class="lg" src="{LOGO_D}" alt=""><div class="no">{k:02d} — {N:02d}</div>
-  <div class="tx"><div class="kick">{KICK}<span class="chip">± {jam}</span></div><div class="ttl">{t}</div><div class="sub">{sub}</div></div></div>''')
+  <div class="tx"><div class="kick">{KICK}{f'<span class="chip">± {jam}</span>' if jam else ""}</div><div class="ttl">{t}</div><div class="sub">{sub}</div></div></div>''')
 rows = "".join(f'<div style="display:flex;gap:28px;padding:22px 0;border-bottom:1.5px solid rgba(138,95,72,.3);font-size:31px"><b style="flex:0 0 120px;color:#C0592C">{a}</b>{b}</div>' for a, b in TL)
 T.append(f'''<div class="s" id="story-10" style="background:#FBF4EC;color:#45301F"><div style="position:absolute;left:40px;right:40px;top:200px;bottom:200px;border:1.5px solid rgba(138,95,72,.4)"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:260px;width:340px" alt="">

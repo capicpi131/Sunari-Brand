@@ -12,13 +12,13 @@ CSS += """
 """
 SL = [("bahuluang/10-air-dangkal-toska.jpg", "50% 60%", "Sehari ke<br>Bahuluang", "Pagi berangkat dari SunaRi, senja sudah kembali", ""),
       ("taman/05-meja-taman-view-laut-gazebo.jpg", "50% 55%", 'Semua dimulai <em>dari SunaRi</em>', "Sarapan pelan di Bajoy Beach Resto sambil memandang laut. Siapkan baju renang, topi, dan tabir surya.", "07.00"),
-      ("bahuluang/05-kapal-menuju-pulau.jpg", "50% 62%", 'Darat, lalu <em>laut</em>', "Sekitar satu jam berkendara ke Desa Turungan, lalu menyeberang dengan kapal. Pulau Bahuluang perlahan mendekat.", "08.00"),
+      ("bahuluang/05-kapal-menuju-pulau.jpg", "50% 62%", 'Mengikuti <em>laut</em> hari itu', "Pagi-pagi kami cek pasang-surut dan kabari kamu. Air cukup tinggi, kapal berangkat dari Bone Taringan, sekitar 20 menit. Air surut, kita berangkat dari Turungan.", "08.00"),
       ("bahuluang/14-snorkeling-makam-karang.jpg", "50% 55%", 'Menyapa <em>Makam Karang</em>', "Spot snorkeling dengan formasi karang yang unik. Airnya jernih, ikan-ikan kecil datang menyapa.", "10.00"),
-      ("bahuluang/12-berjalan-di-pasir-timbul.jpg", "50% 55%", 'Pasir yang <em>muncul</em>', "Pasir Timbul Bahuluang muncul di tengah laut saat air surut. Kalau beruntung, kamu bisa berjalan di atasnya.", "11.00"),
-      ("bahuluang/11-berjalan-ke-laut-dan-kapal.jpg", "50% 55%", 'Makan siang di <em>pasir putih</em>', "Rehat di Pantai Bahuluang. Lunchbox, air toska, dan tidak ada yang perlu dikejar.", "12.00"),
-      ("bahuluang/03-masuk-gua-lipang.jpg", "50% 50%", 'Masuk ke <em>Gua Lipang</em>', "Gua pesisir dengan lengkungan batu kapur, dibentuk laut selama ribuan tahun.", "13.00"),
-      ("bahuluang/06-gua-lipang-stalaktit.jpg", "50% 45%", 'Sejuk di <em>dalam</em>', "Stalaktit menggantung di atas kepala. Dari dalam gua, cahaya laut terlihat di ujung lorong.", "13.30"),
-      ("senja/21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Pulang, senja <em>menunggu</em>', "Sekitar pukul empat sudah kembali di SunaRi. Mandi, rebahan sebentar, lalu duduk di Pantai Sunari menunggu matahari tenggelam.", "16.00")]
+      ("bahuluang/12-berjalan-di-pasir-timbul.jpg", "50% 55%", 'Pasir yang <em>muncul</em>', "Pasir Timbul Bahuluang muncul di tengah laut saat air surut, jadi waktunya mengikuti laut hari itu. Kalau beruntung, kamu bisa berjalan di atasnya.", ""),
+      ("bahuluang/11-berjalan-ke-laut-dan-kapal.jpg", "50% 55%", 'Makan siang di <em>pasir putih</em>', "Rehat di Pantai Bahuluang. Lunchbox, air toska, dan tidak ada yang perlu dikejar.", ""),
+      ("bahuluang/03-masuk-gua-lipang.jpg", "50% 50%", 'Masuk ke <em>Gua Lipang</em>', "Gua pesisir dengan lengkungan batu kapur, dibentuk laut selama ribuan tahun.", ""),
+      ("bahuluang/06-gua-lipang-stalaktit.jpg", "50% 45%", 'Sejuk di <em>dalam</em>', "Stalaktit menggantung di atas kepala. Dari dalam gua, cahaya laut terlihat di ujung lorong.", ""),
+      ("senja/21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Pulang, senja <em>menunggu</em>', "Sekitar pukul dua kapal kembali. Sore hari sudah di SunaRi, masih sempat rebahan sebelum duduk di Pantai Sunari menunggu matahari tenggelam.", "14.00")]
 T = []
 img, pos, t, sub, _ = SL[0]
 T.append(f'''<div class="t fc" id="bahuluang-01"><img class="bgf" src="{P}{img}" style="object-position:{pos}" alt="">
@@ -27,10 +27,10 @@ T.append(f'''<div class="t fc" id="bahuluang-01"><img class="bgf" src="{P}{img}"
   <div class="fg">Ikuti perjalanannya &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''')
 for k, (img, pos, t, sub, jam) in enumerate(SL[1:], 2):
     T.append(f'''<div class="t" id="bahuluang-{k:02d}"><div class="ph"><img src="{P}{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
-  <div class="kick">{KICK}<span class="chip">± {jam}</span></div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
+  <div class="kick">{KICK}{f'<span class="chip">± {jam}</span>' if jam else ""}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>{k:02d} / {N:02d}</span></div></div>''')
-TL = [("07.00", "Sarapan di SunaRi"), ("08.00", "Darat ke Desa Turungan, menyeberang"), ("10.00", "Snorkeling Makam Karang"), ("11.00", "Pasir Timbul (saat surut)"),
-      ("12.00", "Makan siang di Pantai Bahuluang"), ("13.00", "Jelajah Gua Lipang"), ("16.00", "Kembali ke SunaRi, menunggu senja")]
+TL = [("07.00", "Sarapan di SunaRi"), ("08.00", "Berangkat ke titik temu"), ("·", "Kapal dari Bone Taringan / Turungan"), ("10.00", "Tiba di Pulau Bahuluang"),
+      ("·", "Makam Karang, Gua Lipang &amp; makan siang"), ("·", "Pasir Timbul saat air surut"), ("14.00", "Kapal pulang, sore di SunaRi")]
 T.append(f'''<div class="t" id="bahuluang-10"><div class="frame"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:92px;width:300px" alt="">
   <div style="position:absolute;left:100px;right:100px;top:330px;text-align:center;color:#45301F">
