@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <title>SunaRi: Location &amp; Rute Akses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 10.5c.5 1.6 2 3.1 3.6 3.6l1.2-1.1 2 .9-.4 1.7c-3.4.2-7.2-3.6-7-7l1.7-.4.9 2z"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
+</svg>
+
+<!-- 1 · COVER (Sulawesi) -->
+<section class="slide" id="slide-1">
+  <img class="map" style="--y:480px" src="assets/maps/02_sulawesi.png" alt="">
+  <div class="top"><img class="logo" src="assets/logo-sunari-dark.png" alt="SunaRi Beach Resort Selayar"><span class="tag">01 / 07</span></div>
+  <div class="card">
+    <p class="eyebrow">Travel Guide • Selayar</p>
+    <h1 class="h" style="font-size:66px">Cara Mudah Menuju <i>SunaRi</i> Beach Resort</h1>
+    <p class="p">Panduan lengkap rute udara, laut, dan layanan penjemputan.</p>
+    <div class="foot"><span>@sunaribeachresortselayar</span><span class="swipe">Geser →</span></div>
+  </div>
+</section>
+
+<!-- 2 · PETA 3 RUTE -->
+<section class="slide" id="slide-2">
+  <img class="map" style="--y:430px" src="assets/maps/03_tiga_rute.png" alt="">
+  <div class="top"><img class="logo" src="assets/logo-sunari-dark.png" alt="SunaRi Beach Resort Selayar"><span class="tag">02 / 07</span></div>
+  <div class="card" style="padding:32px 46px 26px">
+    <p class="eyebrow">Peta rute</p>
+    <h2 class="h" style="font-size:54px;margin-top:8px">Tiga jalan <i>menuju senja</i></h2>
+    <div class="rows" style="--pad:10px">
+      <div class="row"><span><b class="num" style="background:var(--r1)">1</b>Udara</span><span>tercepat</span></div>
+      <div class="row"><span><b class="num" style="background:var(--r2)">2</b>Darat &amp; feri</span><span>scenic route</span></div>
+      <div class="row"><span><b class="num" style="background:var(--r3)">3</b>Kapal langsung</span><span>tanpa transit</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · OPSI 1 -->
+<section class="slide" id="slide-3">
+  <img class="map" style="--y:430px" src="assets/maps/04_rute1_pesawat.png" alt="">
+  <div class="top"><img class="logo" src="assets/logo-sunari-dark.png" alt="SunaRi Beach Resort Selayar"><span class="tag">03 / 07</span></div>
+  <div class="card">
+    <p class="eyebrow"><b class="num" style="background:var(--r1)">1</b>Opsi 1 · Jalur udara<span class="pill">Tercepat</span></p>
+    <div class="rows">
+      <div class="row"><span>Bandara Sultan Hasanuddin → Bandara H. Aroeppala</span><span>±45 menit</span></div>
+      <div class="row"><span>Bandara H. Aroeppala → SunaRi (mobil)</span><span>±10–15 menit</span></div>
+    </div>
+    <p class="note"><svg><use href="#i-cal"/></svg>Jadwal penerbangan menyesuaikan maskapai (disarankan cek H-7).</p>
+  </div>
+</section>
+
+<!-- 4 · OPSI 2 -->
+<section class="slide" id="slide-4">
+  <img class="map" style="--y:430px" src="assets/maps/05_rute2_darat_feri.png" alt="">
+  <div class="top"><img class="logo" src="assets/logo-sunari-dark.png" alt="SunaRi Beach Resort Selayar"><span class="tag">04 / 07</span></div>
+  <div class="card">
+    <p class="eyebrow"><b class="num" style="background:var(--r2)">2</b>Opsi 2 · Darat &amp; feri<span class="pill">Scenic route</span></p>
+    <div class="rows">
+      <div class="row"><span>Terminal Malengkeri → Pelabuhan Bira</span><span>±4–5 jam</span></div>
+      <div class="row"><span>Feri Bira → Pamatata (ASDP)</span><span>±2 jam</span></div>
+      <div class="row"><span>Pelabuhan Pamatata → SunaRi</span><span>±1–1,5 jam</span></div>
+    </div>
+    <p class="note"><svg><use href="#i-clock"/></svg>Tersedia jadwal penyeberangan pagi &amp; siang.</p>
+  </div>
+</section>
+
+<!-- 5 · OPSI 3 -->
+<section class="slide" id="slide-5">
+  <img class="map" style="--y:430px" src="assets/maps/06_rute3_kapal_laut.png" alt="">
+  <div class="top"><img class="logo" src="assets/logo-sunari-dark.png" alt="SunaRi Beach Resort Selayar"><span class="tag">05 / 07</span></div>
+  <div class="card">
+    <p class="eyebrow"><b class="num" style="background:var(--r3)">3</b>Opsi 3 · Kapal langsung<span class="pill">Tanpa transit</span></p>
+    <div class="rows">
+      <div class="row"><span>KM Dharma Kartika III: Pelabuhan Makassar → Benteng</span><span>±10–11 jam</span></div>
+      <div class="row"><span>Pelabuhan Benteng → SunaRi (mobil)</span><span>±20–30 menit</span></div>
+    </div>
+    <p class="note"><svg><use href="#i-cal"/></svg>Berangkat malam, tiba pagi. Tidak setiap hari, jadi cek jadwal terbaru di PT DLU atau tanya admin kami.</p>
+  </div>
+</section>
+
+<!-- 6 · RESORT PICKUP (Pulau Selayar) -->
+<section class="slide" id="slide-6">
+  <img class="map" style="--y:380px" src="assets/maps/07_pulau_selayar.png" alt="">
+  <div class="top"><img class="logo" src="assets/logo-sunari-dark.png" alt="SunaRi Beach Resort Selayar"><span class="tag">06 / 07</span></div>
+  <div class="card">
+    <p class="eyebrow">Layanan resort</p>
+    <h2 class="h" style="font-size:54px">Terima beres dengan <i>Resort Pickup</i></h2>
+    <div class="duo">
+      <div><p class="k">Penjemputan lokal</p><h3>Bandara &amp; pelabuhan Selayar</h3>
+        <ul><li>Aroeppala · Pamatata · Benteng</li><li>Mobil AC &amp; driver lokal</li></ul></div>
+      <div><p class="k">Paket transfer</p><h3>Makassar – Selayar</h3>
+        <ul><li>Mobil dari Makassar</li><li>Tiket feri terkoordinasi</li></ul></div>
+    </div>
+    <p class="note"><svg><use href="#i-clock"/></svg>Konfirmasi jadwal kedatangan minimal H-2 sebelum check-in.</p>
+  </div>
+</section>
+
+<!-- 7 · CTA (Indonesia) -->
+<section class="slide" id="slide-7">
+  <img class="map" style="--y:430px" src="assets/maps/01_indonesia.png" alt="">
+  <div class="top"><img class="logo" src="assets/logo-sunari-dark.png" alt="SunaRi Beach Resort Selayar"><span class="tag">07 / 07</span></div>
+  <div class="card">
+    <p class="eyebrow">Ringkasan</p>
+    <h2 class="h" style="font-size:56px">Siap merencanakan <i>perjalanan Anda?</i></h2>
+    <p class="note" style="font-size:25px;color:var(--ink)"><svg style="stroke:var(--accent)"><use href="#i-pin"/></svg><span><b>Desa Patikarya, Kec. Bontosikuyu, Kepulauan Selayar</b><br><span style="color:var(--muted);font-size:21px">Pantai Sunari · Jl. Poros Benteng – Appatana KM 14</span></span></p>
+    <div class="cta"><svg><use href="#i-chat"/></svg>Hubungi Admin via WhatsApp untuk Jadwal Terbaru</div>
+    <p class="wa">WhatsApp <b>0821-8903-3044</b></p>
+    <div class="foot"><span>@sunaribeachresortselayar</span><span style="display:flex;align-items:center;gap:8px"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:var(--accent);stroke-width:1.5"><use href="#i-bookmark"/></svg>Simpan postingan ini</span></div>
+  </div>
+</section>
+
+</body>
+</html>

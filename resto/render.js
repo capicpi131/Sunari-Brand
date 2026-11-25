@@ -1,0 +1,23 @@
+const { chromium } = require('playwright'); const path = require('path');
+(async () => {
+  const b = await chromium.launch();
+  const p = await b.newPage({ viewport: { width: 2400, height: 2200 }, deviceScaleFactor: 3 });
+  await p.goto('file://' + path.join(__dirname, 'menu.html')); await p.waitForLoadState('networkidle'); await p.evaluate(() => document.fonts.ready);
+  await p.locator('#menu-a4').screenshot({ path: path.join(__dirname, 'Menu_Bajoy_A4.png') });
+  const s = await b.newPage({ viewport: { width: 2400, height: 2200 }, deviceScaleFactor: 1 });
+  await s.goto('file://' + path.join(__dirname, 'menu.html')); await s.waitForLoadState('networkidle'); await s.evaluate(() => document.fonts.ready);
+  for (const id of ['menu-story-1-makanan', 'menu-story-2-minuman']) await s.locator('#' + id).screenshot({ path: path.join(__dirname, id + '.png') });
+  const q = await b.newPage();
+  await q.goto('file://' + path.join(__dirname, 'menu-print.html')); await q.waitForLoadState('networkidle'); await q.evaluate(() => document.fonts.ready);
+  await q.pdf({ path: path.join(__dirname, 'Menu_Bajoy_A4.pdf'), width: '210mm', height: '297mm', printBackground: true });
+  const e = await b.newPage({ viewport: { width: 2400, height: 2200 }, deviceScaleFactor: 3 });
+  await e.goto('file://' + path.join(__dirname, 'menu-elegan.html')); await e.waitForLoadState('networkidle'); await e.evaluate(() => document.fonts.ready);
+  await e.locator('#menu-elegan-a4').screenshot({ path: path.join(__dirname, 'Menu_Bajoy_Elegan_A4.png') });
+  const e1 = await b.newPage({ viewport: { width: 2400, height: 2200 }, deviceScaleFactor: 1 });
+  await e1.goto('file://' + path.join(__dirname, 'menu-elegan.html')); await e1.waitForLoadState('networkidle'); await e1.evaluate(() => document.fonts.ready);
+  for (const id of ['menu-elegan-story-1-makanan', 'menu-elegan-story-2-minuman']) await e1.locator('#' + id).screenshot({ path: path.join(__dirname, id + '.png') });
+  const ep = await b.newPage();
+  await ep.goto('file://' + path.join(__dirname, 'menu-elegan-print.html')); await ep.waitForLoadState('networkidle'); await ep.evaluate(() => document.fonts.ready);
+  await ep.pdf({ path: path.join(__dirname, 'Menu_Bajoy_Elegan_A4.pdf'), width: '210mm', height: '297mm', printBackground: true });
+  await b.close(); console.log('ok');
+})();
