@@ -88,5 +88,5 @@ page("story-10.html",f'''{prog(10)}
 <div class="c eb" style="top:560px">FASILITAS KAMAR</div>
 <div class="c big" style="top:610px">VIP Superior<br><em>Bungalow</em></div>
 <div class="list">{rows}</div>
-<div class="c" style="top:1540px"><div class="eb">INFO &amp; RESERVASI</div><div class="btn"><em>WhatsApp</em> 0821-8903-3044</div></div>
-<div class="c eb" style="top:1700px;font-size:21px">PANTAI SUNARI · SELAYAR</div>''')
+<div class="c" style="top:1535px"><div class="eb">INFO &amp; RESERVASI</div><div class="btn"><em>WhatsApp</em> 0821-8903-3044</div></div>
+<div class="c eb" style="top:1745px;font-size:21px">PANTAI SUNARI · SELAYAR</div>''')
