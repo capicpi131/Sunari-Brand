@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (37 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (42 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -188,6 +188,13 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `35-berjalan-di-hamparan-karang` | Tamu berransel berjalan di hamparan karang putih (dari belakang) | ✅ | Feed/story jelajah Makam Karang |
 | `36-kru-membantu-tamu-turun-kapal` | Kru membantu tamu turun dari haluan kapal ke gosong karang (dari belakang) | ✅ | Konten pelayanan kru, story |
 | `37-depan-gua-lipang` | Air toska sangat jernih di depan Gua Lipang, tebing karang, kapal bersandar & tamu snorkeling (kecil, dari jauh) | ✅ | Sampul Gua Lipang, feed/story, Reels pembuka |
+| `38-pantai-barat-tamu-menatap-laut` | Tamu berdiri di air dangkal menatap laut lepas (dari belakang), langit luas | ✅ | Feed/story tenang, latar teks, slow living |
+| `39-pantai-barat-tamu-di-air-dangkal` | Tamu berjalan di air dangkal toska, tanjung karang hijau & pasir putih | 👤 (wajah terlihat, depan kanan) | Feed/story makan siang di pantai (dengan izin) |
+| `40-pantai-barat-air-toska-awan` | Air toska sangat jernih, tanjung & pasir putih, tamu kecil di kejauhan, awan besar | ✅ | Sampul Pantai Bone Kidi/Bone Bakka, feed/story, Reels |
+| `41-pantai-barat-tamu-dan-pemandu` | Pemandu & tamu berdiri di air dangkal dekat tanjung (dari belakang/samping) | ✅ (wajah tidak jelas) | Feed/story suasana, konten pemandu |
+| `42-pantai-barat-rombongan-di-air` | Rombongan kecil di air dangkal biru, tanjung karang & awan putih | ✅ | Feed/story, latar teks |
+
+> Foto 38–42: **pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Pantai Bone Bakka)**, tempat makan siang (lunchbox) saat tur.
 
 ## Tur Polassi & Tambolongan: `polassi-tambolongan/` (7 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
