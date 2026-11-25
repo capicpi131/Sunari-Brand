@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (24 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (36 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -175,6 +175,18 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `22-kapal-menuju-batu-berlubang` | Tamu di kapal memotret batu karang berlubang (dari belakang/samping) | ✅ (wajah tidak jelas) | Feed/story "di atas kapal" |
 | `23-ngobrol-di-kapal` | Tamu mengobrol di haluan kapal, laut lepas | 👤 (wajah jelas) | Story suasana perjalanan (dengan izin) |
 | `24-kapal-menuju-pasir-timbul` | Dua tamu dari belakang di kapal, pasir timbul & pulau hijau di depan | ✅ | Feed/story "menuju Pasir Timbul", sampul tur |
+| `25-makam-karang-snorkeling-dan-kapal` | Snorkeler di tepi gosong karang Makam Karang, kapal bersandar, pulau di belakang | ✅ | Sampul Makam Karang, feed/story snorkeling |
+| `26-makam-karang-dua-tamu-awan` | Dua tamu kecil di atas gundukan karang, awan besar | ✅ | Feed/story suasana, latar teks |
+| `27-makam-karang-tamu-dan-pemandu` | Dua tamu & pemandu melihat kerang di atas hamparan karang | 👤 (wajah jelas) | Konten "ditemani pemandu" (dengan izin) |
+| `28-makam-karang-kru-membawa-jangkar` | Kru kapal membawa jangkar di tepi karang, air toska, pulau di cakrawala | ✅ (profil samping) | Feed/story perjalanan, konten kru |
+| `29-snorkeling-masker-penuh` | Tamu snorkeling dengan masker penuh di air toska jernih (wajah tertutup masker) | ✅ | Feed/story snorkeling, Reels |
+| `30-makam-karang-bersiap-snorkeling` | Rombongan bersiap snorkeling di tepi karang, kapal bersandar | 👤 (wajah terlihat) | Story suasana (dengan izin) |
+| `31-snorkeling-dekat-pondok-apung` | Dua tamu snorkeling di air biru, pondok apung di gosong karang | ✅ | Sampul spot snorkeling, feed/story |
+| `32-snorkeling-laut-lepas` | Dua tamu snorkeling di laut biru, pulau di kejauhan | ✅ | Feed/story snorkeling, latar teks |
+| `33-makam-karang-naik-kapal` | Tamu naik kapal di tepi karang, pondok apung di belakang | ✅ (dari belakang) | Feed/story "lanjut ke spot berikutnya" |
+| `34-pondok-apung-dua-tamu` | Pondok apung & dua tamu berjalan di punggung karang, langit mendung | ✅ | Feed/story tenang, latar teks |
+| `35-berjalan-di-hamparan-karang` | Tamu berransel berjalan di hamparan karang putih (dari belakang) | ✅ | Feed/story jelajah Makam Karang |
+| `36-kru-membantu-tamu-turun-kapal` | Kru membantu tamu turun dari haluan kapal ke gosong karang (dari belakang) | ✅ | Konten pelayanan kru, story |
 
 ## Tur Polassi & Tambolongan: `polassi-tambolongan/` (7 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
