@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (36 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (37 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -187,6 +187,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `34-pondok-apung-dua-tamu` | Pondok apung & dua tamu berjalan di punggung karang, langit mendung | ✅ | Feed/story tenang, latar teks |
 | `35-berjalan-di-hamparan-karang` | Tamu berransel berjalan di hamparan karang putih (dari belakang) | ✅ | Feed/story jelajah Makam Karang |
 | `36-kru-membantu-tamu-turun-kapal` | Kru membantu tamu turun dari haluan kapal ke gosong karang (dari belakang) | ✅ | Konten pelayanan kru, story |
+| `37-depan-gua-lipang` | Air toska sangat jernih di depan Gua Lipang, tebing karang, kapal bersandar & tamu snorkeling (kecil, dari jauh) | ✅ | Sampul Gua Lipang, feed/story, Reels pembuka |
 
 ## Tur Polassi & Tambolongan: `polassi-tambolongan/` (7 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
