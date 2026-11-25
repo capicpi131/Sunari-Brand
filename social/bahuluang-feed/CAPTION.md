@@ -2,7 +2,7 @@
 
 Pagi masih pelan di SunaRi. Sarapan sambil memandang laut, lalu kita berangkat 🌊
 
-Kami cek pasang-surut hari itu dulu. Air cukup tinggi, kapal berangkat dari Bone Taringan. Air surut, kita berangkat dari Turungan. Tak lama, Pulau Bahuluang mulai terlihat. Snorkeling di Makam Karang, berjalan di Pasir Timbul kalau air sedang surut, makan siang di pasir putih, lalu masuk ke sejuknya Gua Lipang.
+Kami cek pasang-surut hari itu dulu. Air cukup tinggi, kapal berangkat dari Bone Taringan. Air surut, kita berangkat dari Turungan. Tak lama, Pulau Bahuluang mulai terlihat. Snorkeling di Makam Karang, berjalan di Pasir Timbul saat kapten bilang airnya sudah pas, makan siang di pasir putih, lalu masuk ke sejuknya Gua Lipang.
 
 Sore hari kembali ke SunaRi. Masih sempat mandi, rebahan sebentar, lalu duduk di Pantai Sunari menunggu senja 🌅
 
@@ -14,4 +14,4 @@ Kalau ingin ke Bahuluang saat menginap, biar kami bantu atur.
 #sunarisunsetmoment #SunaRiBeachResort #Selayar #PulauBahuluang #GuaLipang #PasirTimbul #KepulauanSelayar #WisataSulawesiSelatan #SlowLiving
 
 ---
-Catatan: jam bersifat perkiraan (±). Titik temu kapal & waktu Pasir Timbul mengikuti pasang-surut hari itu. Tambahkan lagu saat upload.
+Catatan: jam bersifat perkiraan (±). Titik temu kapal mengikuti pasang-surut hari itu; waktu ke Pasir Timbul diatur kapten. Tambahkan lagu saat upload.
