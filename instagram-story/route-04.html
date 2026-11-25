@@ -1,0 +1,59 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:PF;font-weight:400;font-style:normal;src:url(assets/fonts/playfair-display-latin-400-normal.woff2)}
+@font-face{font-family:PF;font-weight:400;font-style:italic;src:url(assets/fonts/playfair-display-latin-400-italic.woff2)}
+@font-face{font-family:PF;font-weight:500;font-style:normal;src:url(assets/fonts/playfair-display-latin-500-normal.woff2)}
+@font-face{font-family:PF;font-weight:500;font-style:italic;src:url(assets/fonts/playfair-display-latin-500-italic.woff2)}
+@font-face{font-family:MS;font-weight:500;src:url(assets/fonts/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:MS;font-weight:600;src:url(assets/fonts/montserrat-latin-600-normal.woff2)}
+@font-face{font-family:MS;font-weight:700;src:url(assets/fonts/montserrat-latin-700-normal.woff2)}
+:root{--cream:#FBF4EC;--ink:#3E2A1E;--caramel:#9A5B3C;--orange:#FF9A5C}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{background:var(--cream);font-family:MS,sans-serif;color:var(--ink);position:relative}
+em{font-style:italic;color:var(--caramel)}
+.prog{position:absolute;left:60px;right:60px;top:70px;display:flex;gap:8px}
+.prog i{flex:1;height:5px;border-radius:3px;background:rgba(62,42,30,.18)}
+.prog i.on{background:var(--caramel)}
+.top{position:absolute;left:60px;right:60px;top:112px;display:flex;justify-content:space-between;font-weight:700;font-size:23px;letter-spacing:.32em;color:var(--caramel)}
+.card{position:absolute;left:60px;top:200px;width:960px;height:1000px;border-radius:40px;overflow:hidden;box-shadow:0 30px 70px rgba(90,50,20,.28)}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.frame{position:absolute;left:36px;top:176px;width:1008px;height:1048px;border:2px solid rgba(154,91,60,.35);border-radius:56px}
+.chip{position:absolute;left:100px;top:1160px;background:var(--cream);color:var(--caramel);font-weight:700;font-size:22px;letter-spacing:.3em;padding:20px 34px;border-radius:40px;box-shadow:0 10px 30px rgba(90,50,20,.22)}
+.txt{position:absolute;left:70px;right:70px;top:1290px}
+h1{font-family:PF,serif;font-weight:400;font-size:100px;line-height:1.08;letter-spacing:-.01em}
+.orn{display:flex;align-items:center;gap:16px;margin:34px 0 30px}
+.orn b{width:90px;height:3px;background:var(--orange);border-radius:2px}
+.orn s{width:12px;height:12px;border-radius:50%;background:var(--orange)}
+p{font-weight:500;font-size:40px;line-height:1.5;color:#5a4030;max-width:900px}
+.foot{position:absolute;left:60px;right:60px;top:1700px;border-top:2px solid rgba(154,91,60,.25);padding-top:26px;display:flex;justify-content:space-between;font-weight:700;font-size:22px;letter-spacing:.3em;color:var(--caramel)}
+.foot span:last-child{color:#d9692c;letter-spacing:.1em}
+
+.prog i{}
+h2{font-family:PF;font-weight:400;font-size:104px;line-height:1.06}
+.eb{font-weight:700;font-size:24px;letter-spacing:.34em;color:var(--caramel)}
+.hd{position:absolute;left:70px;right:70px;top:230px}
+.hd .eb{margin-bottom:22px}
+.tl{position:absolute;left:70px;right:70px;top:640px}
+.it{position:relative;padding:0 0 60px 150px;min-height:120px}
+.it:before{content:"";position:absolute;left:58px;top:18px;bottom:-18px;width:3px;background:repeating-linear-gradient(to bottom,rgba(154,91,60,.5) 0 10px,transparent 10px 18px)}
+.it:last-child:before{display:none}
+.it .dot{position:absolute;left:48px;top:10px;width:24px;height:24px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 8px rgba(255,154,92,.25)}
+.it .tm{position:absolute;left:-6px;top:-34px;font-weight:700;font-size:21px;letter-spacing:.12em;color:var(--caramel);width:130px;text-align:center}
+.it h3{font-family:PF;font-weight:400;font-size:60px;line-height:1.1}
+.it h3 em{color:var(--caramel)}
+.it p{font-size:34px;line-height:1.45;margin-top:10px;max-width:800px}
+.card2{position:absolute;left:60px;right:60px;border-radius:36px;padding:44px 48px;background:#fff8f0;border:2px solid rgba(154,91,60,.28);box-shadow:0 20px 50px rgba(90,50,20,.12)}
+.card2.dk{background:var(--ink);color:var(--cream);border:none}
+.card2 .eb{font-size:21px}
+.card2.dk .eb{color:#FFB47F}
+.card2 h3{font-family:PF;font-weight:400;font-size:66px;line-height:1.08;margin:14px 0 22px}
+.card2 .row{display:flex;justify-content:space-between;font-size:31px;font-weight:500;padding:16px 0;border-top:2px solid rgba(154,91,60,.25)}
+.card2.dk .row{border-color:rgba(255,238,222,.25)}
+.card2 .row b{font-weight:700}
+.note{font-size:26px;color:#7a5a45;position:absolute;left:70px;right:70px}
+.pill{display:inline-block;background:var(--ink);color:var(--cream);border-radius:80px;padding:26px 50px;font-family:PF;font-size:50px}
+.pill em{color:#FFB47F}
+</style></head><body><div class="prog"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></div><div class="top"><span>SUNARI · SELAYAR</span><span>04 / 06</span></div>
+<div class="hd"><div class="eb">PULAU BAHULUANG · TIBA ± 10.00</div><h2>Hari di <em>pulau</em></h2></div>
+<div class="tl" style="top:600px"><div class="it"><div class="dot"></div><div class="tm">± 10.00</div><h3>Makam <em>Karang</em></h3><p>Snorkeling</p></div><div class="it"><div class="dot"></div><div class="tm">± 12.00</div><h3>Makan siang</h3><p>Lunchbox di Pantai Bahuluang</p></div><div class="it"><div class="dot"></div><div class="tm">± 13.00</div><h3>Gua <em>Lipang</em></h3></div></div>
+<div class="card2 dk" style="top:1270px;padding:40px 48px"><div class="eb">TERGANTUNG PASANG SURUT AIR</div><h3 style="margin:12px 0 0;font-size:62px">Pasir <em style="color:#FFB47F">Timbul</em></h3><p style="font-size:29px;margin-top:10px;color:#FFEEDE">Muncul saat air surut, waktunya menyesuaikan kondisi hari itu.</p></div><div class="foot"><span>± WAKTU PERKIRAAN</span><span>#sunarisunsetmoment</span></div></body></html>
