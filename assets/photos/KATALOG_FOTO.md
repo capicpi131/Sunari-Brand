@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (20 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (24 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -171,6 +171,10 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `18-di-kapal-batu-berlubang` | Rombongan tamu di kapal beratap terpal biru, batu karang berlubang di belakang | 👤 (wajah jelas) | Story/feed perjalanan kapal (dengan izin) |
 | `19-batu-berlubang` | Batu karang berlubang (lengkungan) dengan pepohonan, laut tenang & awan, 3:4 | ✅ | Feed/story perjalanan, sampul tur, Reels |
 | `20-di-kapal-menyeberang` | Tamu di dalam kapal kayu biru saat menyeberang, laut toska & pulau di kejauhan | 👤 (wajah jelas) | Story "di atas kapal" (dengan izin) |
+| `21-laut-toska-dari-kapal` | Laut toska jernih & karang dari sisi kapal, langit biru berawan, pulau di cakrawala (tanpa orang) | ✅ | Feed/story perjalanan, latar teks, Reels |
+| `22-kapal-menuju-batu-berlubang` | Tamu di kapal memotret batu karang berlubang (dari belakang/samping) | ✅ (wajah tidak jelas) | Feed/story "di atas kapal" |
+| `23-ngobrol-di-kapal` | Tamu mengobrol di haluan kapal, laut lepas | 👤 (wajah jelas) | Story suasana perjalanan (dengan izin) |
+| `24-kapal-menuju-pasir-timbul` | Dua tamu dari belakang di kapal, pasir timbul & pulau hijau di depan | ✅ | Feed/story "menuju Pasir Timbul", sampul tur |
 
 ## Tur Polassi & Tambolongan: `polassi-tambolongan/` (7 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
