@@ -371,7 +371,7 @@ parts.append(f'''<div class="tpl facts" id="faq-{NF}">
 # ---- 12 carousels following the feed preview (covers reuse feed tiles; slides 2..n here)
 FEED12 = [
  ("p01", "Lebih dari Menginap", "camp-1", [
-   ("pantai/02-perahu-nelayan-biru.jpg","50% 55%","Pagi yang pelan","Perahu nelayan mulai pulang dari laut, membawa hasil tangkapan dan senyum yang tulus."),
+   ("pantai/01-nelayan-pagi.jpg","50% 58%","Pagi yang pelan","Perahu nelayan mulai pulang dari laut, membawa hasil tangkapan dan senyum yang tulus."),
    ("taman/05-meja-taman-view-laut-gazebo.jpg","50% 55%","Taman untuk jeda","Saya datang untuk pantainya, tapi taman Sunari diam-diam mencuri hati saya lebih dulu."),
    ("pantai/04-kursi-santai-bawah-pohon.jpg","50% 55%","Siang di bawah ketapang","Di bawah pohon yang teduh, waktu terasa berjalan lebih lambat dan lebih bersahabat."),
    ("aktivitas/01-kayak-sore.jpg","50% 55%","Mendayung saat sore","Bayangan pohon kelapa semakin panjang, tanda pertunjukan sore akan segera dimulai."),
