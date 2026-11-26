@@ -30,7 +30,7 @@ T = f'''<div class="s" id="story-hari-jadi-421"><img class="bg" src="{P}senja/16
   <div class="card">
     <div class="lbl">Tema</div>
     <div class="tema">“Pangan Lokal Mendukung<br>Ketahanan Pangan Nasional”</div>
-    <div class="sub">Selayar bukan sekadar tujuan wisata, ia adalah tempat di mana senja terasa lebih jujur.</div>
+    <div class="sub">Dari tepi Pantai Sunari, kami turut merayakan 421 tahun Selayar. Semoga laut dan tanahnya terus memberi berkah untuk kita semua.</div>
     <img src="{LOGO}" style="width:230px;margin-top:22px" alt="">
     <div class="tag">#sunarisunsetmoment · #HariJadiSelayar421</div>
   </div></div>'''
