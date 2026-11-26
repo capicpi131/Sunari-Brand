@@ -100,5 +100,22 @@ page = f'''<div class="pg" id="menu-sunari"><div class="paper"></div>{GRAIN}
   <div style="position:absolute;left:0;right:0;bottom:70px;text-align:center;font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7E5842;text-shadow:0 1px 0 rgba(255,255,255,.9)">
     Harga dalam ribuan rupiah (45 = Rp 45.000) · Senja Dinner pesan H-1 · WA {WA}</div>
 </div>'''
-(H / "menu-sunari.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}{EMB}@page{{size:1080px 1920px;margin:0}}@media print{{body{{background:none}}}}</style></head><body>{page}</body></html>')
+html = f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}{EMB}@page{{size:1080px 1920px;margin:0}}@media print{{body{{background:none}}}}</style></head><body>{page}</body></html>'
+(H / "menu-sunari.html").write_text(html)
+
+# ---- Varian A4 (rasio 1 : 1,414 -> kanvas 1080 x 1527), tata letak dipadatkan
+A4 = [("width:1080px;height:1920px", "width:1080px;height:1527px"), ("@page{size:1080px 1920px", "@page{size:1080px 1527px"),
+ ("width:276px;top:792px", "width:276px;top:590px"), (".sec{margin-bottom:38px}", ".sec{margin-bottom:28px}"),
+ ("margin-bottom:18px;font-family", "margin-bottom:12px;font-family"), ("font-style:italic;font-size:31px", "font-style:italic;font-size:29px"),
+ ("font-size:21px;font-weight:400;line-height:1.2;padding:7px 0", "font-size:20px;font-weight:400;line-height:1.2;padding:4.6px 0"),
+ ("top:800px;width:3px;height:850px", "top:596px;width:3px;height:690px"),
+ ("top:86px;height:388px", "top:84px;height:268px"), ("top:102px;height:356px", "top:100px;height:236px"),
+ ("top:518px;text-align:center", "top:380px;text-align:center"), ("font-size:88px;line-height:1;margin-top:20px", "font-size:76px;line-height:1;margin-top:14px"),
+ ("font-size:24px;margin-top:16px", "font-size:22px;margin-top:12px"), ("gap:22px;margin-top:26px", "gap:22px;margin-top:18px"),
+ ("bottom:156px;padding-top:26px", "bottom:128px;padding-top:24px"), ("bottom:104px\"", "bottom:84px\""), ("bottom:70px;text-align:center", "bottom:52px;text-align:center")]
+h4 = html
+for a, b in A4:
+    assert a in h4, a
+    h4 = h4.replace(a, b)
+(H / "menu-sunari-a4.html").write_text(h4)
 print("ok")
