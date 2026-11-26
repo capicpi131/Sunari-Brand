@@ -378,7 +378,7 @@ FEED12 = [
    ("aktivitas/07-ayunan-gaun-merah-tengah.jpg","50% 60%","Ayunan menghadap senja","Menunggu senja di Sunari mengajarkan saya bahwa hal indah memang layak ditunggu."),
    ("senja/05-tamu-di-meja.jpg","50% 55%","Duduk, diam, menikmati","Saya tidak butuh motivasi panjang, saya hanya butuh satu sore di tepi pantai Sunari."),
    ("resto/04-resto-malam-pohon-kelapa.jpg","50% 70%","Makan malam di bawah pohon kelapa","Aroma ikan bakar segar memenuhi udara malam, membuat perut kami langsung keroncongan."),
-   ("malam/19-taman-bulan-jembatan.jpg","50% 55%","Lalu malam datang","Cahaya lampu yang temaram di antara pepohonan membuat taman tampak seperti negeri dongeng.")],
+   ("malam/19-taman-bulan-jembatan.jpg","50% 55%","Lalu malam datang","Lampu-lampu taman mulai menyala, menciptakan suasana hangat dan romantis di malam hari.")],
    ("Lebih dari menginap", ["5 tipe bungalow dengan teras pribadi","Sarapan, AC &amp; Wi-Fi di semua kamar","Senja tepat di depan Pantai Sunari"])),
  ("p02", "#SenjaHariIni", "feed-senja", [
    ("senja/70-perahu-nelayan-daun-kelapa.jpg","50% 50%","Perahu pulang saat senja","Nelayan melintas pelan, di bawah matahari yang mulai turun."),

@@ -13,4 +13,4 @@ Kalau kamu butuh jeda dari hiruk-pikuk hidup, mungkin senja di Sunari sudah menu
 
 ---
 Sumber kalimat (brand/storytelling/): Senja no. 73 & 81 · Pagi no. 74 · Taman no. 25 · Senja Vol. 2 no. 5 · Malam no. 4, 7 & 32.
-Teks slide: Pagi 71 · Taman 2 · Taman 25 · Senja Vol. 2 no. 6 · Senja Vol. 2 no. 5 · Senja 39 · Malam 32 · Taman 48.
+Teks slide: Pagi 71 · Taman 2 · Taman 25 · Senja Vol. 2 no. 6 · Senja Vol. 2 no. 5 · Senja 39 · Malam 32 · Taman 44.
