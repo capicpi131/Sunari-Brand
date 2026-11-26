@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (47 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (48 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -198,6 +198,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `45-dalam-gua-lipang-pasangan` | Pasangan tamu bersiap di lantai pasir dalam gua | 👤 (wajah jelas) | Story suasana (dengan izin) |
 | `46-dalam-gua-lipang-rombongan-berjalan` | Rombongan berjalan di pasir putih di bawah langit-langit gua keemasan (dari belakang) | ✅ | Sampul Gua Lipang, feed/story |
 | `47-dalam-gua-lipang-stalaktit-rombongan` | Rombongan (siluet) di bawah deretan stalaktit, cahaya dari mulut gua | ✅ | Feed/story Gua Lipang, latar teks |
+| `48-pasir-timbul-langit-biru` | Hamparan Pasir Timbul putih, langit biru pekat & awan, empat tamu kecil (wajah tidak jelas) | ✅ | Sampul Pasir Timbul, feed/story, latar teks |
 
 > Foto 38–42: **pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Pantai Bone Bakka)**, tempat makan siang (lunchbox) saat tur.
 
