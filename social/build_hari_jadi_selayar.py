@@ -1,4 +1,5 @@
 """Story Instagram (1080x1920) ucapan Hari Jadi ke-421 Kabupaten Kepulauan Selayar (29 November 2026), gaya SunaRi.
+# Foto latar: hasil color grading tema SunaRi (resep social/grade_photos.py, kekuatan 0.8) -> assets/photos/graded/senja__16-perahu-nelayan.jpg
 Run: python3 social/build_hari_jadi_selayar.py && node social/render_hari_jadi_selayar.js -> social/hari-jadi-selayar/story-hari-jadi-421.png"""
 import pathlib
 H = pathlib.Path(__file__).parent
@@ -19,7 +20,7 @@ CSS = """
 .sub{font-size:28px;line-height:1.5;color:#5A3E31;margin-top:22px}
 .tag{font-weight:700;font-size:20px;letter-spacing:.14em;color:#C0592C;margin-top:12px}
 """
-T = f'''<div class="s" id="story-hari-jadi-421"><img class="bg" src="{P}senja/16-perahu-nelayan.jpg" style="object-position:50% 50%" alt="">
+T = f'''<div class="s" id="story-hari-jadi-421"><img class="bg" src="{P}graded/senja__16-perahu-nelayan.jpg" style="object-position:50% 50%" alt="">
   <div class="vt"></div>
   <div class="head">
     <div class="kick">29 November 1605 — 2026</div>
