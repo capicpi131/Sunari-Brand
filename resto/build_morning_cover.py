@@ -23,7 +23,17 @@ canvas = Image.new("RGB", (W, Hh), (0xFB, 0xF4, 0xEC))
 for (n, im, _), (r, c) in zip(items, cells):
     t = ImageOps.fit(im, (round(tw), round(th)), Image.LANCZOS, centering=(0.5, 0.5))
     canvas.paste(t, (round(PAD + c*(tw+GAP)), round(PAD + r*(th+GAP))))
-logo = Image.open(H.parent / "assets/logo-sunari-sunset-halo.png").convert("RGBA")
-lw = 1200; logo = logo.resize((lw, round(logo.height * lw / logo.width)), Image.LANCZOS)
-canvas.paste(logo, ((W - lw)//2, (Hh - logo.height)//2), logo)
-canvas.save(H / "menu-cover-morning-3row.png"); print("ok", [i[0] for i in items][:3], logo.size)
+# Logo Shell Cream + bayangan lembut Driftwood Deep (cocok untuk foto siang/pagi yang cerah)
+logo = Image.open(H.parent / "assets/logo-sunari-cream.png").convert("RGBA")
+lw = 1160; logo = logo.resize((lw, round(logo.height * lw / logo.width)), Image.LANCZOS)
+al = logo.getchannel("A")
+def shade(blur, op, off=(0, 0)):
+    m = Image.new("L", logo.size, 0); m.paste(al, off); m = m.filter(ImageFilter.GaussianBlur(blur)).point(lambda v: int(v * op))
+    return m
+lay = Image.new("RGBA", (lw + 160, logo.height + 160), (0, 0, 0, 0))
+for blur, op, off in [(26, .55, (0, 0)), (9, .5, (0, 4)), (3, .45, (0, 3))]:
+    big = Image.new("L", lay.size, 0); big.paste(shade(blur, op, off), (80, 80))
+    lay.alpha_composite(Image.merge("RGBA", (*Image.new("RGB", lay.size, (0x4A, 0x32, 0x26)).split(), big)))
+lay.alpha_composite(logo, (80, 80))
+canvas.paste(lay, ((W - lay.width)//2, (Hh - lay.height)//2), lay)
+canvas.save(H / "menu-cover-morning-3row.png"); print("ok")
