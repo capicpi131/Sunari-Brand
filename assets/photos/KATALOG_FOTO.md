@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (52 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (54 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -205,6 +205,13 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `52-pantai-barat-rebahan-di-air` | Pria bertopi rebahan di air toska, pulau kecil & tebing karang di belakang (wajah tertutup) | ✅ | Feed/story slow living, Reels |
 
 > Foto 49–52: pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Bone Bakka).
+
+| File | Isi | Status | Cocok untuk |
+|---|---|---|---|
+| `53-kampung-bahuluang-tamu-dan-anak` | Tamu bersama anak-anak kampung di jalan berpasir, pohon kelapa & laut | 👤👶 (wajah anak jelas) | Hanya dengan izin orang tua & tamu; story "kampung Bahuluang" |
+| `54-kampung-bahuluang-swafoto-warga` | Swafoto tamu, warga & anak-anak kampung, tersenyum | 👤👶 (wajah anak jelas) | Hanya dengan izin orang tua, tamu & warga |
+
+> Foto 53–54: **perkampungan Pulau Bahuluang**, kunjungan opsional jika tamu ingin eksplor. Ada wajah anak-anak: jangan dipublikasikan tanpa izin orang tua.
 
 > Foto 38–42: **pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Pantai Bone Bakka)**, tempat makan siang (lunchbox) saat tur.
 
