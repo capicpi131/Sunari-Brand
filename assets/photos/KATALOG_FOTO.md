@@ -150,7 +150,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `05-udara-pantai-dan-kapal` | Foto udara pantai kecil & kapal merah, 9:16 | ⚠️ resolusi kecil (459 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 | `06-udara-dua-pantai` | Foto udara dua pantai & terumbu | ⚠️ resolusi kecil (640 px) | Story, e-book (ukuran kecil); dipakai di e-book hal. 15 |
 
-## Tur Pulau Bahuluang: `bahuluang/` (48 foto, ditambahkan 20 Nov 2026)
+## Tur Pulau Bahuluang: `bahuluang/` (52 foto, ditambahkan 20 Nov 2026)
 | File | Isi | Status | Cocok untuk |
 |---|---|---|---|
 | `01-pasangan-pantai-pasir-putih` | Pasangan di pantai pasir putih, laut toska | 👤 | Promo tur, perlu izin tamu |
@@ -199,6 +199,12 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `46-dalam-gua-lipang-rombongan-berjalan` | Rombongan berjalan di pasir putih di bawah langit-langit gua keemasan (dari belakang) | ✅ | Sampul Gua Lipang, feed/story |
 | `47-dalam-gua-lipang-stalaktit-rombongan` | Rombongan (siluet) di bawah deretan stalaktit, cahaya dari mulut gua | ✅ | Feed/story Gua Lipang, latar teks |
 | `48-pasir-timbul-langit-biru` | Hamparan Pasir Timbul putih, langit biru pekat & awan, empat tamu kecil (wajah tidak jelas) | ✅ | Sampul Pasir Timbul, feed/story, latar teks |
+| `49-pantai-barat-duduk-di-pasir` | Pria bertopi duduk di pasir putih menatap teluk toska & tebing karang hijau (wajah samping, 4:3 lanskap) | ✅ (wajah tidak jelas) | Feed/story slow living, latar teks |
+| `50-pantai-barat-dari-bukit` | Pemandangan dari bukit: pantai pasir putih panjang, laut toska, kapal bersandar, orang dari belakang | ⚠️ resolusi kecil (720 px) | Story ukuran kecil, referensi |
+| `51-pantai-barat-teluk-pasir-putih` | Teluk pasir putih & air toska dari atas tebing, kapal & orang kecil, panorama lebar | ✅ (lanskap lebar) | Feed (crop), sampul pantai barat, header e-book |
+| `52-pantai-barat-rebahan-di-air` | Pria bertopi rebahan di air toska, pulau kecil & tebing karang di belakang (wajah tertutup) | ✅ | Feed/story slow living, Reels |
+
+> Foto 49–52: pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Bone Bakka).
 
 > Foto 38–42: **pantai bagian barat Pulau Bahuluang (Pantai Bone Kidi & Pantai Bone Bakka)**, tempat makan siang (lunchbox) saat tur.
 
