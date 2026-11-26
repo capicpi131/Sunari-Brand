@@ -14,6 +14,12 @@ File desain:
 **Cetak edisi elegan sungguhan:** minta percetakan memakai kertas tekstur (cotton/fancy paper 300+ gsm) dengan **emboss/letterpress** untuk logo, judul dan nama menu, serta **hot print/foil emas** untuk harga dan kata *Resto*. File PNG/PDF menampilkan simulasi efeknya; untuk produksi, percetakan butuh file terpisah per efek (bisa saya siapkan).
 Ubah menu/harga di `build_menu.py` (bagian `MENU`), lalu jalankan `python3 resto/build_menu.py && node resto/render.js`.
 
+## Menu Breakfast (inclusion room), DRAF
+File: `Menu_Sarapan_SunaRi_A4.png` / `.pdf` (A4) dan `Menu_Sarapan_SunaRi.png` (1080×1920). Header = mozaik 33 foto pagi/siang resort + logo (`menu-cover-morning-3row.png`, dibuat `build_morning_cover.py`).
+Render: `python3 resto/build_morning_cover.py && python3 resto/build_menu_sarapan.py && node resto/render_sarapan.js`. Ubah menu di `build_menu_sarapan.py` (`MAIN`, `SIDE`, `DRINK`, `HOURS`).
+
+**Isi masih DRAF/placeholder, perlu dikonfirmasi pemilik:** Hidangan utama (pilih satu): Nasi Goreng Kampung, Indomie Goreng, Egg Sandwich, Toast · Pelengkap: Fried Banana, Fresh Fruit · Minuman (pilih satu): Black Coffee, Coffee Milk, Hot Tea, Milk Tea, Orange Juice · Jam sarapan 07.00 – 10.00.
+
 ## Makanan
 | Item | Harga |
 |---|---|
