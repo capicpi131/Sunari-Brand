@@ -16,7 +16,7 @@ CSS += """
 # (foto, posisi, judul, teks, jam)
 SL = [
  (B + "40-pantai-barat-air-toska-awan.jpg", "50% 60%", "Sehari ke<br>Bahuluang", "Berangkat pagi dari SunaRi, pulang menyambut senja", ""),
- (B + "51-pantai-barat-teluk-pasir-putih.jpg", "45% 50%", 'Satu hari, <em>banyak cerita</em>', "Snorkeling di air sebening kaca, pasir yang muncul di tengah laut, gua batu kapur, dan makan siang di pantai yang sepi.", ""),
+ (B + "51-pantai-barat-teluk-pasir-putih.jpg", "45% 50%", 'Satu hari, <em>banyak cerita</em>', "Snorkeling di air sebening kaca, pasir yang muncul di tengah laut, gua dengan stalaktit dan stalagmit yang indah, dan makan siang di pantai yang sepi.", ""),
  (P + "taman/05-meja-taman-view-laut-gazebo.jpg", "50% 55%", 'Pagi yang <em>pelan</em> di SunaRi', "Sarapan di Bajoy Beach Resto sambil memandang laut. Siapkan baju renang, topi, dan tabir surya.", "07.00"),
  (P + "pantai/02-perahu-nelayan-biru.jpg", "50% 55%", 'Mengikuti <em>laut</em> hari itu', "Pagi-pagi kami cek pasang-surut dan kabari kamu. Dari situ ditentukan titik temu dengan kapten kapal.", "08.00"),
  (B + "22-kapal-menuju-batu-berlubang.jpg", "50% 55%", 'Menyeberang <em>ke pulau</em>', "Air cukup tinggi, kapal berangkat dari Bone Taringan, sekitar 20 menit. Air surut, kita berangkat dari Turungan.", ""),
