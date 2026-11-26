@@ -16,7 +16,7 @@ def soft_grade(src, dst):
     a = g + (a-g)*0.82                                                    # desaturasi
     a = a*0.84 + np.array([0xFB, 0xEC, 0xDC])/255*0.16                    # kabut Shell Cream
     Image.fromarray((np.clip(a, 0, 1)*255).astype(np.uint8)).save(dst, quality=95)
-soft_grade(H.parent / "social/wa-cover/sampul-whatsapp-business.png", H / "menu-cover-soft.jpg")
+soft_grade(H / "menu-cover-3row.png", H / "menu-cover-soft.jpg")
 ns = {}
 src = (H / "build_menu.py").read_text()
 exec(src[src.index("MENU = {"):src.index("FONTS =")], ns)
@@ -76,9 +76,9 @@ c3 = section("Juice", MENU["Juice"]) + section("Soft Drink", MENU["Soft Drink"])
 COVER = "menu-cover-soft.jpg"
 page = f'''<div class="pg" id="menu-sunari"><div class="paper"></div>{GRAIN}
   <div class="hair" style="inset:34px"></div><div class="hair" style="inset:46px;opacity:.6"></div>
-  <div class="hair" style="left:84px;right:84px;top:86px;height:388px;opacity:.7"></div>
-  <div style="position:absolute;left:100px;right:100px;top:102px;height:356px;background:url('{COVER}') 50% 44%/cover" class="photo"></div>
-  <div style="position:absolute;left:0;right:0;top:518px;text-align:center">
+  <div class="hair" style="left:84px;right:84px;top:100px;height:330px;opacity:.7"></div>
+  <div style="position:absolute;left:100px;right:100px;top:116px;height:298px;background:url('{COVER}') 50% 50%/100% 100%" class="photo"></div>
+  <div style="position:absolute;left:0;right:0;top:486px;text-align:center">
     <div class="caps" style="font-size:15px;margin-right:-.5em;letter-spacing:.5em">Menu</div>
     <div class="pf" style="font-size:88px;line-height:1;margin-top:20px">Bajoy Beach <span class="it gold">Resto</span></div>
     <div class="pf it" style="font-size:24px;margin-top:16px;color:#7E5842">Tempat senja pulang</div>
@@ -105,14 +105,14 @@ html = f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<styl
 
 # ---- Varian A4 (rasio 1 : 1,414 -> kanvas 1080 x 1527), tata letak dipadatkan
 A4 = [("width:1080px;height:1920px", "width:1080px;height:1527px"), ("@page{size:1080px 1920px", "@page{size:1080px 1527px"),
- ("width:276px;top:792px", "width:276px;top:590px"), (".sec{margin-bottom:38px}", ".sec{margin-bottom:28px}"),
- ("margin-bottom:18px;font-family", "margin-bottom:12px;font-family"), ("font-style:italic;font-size:31px", "font-style:italic;font-size:29px"),
- ("font-size:21px;font-weight:400;line-height:1.2;padding:7px 0", "font-size:20px;font-weight:400;line-height:1.2;padding:4.6px 0"),
- ("top:800px;width:3px;height:850px", "top:596px;width:3px;height:690px"),
- ("top:86px;height:388px", "top:84px;height:268px"), ("top:102px;height:356px", "top:100px;height:236px"),
- ("top:518px;text-align:center", "top:380px;text-align:center"), ("font-size:88px;line-height:1;margin-top:20px", "font-size:76px;line-height:1;margin-top:14px"),
- ("font-size:24px;margin-top:16px", "font-size:22px;margin-top:12px"), ("gap:22px;margin-top:26px", "gap:22px;margin-top:18px"),
- ("bottom:156px;padding-top:26px", "bottom:128px;padding-top:24px"), ("bottom:104px\"", "bottom:84px\""), ("bottom:70px;text-align:center", "bottom:52px;text-align:center")]
+ ("width:276px;top:792px", "width:276px;top:636px"), (".sec{margin-bottom:38px}", ".sec{margin-bottom:24px}"),
+ ("margin-bottom:18px;font-family", "margin-bottom:10px;font-family"), ("font-style:italic;font-size:31px", "font-style:italic;font-size:28px"),
+ ("font-size:21px;font-weight:400;line-height:1.2;padding:7px 0", "font-size:20px;font-weight:400;line-height:1.2;padding:3.7px 0"),
+ ("top:800px;width:3px;height:850px", "top:642px;width:3px;height:640px"),
+ ("top:100px;height:330px", "top:74px;height:330px"), ("top:116px;height:298px", "top:90px;height:298px"),
+ ("top:486px;text-align:center", "top:424px;text-align:center"), ("font-size:88px;line-height:1;margin-top:20px", "font-size:70px;line-height:1;margin-top:10px"),
+ ("font-size:24px;margin-top:16px", "font-size:21px;margin-top:10px"), ("gap:22px;margin-top:26px", "gap:22px;margin-top:14px"),
+ ("bottom:156px;padding-top:26px", "bottom:118px;padding-top:22px"), ("bottom:104px\"", "bottom:78px\""), ("bottom:70px;text-align:center", "bottom:48px;text-align:center")]
 h4 = html
 for a, b in A4:
     assert a in h4, a
