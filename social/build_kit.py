@@ -371,6 +371,11 @@ parts.append(f'''<div class="tpl facts" id="faq-{NF}">
 # ---- 12 carousels following the feed preview (covers reuse feed tiles; slides 2..n here)
 FEED12 = [
  ("p01", "Lebih dari Menginap", "camp-1", [
+   ("pantai/02-perahu-nelayan-biru.jpg","50% 55%","Pagi yang pelan","Perahu nelayan lewat di depan pantai. Kopi masih hangat, dan belum ada yang terburu-buru."),
+   ("taman/05-meja-taman-view-laut-gazebo.jpg","50% 55%","Taman untuk jeda","Meja kayu di antara kamboja dan bougenvil, dengan laut biru di ujung pandangan."),
+   ("pantai/04-kursi-santai-bawah-pohon.jpg","50% 55%","Siang di bawah ketapang","Kursi santai di tepi pantai yang landai. Teduh, tenang, dan aman untuk anak-anak."),
+   ("aktivitas/01-kayak-sore.jpg","50% 55%","Mendayung saat sore","Kayak bisa disewa di pantai. Air tenang, cahaya mulai keemasan."),
+   ("aktivitas/07-ayunan-gaun-merah-tengah.jpg","50% 60%","Ayunan menghadap senja","Ayunan raksasa di Pantai Sunari, gratis untuk tamu. Tempat favorit menunggu matahari turun."),
    ("senja/05-tamu-di-meja.jpg","50% 55%","Duduk, diam, menikmati","Tidak perlu rencana. Cukup meja kayu, angin laut, dan langit yang pelan-pelan berubah warna."),
    ("resto/04-resto-malam-pohon-kelapa.jpg","50% 70%","Makan malam di bawah pohon kelapa","Ikan bakar &amp; seafood di Bajoy Beach Resto. Senja Dinner bisa dipesan H-1."),
    ("malam/03-resort-malam-a-frame.jpg","50% 60%","Lalu malam datang","Lampu-lampu bungalow menyala di antara pohon kelapa.")],
