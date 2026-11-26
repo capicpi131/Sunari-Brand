@@ -93,6 +93,7 @@ Tidak disimpan: foto resto dengan wajah tamu terlihat, foto kaus bergambar wajah
 |---|---|---|
 | `senja/84-afterglow-gazebo-lampu-tamu.jpg` | Afterglow biru-jingga-merah muda, gazebo bambu berlampu & ayunan, lampu gantung, tamu bersantai di tepi pantai | 👤 ada anak kecil & beberapa wajah samar: pakai ukuran kecil/crop, atau dengan izin |
 | `senja/85-siluet-tirai-senja-persegi.jpg` | Siluet tamu dengan minuman di meja, tirai & daun ketapang, matahari & jalur cahaya di laut (1:1) | ✅ (siluet) | Story ucapan Hari Jadi Selayar ke-421, feed senja |
+| `senja/85-siluet-tirai-senja-persegi-lurus.jpg` | Versi no. 85 dengan cakrawala diluruskan (±1,5°), sedikit di-crop | ✅ (siluet) | **Dipakai: story Hari Jadi Selayar ke-421** |
 
 Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 
