@@ -38,6 +38,8 @@ body{background:#ccc;font-family:Montserrat,sans-serif;color:#5A3E31;font-varian
 .row .dots{flex:1;border-bottom:1.5px dotted rgba(166,124,100,.65);margin:0 9px;transform:translateY(-4px)}
 .row .p{font-family:Montserrat,sans-serif;font-weight:500;font-size:16.5px;letter-spacing:.06em}
 """
+IG = '''<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>'''
+TT = '''<svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.74 5.7 3.15 0 5.7-2.55 5.7-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z"/></svg>'''
 EMB = """
 .pg{background:#F3E8D8}
 .paper{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 28%,rgba(255,255,255,.6),rgba(255,255,255,0) 62%),radial-gradient(ellipse at 50% 118%,rgba(90,62,49,.10),rgba(90,62,49,0) 60%)}
@@ -52,7 +54,10 @@ EMB = """
 .hair{border:none !important;box-shadow:inset 1.5px 1.5px 0 rgba(74,50,38,.28),inset -1.5px -1.5px 0 rgba(255,255,255,.95),1.5px 1.5px 0 rgba(255,255,255,.9),-1.5px -1.5px 0 rgba(74,50,38,.14)}
 .photo{box-shadow:inset 0 0 0 1px rgba(255,255,255,.5),0 0 0 6px #F7EEE0,0 0 0 7.5px rgba(74,50,38,.28),0 0 0 9px rgba(255,255,255,.95),3px 5px 14px rgba(74,50,38,.28)}
 .sunacc{filter:drop-shadow(0 1.5px 0 rgba(255,255,255,.9)) drop-shadow(1px 2px 2px rgba(74,50,38,.32))}
-.vr{position:absolute;top:800px;width:3px;height:880px;border-left:1.5px solid rgba(126,88,66,.35);border-right:1.5px solid rgba(255,255,255,.95)}
+.soc{display:flex;align-items:center;justify-content:center;gap:16px;color:#7E5842}
+.soc svg{filter:drop-shadow(0 1.5px 0 rgba(255,255,255,.95)) drop-shadow(1px 2px 1.5px rgba(74,50,38,.3))}
+.soc span{font-family:Montserrat,sans-serif;font-weight:600;font-size:17px;letter-spacing:.14em;text-shadow:0 1.5px 0 rgba(255,255,255,.9),1px 2px 1.5px rgba(74,50,38,.22)}
+.vr{position:absolute;top:800px;width:3px;height:850px;border-left:1.5px solid rgba(126,88,66,.35);border-right:1.5px solid rgba(255,255,255,.95)}
 .rule{background:none !important;height:3px !important;border-top:1.5px solid rgba(126,88,66,.45);border-bottom:1.5px solid rgba(255,255,255,.95);opacity:1 !important}
 """
 GRAIN = '<svg class="grain" width="100%" height="100%"><filter id="gr"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .35  0 0 0 0 .24  0 0 0 0 .18  0 0 0 .09 0"/></filter><rect width="100%" height="100%" filter="url(#gr)"/></svg>'
@@ -85,13 +90,14 @@ page = f'''<div class="pg" id="menu-sunari"><div class="paper"></div>{GRAIN}
   <div class="col" style="left:100px">{c1}</div>
   <div class="col" style="left:402px">{c2}</div>
   <div class="col" style="right:100px">{c3}</div>
-  <div style="position:absolute;left:100px;right:100px;bottom:128px;padding-top:26px;display:flex;text-align:center">
+  <div style="position:absolute;left:100px;right:100px;bottom:156px;padding-top:26px;display:flex;text-align:center">
     <div class="rule" style="position:absolute;left:0;right:0;top:0"></div>
     <div style="flex:1"><div class="caps" style="font-size:12.5px;letter-spacing:.4em;margin-right:-.4em">Tamu menginap</div><div class="pf" style="font-size:30px;margin-top:8px">07.00 – 21.00</div></div>
     <div style="position:absolute;left:50%;top:60px;transform:translate(-50%,-50%)">{SUN}</div>
     <div style="flex:1"><div class="caps" style="font-size:12.5px;letter-spacing:.4em;margin-right:-.4em">Tamu tidak menginap</div><div class="pf" style="font-size:30px;margin-top:8px">07.00 – 19.00</div></div>
   </div>
-  <div style="position:absolute;left:0;right:0;bottom:76px;text-align:center;font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7E5842;text-shadow:0 1px 0 rgba(255,255,255,.9)">
+  <div class="soc" style="position:absolute;left:0;right:0;bottom:104px">{IG}{TT}<span>@sunaribeachresortselayar</span></div>
+  <div style="position:absolute;left:0;right:0;bottom:70px;text-align:center;font-size:12.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7E5842;text-shadow:0 1px 0 rgba(255,255,255,.9)">
     Harga dalam ribuan rupiah (45 = Rp 45.000) · Senja Dinner pesan H-1 · WA {WA}</div>
 </div>'''
 (H / "menu-sunari.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}{EMB}@page{{size:1080px 1920px;margin:0}}@media print{{body{{background:none}}}}</style></head><body>{page}</body></html>')
