@@ -32,7 +32,7 @@ SL = [
  (B + "37-depan-gua-lipang.jpg", "40% 45%", 'Di depan <em>Gua Lipang</em>', "Tebing batu kapur menjulang, airnya toska sampai dasar terlihat.", ""),
  (B + "43-pintu-masuk-gua-lipang.jpg", "50% 45%", 'Melangkah <em>masuk</em>', "Pintu gua menyambut dengan kolam karang dan cahaya laut di belakang.", ""),
  (B + "47-dalam-gua-lipang-stalaktit-rombongan.jpg", "50% 40%", 'Sejuk di <em>dalam</em>', "Stalaktit menggantung di atas kepala, lantainya pasir putih. Gua yang dibentuk laut selama ribuan tahun.", ""),
- (B + "33-makam-karang-naik-kapal.jpg", "50% 60%", 'Saatnya <em>pulang</em>', "Sekitar pukul dua kapal kembali ke titik temu, lalu perjalanan darat ke SunaRi.", "14.00"),
+ (B + "33-makam-karang-naik-kapal.jpg", "50% 60%", 'Saatnya <em>pulang</em>', "Sekitar pukul tiga kapal kembali ke titik temu, lalu perjalanan darat ke SunaRi.", "15.00"),
  (P + "senja/21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Senja <em>menunggu</em> di SunaRi', "Sore hari sudah kembali. Masih sempat mandi dan rebahan, lalu duduk di Pantai Sunari menunggu matahari tenggelam.", "Sore"),
 ]
 T = []
@@ -47,7 +47,7 @@ for k, (img, pos, t, sub, jam) in enumerate(SL[1:], 2):
   <div class="kick">{KICK}{chip}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">#sunarisunsetmoment</span><span>{k:02d} / {N:02d}</span></div></div>''')
 TL = [("07.00", "Sarapan di SunaRi"), ("08.00", "Berangkat ke titik temu"), ("·", "Kapal dari Bone Taringan / Turungan"), ("10.00", "Makam Karang &amp; snorkeling"),
-      ("·", "Pasir Timbul, waktunya diatur kapten"), ("·", "Makan siang di Bone Kidi &amp; Bone Bakka"), ("·", "Jelajah Gua Lipang"), ("14.00", "Kapal pulang, senja di SunaRi")]
+      ("·", "Pasir Timbul, waktunya diatur kapten"), ("·", "Makan siang di Bone Kidi &amp; Bone Bakka"), ("·", "Jelajah Gua Lipang"), ("15.00", "Kapal pulang, senja di SunaRi")]
 T.append(f'''<div class="t" id="bahuluang-20"><div class="frame"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:84px;width:280px" alt="">
   <div style="position:absolute;left:100px;right:100px;top:300px;text-align:center;color:#45301F">

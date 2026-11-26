@@ -6,7 +6,7 @@ Kami cek pasang-surut hari itu dulu. Air cukup tinggi, kapal berangkat dari Bone
 
 Di Bahuluang, kita snorkeling di Makam Karang, berjalan di atas karang putih, lalu ke Pasir Timbul saat kapten bilang airnya sudah pas. Makan siang di pantai barat, Bone Kidi dan Bone Bakka, sebelum masuk ke sejuknya Gua Lipang.
 
-Sekitar pukul dua kapal kembali. Sore hari sudah di SunaRi, masih sempat rebahan sebelum duduk di Pantai Sunari menunggu senja 🌅
+Sekitar pukul tiga kapal kembali. Sore hari sudah di SunaRi, masih sempat rebahan sebelum duduk di Pantai Sunari menunggu senja 🌅
 
 Simpan dulu alurnya, biar liburanmu di Selayar tinggal berangkat. Tag teman yang mau kamu ajak menyeberang 👇
 
