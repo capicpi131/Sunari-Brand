@@ -8,7 +8,7 @@
 
 File desain:
 - **Edisi elegan (timbul + foil emas):** `Menu_Bajoy_Elegan_A4.pdf` / `.png`, `menu-elegan-story-1-makanan.png`, `menu-elegan-story-2-minuman.png`
-- **Edisi SunaRi (foto + latar Shell Cream):** `Menu_Bajoy_SunaRi_A4.pdf` / `.png` (sumber `build_menu_sunari.py`, render `node resto/render_sunari.js`)
+- **Edisi SunaRi elegan (2 halaman: Makanan | Minuman):** `Menu_Bajoy_SunaRi.pdf`, `Menu_Bajoy_SunaRi_Hal1.png`, `Menu_Bajoy_SunaRi_Hal2.png` (sumber `build_menu_sunari.py`, render `node resto/render_sunari.js`)
 - Edisi polos: `Menu_Bajoy_A4.pdf` / `.png`, `menu-story-1-makanan.png`, `menu-story-2-minuman.png`
 
 **Cetak edisi elegan sungguhan:** minta percetakan memakai kertas tekstur (cotton/fancy paper 300+ gsm) dengan **emboss/letterpress** untuk logo, judul dan nama menu, serta **hot print/foil emas** untuk harga dan kata *Resto*. File PNG/PDF menampilkan simulasi efeknya; untuk produksi, percetakan butuh file terpisah per efek (bisa saya siapkan).
