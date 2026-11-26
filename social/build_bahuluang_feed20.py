@@ -5,7 +5,8 @@ Run: python3 social/build_bahuluang_feed20.py && node social/render_bahuluang_fe
 import pathlib
 H = pathlib.Path(__file__).parent
 exec((H / "build_vipsuperior.py").read_text().split("KICK =")[0].replace("__file__", repr(str(H / "build_vipsuperior.py"))))
-P = "../assets/photos/"; B = P + "bahuluang/"; N = 20; KICK = "Sehari ke Bahuluang"
+# foto hasil color grading tema SunaRi (social/grade_bahuluang.py)
+P = "../assets/photos/graded/"; B = P + "bahuluang__"; N = 20; KICK = "Sehari ke Bahuluang"
 CSS += """
 .chip{display:inline-block;margin-left:14px;padding:6px 14px;border-radius:30px;background:linear-gradient(90deg,#FDB15D,#FF8A5C);color:#fff;font-size:17px;letter-spacing:.14em;vertical-align:2px}
 .sub{font-size:29px}
@@ -17,8 +18,8 @@ CSS += """
 SL = [
  (B + "40-pantai-barat-air-toska-awan.jpg", "50% 60%", "Sehari ke<br>Bahuluang", "Berangkat pagi dari SunaRi, pulang menyambut senja", ""),
  (B + "51-pantai-barat-teluk-pasir-putih.jpg", "45% 50%", 'Satu hari, <em>banyak cerita</em>', "Snorkeling di air sebening kaca, pasir yang muncul di tengah laut, gua dengan stalaktit dan stalagmit yang indah, dan makan siang di pantai yang sepi.", ""),
- (P + "taman/05-meja-taman-view-laut-gazebo.jpg", "50% 55%", 'Pagi yang <em>pelan</em> di SunaRi', "Sarapan di Bajoy Beach Resto sambil memandang laut. Siapkan baju renang, topi, dan tabir surya.", "07.00"),
- (P + "pantai/02-perahu-nelayan-biru.jpg", "50% 55%", 'Mengikuti <em>laut</em> hari itu', "Pagi-pagi kami cek pasang-surut dan kabari kamu. Dari situ ditentukan titik temu dengan kapten kapal.", "08.00"),
+ (P + "taman__05-meja-taman-view-laut-gazebo.jpg", "50% 55%", 'Pagi yang <em>pelan</em> di SunaRi', "Sarapan di Bajoy Beach Resto sambil memandang laut. Siapkan baju renang, topi, dan tabir surya.", "07.00"),
+ (P + "pantai__02-perahu-nelayan-biru.jpg", "50% 55%", 'Mengikuti <em>laut</em> hari itu', "Pagi-pagi kami cek pasang-surut dan kabari kamu. Dari situ ditentukan titik temu dengan kapten kapal.", "08.00"),
  (B + "22-kapal-menuju-batu-berlubang.jpg", "50% 55%", 'Menyeberang <em>ke pulau</em>', "Air cukup tinggi, kapal berangkat dari Bone Taringan, sekitar 20 menit. Air surut, kita berangkat dari Turungan.", ""),
  (B + "21-laut-toska-dari-kapal.jpg", "50% 62%", 'Laut yang <em>berganti warna</em>', "Dari biru tua ke toska. Karang terlihat jelas dari sisi kapal.", ""),
  (B + "19-batu-berlubang.jpg", "50% 55%", 'Batu karang <em>berlubang</em>', "Salah satu pemandangan yang menyapa di perjalanan. Siapkan kamera.", ""),
@@ -33,7 +34,7 @@ SL = [
  (B + "43-pintu-masuk-gua-lipang.jpg", "50% 45%", 'Melangkah <em>masuk</em>', "Pintu gua menyambut dengan kolam karang dan cahaya laut di belakang.", ""),
  (B + "47-dalam-gua-lipang-stalaktit-rombongan.jpg", "50% 40%", 'Sejuk di <em>dalam</em>', "Stalaktit menggantung di atas kepala, lantainya pasir putih. Gua yang dibentuk laut selama ribuan tahun.", ""),
  (B + "33-makam-karang-naik-kapal.jpg", "50% 60%", 'Saatnya <em>pulang</em>', "Sekitar pukul tiga kapal kembali ke titik temu, lalu perjalanan darat ke SunaRi.", "15.00"),
- (P + "senja/21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Senja <em>menunggu</em> di SunaRi', "Sore hari sudah kembali. Masih sempat mandi dan rebahan, lalu duduk di Pantai Sunari menunggu matahari tenggelam.", "Sore"),
+ (P + "senja__21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Senja <em>menunggu</em> di SunaRi', "Sore hari sudah kembali. Masih sempat mandi dan rebahan, lalu duduk di Pantai Sunari menunggu matahari tenggelam.", "Sore"),
 ]
 T = []
 img, pos, t, sub, _ = SL[0]
