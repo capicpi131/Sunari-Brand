@@ -1,0 +1,38 @@
+"""Story Instagram (1080x1920) ucapan Hari Jadi ke-421 Kabupaten Kepulauan Selayar (29 November 2026), gaya SunaRi.
+Run: python3 social/build_hari_jadi_selayar.py && node social/render_hari_jadi_selayar.js -> social/hari-jadi-selayar/story-hari-jadi-421.png"""
+import pathlib
+H = pathlib.Path(__file__).parent
+P = "../assets/photos/"; LOGO_D = "../assets/logo-sunari-color-dark.png"
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'
+CSS = """
+*{margin:0;padding:0;box-sizing:border-box}body{background:#bbb;font-family:Montserrat,sans-serif}
+.s{position:relative;overflow:hidden;width:1080px;height:1920px;margin:30px auto;background:#120c08;color:#FBF4EC}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vt{position:absolute;left:0;right:0;top:0;height:1000px;background:linear-gradient(180deg,rgba(14,8,4,.78),rgba(14,8,4,.45) 60%,rgba(14,8,4,0))}
+.vb{position:absolute;left:0;right:0;bottom:0;height:760px;background:linear-gradient(0deg,rgba(14,8,4,.88),rgba(14,8,4,.5) 60%,rgba(14,8,4,0))}
+.c{position:absolute;left:80px;right:80px;text-align:center;text-shadow:0 2px 16px rgba(0,0,0,.55)}
+.kick{font-weight:600;font-size:24px;letter-spacing:.42em;text-transform:uppercase;color:#FDB15D}
+.big{font-family:'Playfair Display',serif;font-size:300px;line-height:.9;color:#FDB15D;font-style:italic}
+.ttl{font-family:'Playfair Display',serif;font-size:76px;line-height:1.12}
+.rule{width:120px;height:2px;background:#FDB15D;margin:34px auto;opacity:.85}
+.tema{font-family:'Playfair Display',serif;font-style:italic;font-size:42px;line-height:1.35}
+.sub{font-size:30px;line-height:1.5;opacity:.95}
+"""
+T = f'''<div class="s" id="story-hari-jadi-421"><img class="bg" src="{P}senja/57-matahari-cakrawala-emas-1753.jpg" style="object-position:50% 60%" alt="">
+  <div class="vt"></div><div class="vb"></div>
+  <div class="c" style="top:250px">
+    <div class="kick">29 November 1605 — 2026</div>
+    <div class="ttl" style="margin-top:34px">Selamat Hari Jadi</div>
+    <div class="big" style="margin-top:6px">ke-421</div>
+    <div class="ttl" style="font-size:64px;margin-top:18px">Kabupaten<br>Kepulauan Selayar</div>
+  </div>
+  <div class="c" style="bottom:300px">
+    <div class="kick" style="font-size:20px">Tema</div>
+    <div class="tema" style="margin-top:14px">“Pangan Lokal Mendukung<br>Ketahanan Pangan Nasional”</div>
+    <div class="rule"></div>
+    <div class="sub">Selayar bukan sekadar tujuan wisata, ia adalah tempat di mana senja terasa lebih jujur.</div>
+    <img src="{LOGO_D}" style="width:260px;margin-top:40px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))" alt="">
+    <div style="font-weight:700;font-size:19px;letter-spacing:.2em;color:#FDB15D;margin-top:14px">#sunarisunsetmoment &nbsp;·&nbsp; #HariJadiSelayar421</div>
+  </div></div>'''
+(H / "hari_jadi_selayar.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{T}</body></html>')
+print("ok")
