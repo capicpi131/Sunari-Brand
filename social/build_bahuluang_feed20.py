@@ -24,7 +24,7 @@ SL = [
  (B + "19-batu-berlubang.jpg", "50% 55%", 'Batu karang <em>berlubang</em>', "Salah satu pemandangan yang menyapa di perjalanan. Siapkan kamera.", ""),
  (B + "25-makam-karang-snorkeling-dan-kapal.jpg", "40% 60%", 'Tiba di <em>Makam Karang</em>', "Gosong karang putih di tengah laut, dikelilingi air jernih. Spot snorkeling pertama hari ini.", "10.00"),
  (B + "31-snorkeling-dekat-pondok-apung.jpg", "45% 50%", 'Air sebening <em>kaca</em>', "Masker dan pelampung sudah disiapkan. Ikan-ikan kecil datang menyapa di antara karang.", ""),
- (B + "35-berjalan-di-hamparan-karang.jpg", "50% 55%", 'Di atas <em>karang putih</em>', "Pakai sepatu air, lalu susuri punggung karang putih yang membentang ke tengah laut.", ""),
+ (B + "35-berjalan-di-hamparan-karang.jpg", "50% 55%", 'Di atas <em>Makam Karang</em>', "Pakai sepatu air, lalu susuri punggung Makam Karang yang membentang ke tengah laut.", ""),
  (B + "36-kru-membantu-tamu-turun-kapal.jpg", "50% 60%", 'Ditemani kru yang <em>sigap</em>', "Naik-turun kapal, memasang alat snorkeling, mencari spot foto. Kru kapal selalu siap membantu.", ""),
  (B + "48-pasir-timbul-langit-biru.jpg", "50% 65%", 'Pasir yang <em>muncul</em>', "Pasir Timbul Bahuluang muncul di tengah laut. Kapten akan membawamu ke sana saat airnya paling pas.", ""),
  (B + "42-pantai-barat-rombongan-di-air.jpg", "50% 60%", 'Makan siang di <em>pasir putih</em>', "Rehat di pantai barat Bahuluang, Pantai Bone Kidi dan Bone Bakka. Lunchbox, air toska, tidak ada yang perlu dikejar.", ""),
