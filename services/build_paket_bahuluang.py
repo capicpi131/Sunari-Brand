@@ -61,6 +61,18 @@ ul.l.ok li::before{background:#D9703F;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,6
 .join span{display:inline-block;background:#5A3E31;border-radius:14px;padding:5px 14px}
 .flow .arr{margin-top:0;padding:8px 10px 10px} .flow .arr ul{font-size:10.5px} .flow .arr .tm2{font-size:17px}
 .flow .join{margin:0}
+/* versi ringkas di dalam brosur (gambar mandiri tetap ukuran penuh) */
+.flow.inpage .day{margin-top:9px;gap:10px} .flow.inpage .lbl{flex-basis:62px;width:62px}
+.flow.inpage .rows{gap:7px} .flow.inpage .row{column-gap:30px}
+.flow.inpage .st{padding:5px 4px 6px} .flow.inpage .ic{width:26px;height:26px;margin-bottom:3px}
+.flow.inpage .ic svg{width:15px;height:15px} .flow.inpage .tm{font-size:9.5px} .flow.inpage .ti{font-size:11px}
+.flow.inpage .ds{font-size:9px;line-height:1.25} .flow.inpage .st .nx{top:12px;right:-30px;width:30px;font-size:19px}
+.flow.inpage .turn{margin:-3px 4px -3px;font-size:8.5px}
+.flow.inpage .arr{padding:6px 9px 8px} .flow.inpage .arr .hd2{margin-bottom:5px;font-size:9px}
+.flow.inpage .arr .opt{padding:6px 10px 7px} .flow.inpage .arr .tm2{font-size:15px;margin:2px 0 1px}
+.flow.inpage .arr ul{font-size:10px;line-height:1.3} .flow.inpage .arr li::before{top:6px}
+.flow.inpage .join{font-size:9px} .flow.inpage .join span{padding:4px 12px}
+.flow.inpage .legend{margin-top:10px;font-size:10px}
 /* alur trip */
 .flow .day{display:flex;gap:14px;margin-top:16px}
 .flow .lbl{flex:0 0 70px;width:70px;border-radius:4px;background:#5A3E31;color:#FBF4EC;text-shadow:none;display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -178,12 +190,12 @@ H3 = [("05.30", "bag", "Bersiap", "Barang dibawa ke mobil", "", "home"),
       ("Perjalanan", "food", "Breakfast take away", "Sarapan di perjalanan", "Mobil"),
       ("Tiba", "plane", "Pulang", "Diantar ke bandara / pelabuhan", "", "key")]
 p = mini("Alur trip")
-p += '<h2 style="margin-top:12px">Alur trip <span class="it">dari tiba sampai pulang</span></h2><div class="sub">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan dan mengikuti penerbangan, cuaca, serta pasang-surut.</div>'
+p += '<h2 style="margin-top:12px">Alur trip <span class="it">dari tiba sampai pulang</span></h2><div class="sub">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan.</div>'
 FLOW = ('<div class="flow">'
       + flow_day("1", "Tiba &amp; santai", H1, arrival()) +flow_day("2", "Trip Bahuluang", H2) + flow_day("3", "Pulang", H3)
       + '<div class="legend"><span><i style="background:#D9703F"></i>Momen utama</span><span><i style="background:#A67C64"></i>Di resort</span>'
         '<span><i style="background:#7BA7B6"></i>Kegiatan lain</span><span><b style="color:#4E7F91;font-size:9px;letter-spacing:.06em">MOBIL / KAPAL</b> = moda perjalanan</span></div></div>')
-p += FLOW
+p += FLOW.replace('class="flow"', 'class="flow inpage"', 1)
 pages.append(p)
 # gambar mandiri (png/Alur_Trip_Bahuluang.png): logo, judul, diagram, kontak
 EXPORT = f'''<template data-export="Alur_Trip_Bahuluang"><div class="page" style="height:auto;margin:0;padding:40px 46px 34px">
