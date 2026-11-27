@@ -29,7 +29,7 @@ SL = [
   'Karang dan ikan warna-warni di perairan Selayar. Jaga bersama, wariskan untuk anak cucu.'),
  ([(P + "bahuluang__51-pantai-barat-teluk-pasir-putih.jpg", "45% 50%", "Bahuluang"), (P + "pantai__03-pulau-di-seberang.jpg", "50% 60%", "Gusung"), (P + "polassi-tambolongan__07-punggung-bukit-nane-dan-teluk.jpg", "50% 50%", "Polassi")], "", 'Pulau-pulau <em>yang memesona</em>',
   'Bahuluang, Gusung, Polassi, Tambolongan. Hanya sebagian kecil dari keindahan Kepulauan Selayar.'),
- (P + "bahuluang__12-berjalan-di-pasir-timbul.jpg", "50% 55%", 'Pasir yang <em>muncul</em>',
+ (P + "bahuluang__12-berjalan-di-pasir-timbul.jpg", "50% 55%", 'Daratan <em>sesaat</em>',
   'Saat air surut, gosong pasir putih muncul di tengah laut. Keajaiban kecil dari pasang-surut Selayar.'),
  (P + "bahuluang__47-dalam-gua-lipang-stalaktit-rombongan.jpg", "50% 40%", 'Gua yang <em>dibentuk laut</em>',
   'Gua Lipang di Pulau Bahuluang: stalaktit menggantung, lantai pasir putih, sejuk di dalam.'),
