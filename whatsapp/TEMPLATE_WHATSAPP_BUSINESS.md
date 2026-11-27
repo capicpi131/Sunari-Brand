@@ -275,7 +275,7 @@ Ada yang bisa kami siapkan sebelum Kakak tiba? (antar-jemput, Senja Dinner, extr
 
 | Item | Foto (dari `assets/photos/`) | Deskripsi singkat |
 |---|---|---|
-| Standard Bungalow | `standard-bungalow/01-teras-view-laut.jpg` | Queen bed · 2 orang (maks. 3) · teras menghadap laut · sarapan |
+| Standard Bungalow | 10 gambar di `whatsapp/katalog-standard/` (+ panduan) | Queen bed · 2 orang (maks. 3) · teras menghadap laut · sarapan |
 | VIP Standard Bungalow | 10 gambar di `whatsapp/katalog-vip-standard/` (+ panduan) | King bed · 2 orang (maks. 3) · rumah panggung tepi pantai · sarapan |
 | Superior Bungalow | 10 gambar di `whatsapp/katalog-superior/` (zip + panduan) | King bed · TV · kamar mandi semi-outdoor · sarapan |
 | VIP Superior Bungalow | 10 gambar di `whatsapp/katalog-vip-superior/` (zip + panduan) | King bed · TV · mini bar · bathtub & air panas · sarapan |
