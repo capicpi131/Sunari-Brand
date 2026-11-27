@@ -124,7 +124,7 @@ def flow_day(n, sub, steps):
 H1 = [("07.00 – 08.00", "plane", "Tiba dengan pesawat", "Dijemput di Bandara H. Aroeppala", "atau", "key"),
       ("± 12.00", "boat", "Tiba dengan ferri", "Dari Bira, dijemput di Pelabuhan Pamatata", "Mobil", "key"),
       ("Siang", "food", "Lunch", "12.30, atau setibanya di resort"),
-      ("14.00", "home", "Check-in", "Family Superior Bungalow", "", "home"),
+      ("Saat kamar siap", "home", "Check-in", "Paling lambat 14.00", "", "home"),
       ("16.00", "cup", "Afternoon tea", "Teh/kopi &amp; kudapan"),
       ("Sore", "sun", "Senja di pantai", "Acara bebas, main di pantai"),
       ("19.00", "moon", "Dinner", "Istirahat untuk trip besok")]
@@ -167,9 +167,9 @@ EXPORT = f'''<template data-export="Alur_Trip_Bahuluang"><div class="page" style
 # ---------------------------------------------------------------- 2. Yang didapat
 p = mini("Yang Anda dapatkan")
 p += '<h2><span class="n">01</span>Penginapan <span class="it">&amp; transportasi</span></h2>'
-p += f'''<div class="cols" style="align-items:flex-start"><div>{img("bungalow", 140)}<div class="cap">Family Superior Bungalow</div></div><div>
+p += f'''<div class="cols" style="align-items:flex-start"><div>{img("bungalow", 130)}<div class="cap">Family Superior Bungalow</div></div><div>
 {ul(["<b>Family Superior Bungalow</b> selama 2 malam: satu rumah dua lantai, cukup untuk 4 dewasa dan 2 anak.",
-     "Check-in Hari 1 pukul 14.00, check-out Hari 3 pukul 06.00–07.00.",
+     "Check-in saat kamar siap (paling lambat 14.00); check-out Hari 3 pukul 06.00–07.00.",
      "<b>Antar-jemput bandara atau pelabuhan</b> saat tiba dan pulang, dari dan ke mana pun di Selayar.",
      "<b>Mobil</b> dari resort ke dermaga dan kembali pada hari trip.",
      "<b>Kapal</b> pulang-pergi ke Pulau Bahuluang, lengkap dengan awak kapal."])}</div></div>'''
@@ -191,12 +191,11 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 3. Jadwal Hari 1-2
 p = mini("Jadwal perjalanan")
-p += '<div class="sub" style="margin:8px 0 0">Jam di bawah adalah perkiraan. Jadwal kami sesuaikan dengan jam pesawat atau ferri Anda serta kondisi cuaca dan laut pada hari itu.</div>'
-p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2><div class="sub">Jam tiba tergantung moda perjalanan: pesawat tiba pagi, ferri dari Bira tiba siang. Keduanya kami jemput.</div>'
-p += sched([("07.00 – 08.00", "Tiba dengan pesawat", "Dijemput di Bandara H. Aroeppala, lalu ke resort; titip barang dan bersantai di pantai sampai lunch"),
+p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2><div class="sub">Jam adalah perkiraan dan menyesuaikan jam pesawat atau ferri, cuaca, serta kondisi laut. Pesawat tiba pagi, ferri dari Bira tiba siang; keduanya kami jemput.</div>'
+p += sched([("07.00 – 08.00", "Tiba dengan pesawat", "Dijemput di Bandara H. Aroeppala. Kamar sudah siap: langsung check-in; belum siap: titip barang &amp; bersantai di pantai"),
             ("± 12.00", "Tiba dengan ferri", "Ferri dari Pelabuhan Bira tiba di Pelabuhan Pamatata; dijemput, lalu ke resort"),
             ("12.30 / setibanya", "Lunch", "Makan siang di resort (tamu ferri: setibanya di resort)"),
-            ("14.00", "Check-in SunaRi Beach Resort", "Masuk ke Family Superior Bungalow, istirahat"),
+            ("Saat kamar siap", "Check-in SunaRi Beach Resort", "Paling lambat 14.00; istirahat di Family Superior Bungalow"),
             ("16.00", "Afternoon tea", "Teh/kopi dan kudapan sore"),
             ("Sore", "Acara bebas", "Jalan di pantai, berenang, atau menikmati matahari terbenam"),
             ("19.00", "Dinner", "Makan malam, lalu istirahat untuk trip besok")])
