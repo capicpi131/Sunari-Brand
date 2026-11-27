@@ -162,7 +162,7 @@ def room(no, name, sub, spec, desc, fac, photos, price=0):
 
 room("03 · a", "Standard <i>Bungalow</i>", "Pagi menghadap laut Selayar.",
      [("Kapasitas", "2 dewasa (maks. 3)"), ("Tempat tidur", "Queen"), ("Pemandangan", "Laut &amp; taman")],
-     "Bungalow kayu yang sejuk dan bersih dengan atap tinggi dan teras pribadi yang luas menghadap laut. Nikmati kopi pagi sambil melihat ombak dari kursi santai, lalu berjalan ke pantai untuk menunggu senja. Kamar mandi dalam bernuansa bambu dengan lantai batu alam.",
+     "Bungalow kayu yang sejuk dan bersih dengan atap tinggi dan teras pribadi yang luas menghadap laut. Nikmati kopi pagi sambil melihat ombak dari kursi santai, lalu berjalan ke pantai untuk menunggu senja. Kamar mandi dalam bernuansa bambu.",
      ["Sarapan", "Queen bed", "AC", "Wi-Fi", "Kopi/teh &amp; kettle", "Meja kerja/rias", "Tirai blackout", "Bantal &amp; selimut tambahan", "Shower", "Toilet duduk", "Perlengkapan mandi &amp; handuk", "Teras pribadi &amp; kursi santai", "Setrika (atas permintaan)", "Extra bed (maks. 1)"],
      [("standard-bungalow/01-teras-view-laut.jpg", "50% 60%"), ("standard-bungalow/03-kamar-depan.jpg", "50% 50%"), ("standard-bungalow/04-kamar-mandi-bambu.jpg", "50% 50%")], price=900000)
 room("03 · b", "VIP Standard <i>Bungalow</i>", "Rumah panggung di bibir Pantai Sunari.",

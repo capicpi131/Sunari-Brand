@@ -14,7 +14,7 @@ ROOMS = [
  ("standard", "Standard", "Bungalow", 900_000, "../katalog-standard/foto/", "g_teras",
   ["g_kamarsudut", "g_kamardepan", "g_bambu", "g_toilet"],
   "2 orang · maks. 3 dengan extra bed", "Pagi menghadap laut Selayar",
-  ["Queen bed", "Kamar mandi bambu &amp; lantai batu alam", "Shower &amp; toilet duduk", "Teras luas view laut &amp; taman"]),
+  ["Queen bed", "Kamar mandi dalam bernuansa bambu", "Shower &amp; toilet duduk", "Teras luas view laut &amp; taman"]),
  ("vip-standard", "VIP Standard", "Bungalow", 1_000_000, "../katalog-vip-standard/foto/", "g_eksterior",
   ["g_terasview", "g_terassamping", "g_teraslaut", "g_kamarsudut", "g_kamardepan", "g_kamarsamping", "g_wastafel", "g_shower", "g_toilet"],
   "2 orang · maks. 3 dengan extra bed", "Turun tangga, langsung pasir",

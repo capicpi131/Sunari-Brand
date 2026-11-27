@@ -19,7 +19,7 @@ FASILITAS
 • AC, Wi-Fi
 • Kopi/teh dengan pemanas air
 • Meja kerja/rias, tirai blackout
-• Kamar mandi dalam bernuansa bambu dengan lantai batu alam: shower & toilet duduk
+• Kamar mandi dalam bernuansa bambu: shower & toilet duduk
 • Perlengkapan mandi & handuk
 • Setrika atas permintaan
 • Teras pribadi luas dengan kursi santai, pemandangan laut & taman

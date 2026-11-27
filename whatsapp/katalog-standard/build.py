@@ -80,7 +80,7 @@ S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">
   + h1('Kamar mandi <span class="it">bernuansa bambu</span>')
   + f'<div class="big" style="height:470px;margin-top:24px">{img("bambu", "center 55%")}</div>'
   + '<div class="feat">' + "".join(f'<div>{ic(i, c)}<b>{t}</b><span>{d}</span></div>' for i, c, t, d in [
-      ("leaf", "c", "Dinding bambu", "alami"), ("stone", "c", "Lantai batu alam", "sejuk di kaki"), ("shower", "b", "Shower", "kamar mandi dalam")]) + '</div></div>' + foot()))
+      ("leaf", "c", "Dinding bambu", "alami"), ("toilet", "b", "Toilet duduk", "bersih"), ("shower", "b", "Shower", "kamar mandi dalam")]) + '</div></div>' + foot()))
 
 # 3 kamar
 S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">Kamar</span>")
@@ -102,7 +102,7 @@ S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">
   + h1('Rapi <span class="it">&amp; alami</span>')
   + f'<div class="two" style="height:500px"><div>{img("toilet", "center 55%")}</div><div>{img("bambu", "30% 55%")}</div></div>'
   + '<ul class="bul">' + "".join(f"<li>{x}</li>" for x in [
-      "Kamar mandi dalam: shower &amp; toilet duduk", "Dinding bambu &amp; lantai batu alam", "Perlengkapan mandi &amp; handuk bersih setiap tamu"]) + '</ul></div>' + foot()))
+      "Kamar mandi dalam: shower &amp; toilet duduk", "Dinding bambu, wastafel &amp; cermin", "Perlengkapan mandi &amp; handuk bersih setiap tamu"]) + '</ul></div>' + foot()))
 
 # 6 teras & pantai
 S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">Teras pribadi</span>")

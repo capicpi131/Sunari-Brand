@@ -18,7 +18,7 @@ ATURAN PENTING
 Gambar katalog (1080 x 1080, persegi). Nomor = urutan unggah:
 
   01_sampul.jpg               Teras menghadap laut + judul
-  02_kamar_mandi_bambu.jpg    Sorotan: kamar mandi bambu & lantai batu alam
+  02_kamar_mandi_bambu.jpg    Sorotan: kamar mandi bambu
   03_kamar.jpg                Queen bed, atap tinggi
   04_fasilitas.jpg            12 fasilitas kamar (ikon)
   05_kamar_mandi.jpg          Shower, toilet duduk, wastafel
@@ -81,7 +81,7 @@ FASILITAS
 • AC, Wi-Fi
 • Kopi/teh dengan pemanas air
 • Meja kerja/rias, tirai blackout
-• Kamar mandi dalam bernuansa bambu dengan lantai batu alam: shower & toilet duduk
+• Kamar mandi dalam bernuansa bambu: shower & toilet duduk
 • Perlengkapan mandi & handuk
 • Setrika atas permintaan
 • Teras pribadi luas dengan kursi santai, pemandangan laut & taman
