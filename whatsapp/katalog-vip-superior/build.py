@@ -46,14 +46,14 @@ CSS += """
 .three>div{border-radius:8px;overflow:hidden} .three>div:first-child{grid-row:1/3}
 .bul{list-style:none;margin-top:20px} .bul li{font-size:23px;line-height:1.4;padding:6px 0 6px 30px;position:relative}
 .bul li::before{content:"";position:absolute;left:4px;top:17px;width:11px;height:11px;border-radius:50%;background:#D9703F}
-.info{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
-.info>div{display:flex;gap:18px;align-items:center;padding:20px 22px;border-radius:8px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px rgba(138,95,72,.3)}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.info>div{display:flex;gap:16px;align-items:center;padding:13px 20px;border-radius:8px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px rgba(138,95,72,.3)}
 .info b{display:block;font-size:24px;line-height:1.2} .info span{display:block;font-size:18px;color:#6B4A37;margin-top:3px}
 .near{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
 .near>div{border-radius:8px;overflow:hidden;position:relative;height:268px}
 .near .lbl{position:absolute;left:0;right:0;bottom:0;padding:50px 14px 16px;color:#FBF4EC;text-shadow:0 2px 8px rgba(0,0,0,.5);background:linear-gradient(180deg,rgba(30,20,12,0),rgba(30,20,12,.72))}
 .near .lbl b{display:block;font-family:'Playfair Display',serif;font-size:30px;font-weight:500;line-height:1.1} .near .lbl span{font-size:16px}
-.quote{font-family:'Playfair Display',serif;font-style:italic;font-size:30px;color:#94532B;margin-top:22px;line-height:1.35}
+.quote{font-family:'Playfair Display',serif;font-style:italic;font-size:26px;color:#94532B;margin-top:16px;line-height:1.3}
 """
 S = []
 # 1 sampul
@@ -111,7 +111,7 @@ S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">
   + h1('Yang perlu <span class="it">Anda tahu</span>')
   + '<div class="info">' + "".join(f'<div>{ic(i, c)}<div><b>{t}</b><span>{d}</span></div></div>' for i, c, t, d in info) + '</div>'
   + '<div class="quote">Kelas tertinggi di SunaRi, satu-satunya tipe kamar dengan bathtub dan air panas.</div>'
-  + f'<div style="height:165px;border-radius:8px;overflow:hidden;margin-top:18px">{img("eksterior", "center 45%")}</div></div>' + foot()))
+  + f'<div class="two" style="height:290px;margin-top:18px"><div>{img("eksterior", "center 40%")}</div><div>{img("terasdepan", "center 55%")}</div></div></div>' + foot()))
 
 # 9 di sekitar bungalow
 near = [("senja", "center 78%", "Senja", "tepat di depan pantai"), ("pantai", "center 50%", "Pantai landai", "aman untuk anak"),
