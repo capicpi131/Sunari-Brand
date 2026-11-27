@@ -1,0 +1,149 @@
+=====================================================================
+ PANDUAN KATALOG WHATSAPP BUSINESS
+ Kamar: Family Superior Bungalow
+ SunaRi Beach Resort Selayar · WhatsApp +62 821-8903-3044
+=====================================================================
+
+ATURAN PENTING
+- Harga kamar TIDAK dicantumkan di katalog. Kolom "Harga" dikosongkan.
+- Harga dikirim lewat chat pribadi sesuai tanggal & ketersediaan.
+- JANGAN sebut TV, mini bar, bathtub, atau air panas: tipe ini tidak
+  memilikinya.
+
+
+---------------------------------------------------------------------
+1. ISI FOLDER INI
+---------------------------------------------------------------------
+Gambar katalog (1080 x 1080, persegi). Nomor = urutan unggah:
+
+  01_sampul.jpg               Eksterior di tengah taman + judul
+  02_dua_lantai.jpg           Sorotan: dua lantai, 2 kamar mandi
+  03_lantai1.jpg              Lantai 1: tempat tidur besar
+  04_fasilitas.jpg            12 fasilitas (ikon)
+  05_lantai2.jpg              Lantai 2: empat kasur
+  06_kamar_mandi.jpg          Shower, wastafel, toilet
+  07_suasana_malam.jpg        Bungalow di bawah bulan (foto penuh)
+  08_info_menginap.jpg        Kapasitas, check-in/out, sarapan, teras
+  09_sekitar_bungalow.jpg     Senja, kayak, ayunan raksasa, Bajoy Beach Resto
+  10_cara_pesan.jpg           3 langkah memesan + nomor WhatsApp
+
+Teks:
+  PANDUAN_UPLOAD.txt          File ini
+  KATALOG.md                  Teks katalog (sama dengan bagian 3)
+
+
+---------------------------------------------------------------------
+2. CARA UPLOAD KE KATALOG
+---------------------------------------------------------------------
+Persiapan
+  a. Ekstrak (unzip) file ini di HP yang memakai WhatsApp Business.
+  b. Pastikan 10 gambar sudah masuk Galeri / folder Download.
+
+Android
+  1. Buka WhatsApp Business.
+  2. Ketuk titik tiga (kanan atas) > Alat bisnis > Katalog.
+  3. Ketuk "Tambah item baru" (atau tombol +).
+     Jika item "Family Superior Bungalow" lama sudah ada di katalog,
+     buka item itu > Edit, lalu ganti gambar & teksnya.
+  4. Ketuk "Tambahkan gambar", pilih 10 gambar SESUAI URUTAN NOMOR
+     (01 dulu, terakhir 10). Gambar pertama menjadi sampul.
+  5. Isi kolom dengan teks di bagian 3 (salin-tempel).
+  6. Kolom Harga: BIARKAN KOSONG.
+  7. Ketuk "Simpan".
+
+iPhone
+  1. Buka WhatsApp Business.
+  2. Ketuk Pengaturan (kanan bawah) > Alat bisnis > Katalog.
+  3. Lanjutkan seperti langkah 3 - 7 Android.
+
+Catatan
+  - Nama menu bisa sedikit berbeda tergantung versi aplikasi.
+  - Setelah disimpan, item ditinjau dulu oleh WhatsApp sebelum
+    tampil ke tamu (biasanya cepat, kadang sampai 24 jam).
+  - Urutan gambar bisa diubah: buka item > Edit > tahan dan geser.
+
+
+---------------------------------------------------------------------
+3. TEKS UNTUK KOLOM KATALOG (salin-tempel)
+---------------------------------------------------------------------
+NAMA ITEM:
+Family Superior Bungalow
+
+HARGA:
+(kosongkan)
+
+DESKRIPSI:
+Satu rumah, dua lantai, semua bersama. Tipe bungalow terbesar di SunaRi Beach Resort Selayar, ideal untuk keluarga besar.
+
+• Lantai 1: tempat tidur besar untuk 2–3 orang
+• Lantai 2: empat kasur untuk 4–5 orang, di bawah atap kayu yang tinggi
+• Toilet & kamar mandi di kedua lantai
+
+FASILITAS
+• AC, Wi-Fi di kamar
+• Kopi/teh dengan pemanas air
+• Meja kerja/rias, tirai blackout
+• Bantal & selimut tambahan
+• Perlengkapan mandi & handuk bersih untuk setiap tamu
+• Setrika atas permintaan
+• Teras pribadi dengan kursi santai, pemandangan laut atau taman
+• Termasuk sarapan
+
+INFO
+• 6 tamu (maks. 8 dengan 2 extra bed, berbayar)
+• Check-in 14.00 · check-out 12.00 WITA
+• Antar-jemput bandara/pelabuhan tersedia (berbayar)
+
+Tanya harga & ketersediaan: chat kami dengan tanggal check-in, check-out, dan jumlah tamu (dewasa & anak).
+
+TAUTAN (opsional):
+https://maps.app.goo.gl/iUWWHNCT7Vyu4i537
+
+KODE ITEM:
+KAMAR-FAMILY-SUPERIOR
+
+
+---------------------------------------------------------------------
+4. CARA MEMBAGIKAN KATALOG KE TAMU
+---------------------------------------------------------------------
+Di dalam chat
+  1. Buka chat tamu.
+  2. Ketuk ikon klip / lampiran > Katalog.
+  3. Pilih item "Family Superior Bungalow" > Kirim.
+
+Lewat tautan (untuk status, Instagram, grup)
+  1. Buka Katalog > ketuk item.
+  2. Ketuk ikon bagikan / titik tiga > "Salin tautan".
+  3. Tempel di status WhatsApp, bio Instagram, atau grup.
+
+
+---------------------------------------------------------------------
+5. BALASAN CEPAT (siapkan di Alat bisnis > Balasan cepat)
+---------------------------------------------------------------------
+/family  (saat tamu tanya kamar ini)
+.....................................................................
+Halo Kak, terima kasih sudah bertanya 🌅
+Ini Family Superior Bungalow, satu rumah dua lantai untuk
+6 orang (maks. 8): [tempel tautan katalog]
+
+Boleh info:
+1. Tanggal check-in & check-out
+2. Jumlah tamu (dewasa & anak)
+3. Perlu extra bed atau tidak?
+Nanti kami kirim harga dan ketersediaannya 🙏
+.....................................................................
+
+Untuk mengirim harga, pakai balasan cepat /penawaran yang sudah ada
+(isi tipe kamar: Family Superior Bungalow). Nomor rekening dikirim
+terpisah lewat /bayar setelah tamu setuju.
+
+
+---------------------------------------------------------------------
+6. CEK SEBELUM SELESAI
+---------------------------------------------------------------------
+[ ] 10 gambar terunggah, urutan 01 sampai 10
+[ ] Kolom harga kosong
+[ ] Nama, deskripsi, dan kode item sudah ditempel
+[ ] Item sudah lolos tinjauan WhatsApp (tampil di katalog)
+[ ] Tautan item disimpan di balasan cepat /family
+[ ] Coba kirim katalog ke nomor sendiri untuk melihat tampilannya

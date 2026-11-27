@@ -279,7 +279,7 @@ Ada yang bisa kami siapkan sebelum Kakak tiba? (antar-jemput, Senja Dinner, extr
 | VIP Standard Bungalow | 10 gambar di `whatsapp/katalog-vip-standard/` (+ panduan) | King bed · 2 orang (maks. 3) · rumah panggung tepi pantai · sarapan |
 | Superior Bungalow | 10 gambar di `whatsapp/katalog-superior/` (zip + panduan) | King bed · TV · kamar mandi semi-outdoor · sarapan |
 | VIP Superior Bungalow | 10 gambar di `whatsapp/katalog-vip-superior/` (zip + panduan) | King bed · TV · mini bar · bathtub & air panas · sarapan |
-| Family Superior Bungalow | `family-superior-bungalow/01-eksterior-taman.jpg` | 6 orang (maks. 8) · 2 lantai · 2 kamar mandi · sarapan |
+| Family Superior Bungalow | 10 gambar di `whatsapp/katalog-family-superior/` (+ panduan) | 6 orang (maks. 8) · 2 lantai · 2 kamar mandi · sarapan |
 | Senja Dinner | `resto/05-makan-malam-taman.jpg` | Ikan bakar & seafood saat senja · pesan H-1 |
 | Sewa Kayak | `senja/03-kayak-matahari-merah.jpg` | Single Rp 50.000 · Double Rp 100.000 *(harga boleh diisi)* |
 | 3H2M di Selayar · Sehari ke Bahuluang | 10 gambar di `whatsapp/katalog-paket-bahuluang/` | Paket keluarga 4 dewasa + 2 anak, tanpa harga. Teks lengkap: `katalog-paket-bahuluang/KATALOG.md` |
