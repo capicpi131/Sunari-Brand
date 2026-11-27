@@ -1,4 +1,4 @@
-"""Brosur Paket Wisata All Included Bahuluang (Keluarga 4 Dewasa + 2 Anak), A4, gaya SunaRi.
+"""Brosur paket "3 Hari 2 Malam di Selayar · SunaRi Beach Resort Selayar · Sehari ke Bahuluang" (4 Dewasa + 2 Anak), A4, gaya SunaRi.
 Run: python3 services/build_paket_bahuluang.py && node services/render.js 06_Paket"""
 import build_docs as B
 from build_docs import header, table, ul, H, FONTS, CSS, GRAIN, SUN, footer, WA
@@ -89,7 +89,7 @@ ul.l.ok li::before{background:#D9703F;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,6
 def page(inner, n, total):
     return f'<div class="page"><div class="frame"></div><div class="frame2"></div>{inner}{footer(n, total)}</div>'
 def mini(title):
-    return f'<div class="mini"><img src="../assets/logo-sunari-color.png"><div class="caps">Paket Wisata All Included Bahuluang<br><span style="color:#C0592C">{title}</span></div></div><div class="rule" style="margin:2px 0 4px"><i style="width:100%"></i></div>'
+    return f'<div class="mini"><img src="../assets/logo-sunari-color.png"><div class="caps">3 Hari 2 Malam di Selayar · Sehari ke Bahuluang<br><span style="color:#C0592C">{title}</span></div></div><div class="rule" style="margin:2px 0 4px"><i style="width:100%"></i></div>'
 def img(name, h, pos="center"):
     return f'<img class="ph" src="{PH}{name}.jpg" style="height:{h}px;object-position:{pos}">'
 def card(k, v, s="", color=""):
@@ -101,9 +101,9 @@ TOTAL = 6
 pages = []
 
 # ---------------------------------------------------------------- 1. Sampul
-p = header("Paket Wisata Keluarga · SunaRi Beach Resort Selayar", 'All Included <span class="it">Bahuluang</span>',
-           "Tiga hari dua malam di tepi Pantai Sunari, dengan sehari penuh menjelajah Pulau Bahuluang",
-           '<span class="chip"><b>●</b> 3 Hari 2 Malam</span><span class="chip"><b>●</b> 4 Dewasa + 2 Anak</span><span class="chip"><b>●</b> Semua sudah termasuk</span>')
+p = header("SunaRi Beach Resort Selayar", '3 Hari 2 Malam <span class="it">di Selayar</span>',
+           '<span style="font-family:\'Playfair Display\',serif;font-size:19px;font-style:italic;color:#94532B">Sehari ke Bahuluang</span>',
+           '<span class="chip"><b>●</b> Family Superior Bungalow</span><span class="chip"><b>●</b> 4 Dewasa + 2 Anak</span><span class="chip"><b>●</b> Semua sudah termasuk</span>')
 p += f'<div class="hero">{img("hero", 310, "center 55%")}<div class="tag">Pantai Bone Bakka, Pulau Bahuluang</div></div>'
 p += '<div class="grid4">' + card("Durasi", "3 Hari", "2 malam menginap") + card("Peserta", "6 Orang", "4 dewasa + 2 anak") + card("Penginapan", "Family Superior", "1 bungalow dua lantai") + card("Harga paket", "Rp 10.000.000", "seluruh rombongan", "color:#A84A24;font-size:17px") + "</div>"
 p += '<p class="lead">Anda cukup datang. <b>Penginapan, makan, antar-jemput, kapal, guide, alat snorkeling, dan dokumentasi</b> sudah kami siapkan, supaya keluarga bisa menikmati laut Selayar tanpa repot mengatur apa pun.</p>'
@@ -189,7 +189,7 @@ pages.append(p)
 EXPORT = f'''<template data-export="Alur_Trip_Bahuluang"><div class="page" style="height:auto;margin:0;padding:40px 46px 34px">
   <div class="frame"></div><div class="frame2"></div>
   <div class="hd"><img src="../assets/logo-sunari-color.png" style="width:150px"><div class="rule"><i></i>{SUN}<i></i></div>
-  <div class="caps" style="font-size:10px">Paket Wisata All Included Bahuluang · 4 Dewasa + 2 Anak</div>
+  <div class="caps" style="font-size:10px">3 Hari 2 Malam di Selayar · Sehari ke Bahuluang · 4 Dewasa + 2 Anak</div>
   <h1 style="font-size:32px">Alur Trip <span class="it">dari tiba sampai pulang</span></h1>
   <p style="font-size:12px">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan.</p></div>
   {FLOW}
@@ -253,7 +253,7 @@ p += sched([("05.30", "Bangun &amp; bersiap", "Barang dibawa ke mobil; sarapan t
             ("Perjalanan", "Breakfast take away", "Sarapan dibawa dan dinikmati di perjalanan"),
             ("Tiba", "Diantar pulang", "Sampai bandara atau pelabuhan; trip selesai")])
 p += '<h2><span class="n">04</span>Harga <span class="it">paket</span></h2>'
-p += '''<div class="card big-price"><div class="caps" style="font-size:10px">All Included Bahuluang 3H2M · 4 dewasa + 2 anak</div><div class="v">Rp 10.000.000</div>
+p += '''<div class="card big-price"><div class="caps" style="font-size:10px">3 Hari 2 Malam di Selayar · Sehari ke Bahuluang · 4 dewasa + 2 anak</div><div class="v">Rp 10.000.000</div>
 <div style="font-size:12px">untuk seluruh rombongan (6 orang), bukan per orang &nbsp;·&nbsp; setara ± Rp 1.667.000 per orang</div></div>'''
 p += '<div class="cols" style="margin-top:6px"><div><h2><span class="n">05</span>Tidak <span class="it">termasuk</span></h2>' + ul([
     "Tiket pesawat atau kapal ke Selayar pulang-pergi",
@@ -295,5 +295,5 @@ pages.append(p)
 html = "".join(page(x, i + 1, TOTAL) for i, x in enumerate(pages))
 assert len(pages) == TOTAL
 (H / "06_Paket_All_Included_Bahuluang.html").write_text(
-    f'<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Paket All Included Bahuluang</title>{FONTS}<style>{CSS}{EXTRA}</style></head><body>{html}{EXPORT}</body></html>')
+    f'<!doctype html><html lang="id"><head><meta charset="utf-8"><title>3 Hari 2 Malam di Selayar</title>{FONTS}<style>{CSS}{EXTRA}</style></head><body>{html}{EXPORT}</body></html>')
 print("ok", len(pages), "halaman")
