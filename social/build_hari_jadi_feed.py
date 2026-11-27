@@ -7,6 +7,10 @@ exec((H / "build_vipsuperior.py").read_text().split("KICK =")[0].replace("__file
 P = "../assets/photos/graded/"; N = 6; KICK = "Hari Jadi Selayar ke-421"
 CSS += """
 .big{font-family:'Playfair Display',serif;font-size:230px;line-height:.9;color:#FBF4EC;text-shadow:0 3px 18px rgba(0,0,0,.45)}
+.ph.grid{display:grid;gap:10px;background:#FBF4EC}
+.ph.grid>div{position:relative;overflow:hidden}
+.ph.grid>div img{width:100%;height:100%;object-fit:cover}
+.ph.grid .cap{position:absolute;left:0;right:0;bottom:0;padding:40px 20px 14px;color:#FBF4EC;font-family:'Playfair Display',serif;font-size:32px;text-shadow:0 2px 8px rgba(0,0,0,.55);background:linear-gradient(180deg,rgba(20,12,6,0),rgba(20,12,6,.6))}
 .fc .vb{height:520px;background:linear-gradient(0deg,rgba(20,12,6,.7),rgba(20,12,6,0))}
 """
 T = []
@@ -17,17 +21,24 @@ T.append(f'''<div class="t fc" id="hari-jadi-01"><img class="bgf" src="{P}senja_
   <div class="fs" style="top:620px">Kabupaten Kepulauan Selayar</div>
   <div class="fg">Geser &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''')
 SL = [
- (P + "pantai__02-perahu-nelayan-biru.jpg", "50% 55%", 'Bangga <em>pangan lokal</em>',
+ ([(P + "pantai__02-perahu-nelayan-biru.jpg", "40% 55%", "Dari laut"), (P + "resto__02-bakar-cumi-ayam.jpg", "50% 50%", "ke meja makan")], "", 'Bangga <em>pangan lokal</em>',
   'Tema tahun ini: “Pangan Lokal Mendukung Ketahanan Pangan Nasional”. Dari laut dan kebun Selayar, untuk Indonesia.'),
- (P + "bahuluang__51-pantai-barat-teluk-pasir-putih.jpg", "45% 50%", 'Laut yang <em>memberi</em>',
+ (P + "bahuluang__21-laut-toska-dari-kapal.jpg", "50% 70%", 'Laut yang <em>memberi</em>',
   'Air toska, pasir putih, dan karang yang terjaga. Laut Selayar adalah rumah, sumber kehidupan, dan kebanggaan kita.'),
- (P + "bahuluang__19-batu-berlubang.jpg", "50% 55%", 'Pulau-pulau <em>yang memesona</em>',
+ ([(P + "bahuluang__51-pantai-barat-teluk-pasir-putih.jpg", "45% 50%", "Bahuluang"), (P + "pantai__03-pulau-di-seberang.jpg", "50% 60%", "Gusung"), (P + "polassi-tambolongan__07-punggung-bukit-nane-dan-teluk.jpg", "50% 50%", "Polassi")], "", 'Pulau-pulau <em>yang memesona</em>',
   'Bahuluang, Gusung, Polassi, Tambolongan. Hanya sebagian kecil dari keindahan Kepulauan Selayar.'),
  (P + "senja__21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Senja di <em>pesisir barat</em>',
   'Setiap sore matahari tenggelam di depan Pantai Sunari. Hadiah kecil dari Selayar untuk siapa saja yang singgah.'),
 ]
 for k, (img, pos, t, sub) in enumerate(SL, 2):
-    T.append(f'''<div class="t" id="hari-jadi-{k:02d}"><div class="ph"><img src="{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>
+    if isinstance(img, list):
+        cols = "1fr 1fr" if len(img) == 2 else "1.3fr 1fr"
+        rows = "1fr" if len(img) == 2 else "1fr 1fr"
+        cells = "".join(f'<div style="{"grid-row:1/3" if len(img) == 3 and i == 0 else ""}"><img src="{a}" style="object-position:{b}" alt=""><div class="cap">{c}</div></div>' for i, (a, b, c) in enumerate(img))
+        ph = f'<div class="ph grid" style="grid-template-columns:{cols};grid-template-rows:{rows}">{cells}<img class="lg" src="{LOGO_D}" style="position:absolute" alt=""></div>'
+    else:
+        ph = f'<div class="ph"><img src="{img}" style="object-position:{pos}" alt=""><img class="lg" src="{LOGO_D}" alt=""></div>'
+    T.append(f'''<div class="t" id="hari-jadi-{k:02d}">{ph}
   <div class="kick">{KICK}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">#HariJadiSelayar421</span><span>{k:02d} / {N:02d}</span></div></div>''')
 T.append(f'''<div class="t" id="hari-jadi-06"><div class="frame"></div>
