@@ -278,7 +278,7 @@ Ada yang bisa kami siapkan sebelum Kakak tiba? (antar-jemput, Senja Dinner, extr
 | Standard Bungalow | `standard-bungalow/01-teras-view-laut.jpg` | Queen bed · 2 orang (maks. 3) · teras menghadap laut · sarapan |
 | VIP Standard Bungalow | `vip-standard-bungalow/02-teras-view-pantai.jpg` | King bed · 2 orang (maks. 3) · rumah panggung tepi pantai · sarapan |
 | Superior Bungalow | `superior-bungalow/02-eksterior-depan.jpg` | King bed · TV · kamar mandi semi-outdoor · sarapan |
-| VIP Superior Bungalow | `vip-superior-bungalow/06-bathtub-semi-outdoor.jpg` | King bed · TV · mini bar · bathtub & air panas · sarapan |
+| VIP Superior Bungalow | 10 gambar di `whatsapp/katalog-vip-superior/` (zip + panduan) | King bed · TV · mini bar · bathtub & air panas · sarapan |
 | Family Superior Bungalow | `family-superior-bungalow/01-eksterior-taman.jpg` | 6 orang (maks. 8) · 2 lantai · 2 kamar mandi · sarapan |
 | Senja Dinner | `resto/05-makan-malam-taman.jpg` | Ikan bakar & seafood saat senja · pesan H-1 |
 | Sewa Kayak | `senja/03-kayak-matahari-merah.jpg` | Single Rp 50.000 · Double Rp 100.000 *(harga boleh diisi)* |
