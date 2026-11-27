@@ -7,8 +7,8 @@ PH = "paket-photos/"
 EXTRA = """
 .ph{display:block;width:100%;object-fit:cover;border-radius:3px;box-shadow:0 0 0 5px #FBF4EC,0 0 0 6px rgba(138,95,72,.35),2px 4px 10px rgba(90,62,49,.25)}
 .hero{position:relative;margin:18px 6px 6px}
-.hero .tag{position:absolute;left:0;right:0;bottom:0;padding:34px 22px 14px;border-radius:0 0 3px 3px;color:#FBF4EC;text-shadow:0 1px 6px rgba(40,25,15,.55);
-  background:linear-gradient(180deg,rgba(40,25,15,0),rgba(40,25,15,.62));font-family:'Playfair Display',serif;font-style:italic;font-size:16px}
+.hero .tag{text-align:center;margin-top:12px;color:#94532B;font-family:'Playfair Display',serif;font-style:italic;font-size:14px;text-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.3)}
+.rule svg circle{fill:#E08A4F}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:16px 6px 4px}
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
 .cap{font-size:10px;text-align:center;margin-top:9px;letter-spacing:.06em;color:#8A5F48;font-style:italic;font-family:'Playfair Display',serif;font-size:12px}
@@ -27,6 +27,39 @@ td.c,th.c{text-align:center}
   background:radial-gradient(circle at 35% 30%,#FDB15D,#E07A4B 75%);box-shadow:0 1px 0 rgba(255,255,255,.9),.5px 1px 2px rgba(90,62,49,.4);text-shadow:none}
 .itn.tight td{padding:6px 6px;font-size:12.5px;line-height:1.35} .itn.tight .t{width:84px}
 .mealtbl.big td{padding:7px 6px;font-size:13px}
+/* teks timbul: warna solid, highlight putih tajam di bawah + bayangan tipis di atas (tanpa blur, tanpa gradasi) */
+.page{color:#3A2819;text-shadow:0 1px 0 rgba(255,255,255,.9)}
+.page>.paper{background:none}
+.hd h1,h2,.card h4,.ft .wa,.price .v,.big-price .v,.lead{color:#3A2819;text-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.30)}
+.hd h1 .it,h2 .it,.card h4 .it,.ft .wa span{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:#94532B;filter:none;
+  text-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.35)}
+.it{color:#94532B}
+.big-price .v,.lead b{color:#A2461F}
+.caps{color:#7A5038}
+ul.l.ok li::before{background:#D9703F;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.3)}
+.steps li::before{background:#D9703F;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.35)}
+/* alur trip */
+.flow .day{display:flex;gap:14px;margin-top:16px}
+.flow .lbl{flex:0 0 70px;width:70px;border-radius:4px;background:#5A3E31;color:#FBF4EC;text-shadow:none;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  font-weight:700;font-size:9.5px;letter-spacing:.2em;text-align:center;padding:8px 4px}
+.flow .lbl b{display:block;font-family:'Playfair Display',serif;font-size:30px;letter-spacing:0;font-weight:500;line-height:1}
+.flow .lbl i{font-style:normal;font-weight:500;letter-spacing:.05em;font-size:9px;margin-top:6px;line-height:1.3;opacity:.85}
+.flow .rows{flex:1;display:flex;flex-direction:column;gap:12px}
+.flow .row{display:grid;grid-template-columns:repeat(4,1fr);column-gap:34px}
+.flow .st{position:relative;text-align:center;padding:9px 5px 8px;border-radius:4px;
+  box-shadow:inset 1px 1px 2px rgba(90,62,49,.24),inset -1px -1px 0 rgba(255,255,255,.95),0 1px 0 rgba(255,255,255,.8)}
+.flow .st.key{box-shadow:inset 0 0 0 1.5px #D9703F,0 1px 0 #fff}
+.flow .ic{width:34px;height:34px;border-radius:50%;margin:0 auto 5px;background:#7BA7B6;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.3)}
+.flow .st.key .ic{background:#D9703F} .flow .st.home .ic{background:#A67C64}
+.flow .ic svg{width:19px;height:19px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.flow .tm{font-weight:700;font-size:10px;letter-spacing:.08em;color:#C0592C}
+.flow .ti{font-weight:700;font-size:11.5px;line-height:1.25;margin-top:1px}
+.flow .ds{font-size:9.5px;line-height:1.3;margin-top:2px;color:#6B4A37}
+.flow .st .nx{position:absolute;right:-34px;top:18px;width:34px;text-align:center;font-size:22px;line-height:1;color:#A67C64;font-weight:700}
+.flow .st .nx small{display:block;font-size:7.5px;letter-spacing:.04em;text-transform:uppercase;font-weight:700;color:#4E7F91;margin-top:1px}
+.flow .turn{text-align:right;font-size:9.5px;font-weight:600;color:#A67C64;letter-spacing:.06em;margin:-6px 4px -4px}
+.legend{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;margin-top:16px;font-size:10.5px}
+.legend span{display:flex;align-items:center;gap:6px} .legend i{width:12px;height:12px;border-radius:50%;display:inline-block}
 .mealtbl td,.mealtbl th{text-align:center} .mealtbl td:first-child,.mealtbl th:first-child{text-align:left}
 """
 
@@ -41,19 +74,92 @@ def card(k, v, s="", color=""):
 def sched(rows):
     return '<div class="itn tight"><table><tr><th>Waktu</th><th>Kegiatan</th><th>Keterangan</th></tr>' + "".join(
         f'<tr><td class="t">{t}</td><td class="b">{a}</td><td>{k}</td></tr>' for t, a, k in rows) + "</table></div>"
-TOTAL = 5
+TOTAL = 6
 pages = []
 
 # ---------------------------------------------------------------- 1. Sampul
 p = header("Paket Wisata Keluarga · SunaRi Beach Resort Selayar", 'All Included <span class="it">Bahuluang</span>',
            "Tiga hari dua malam di tepi Pantai Sunari, dengan sehari penuh menjelajah Pulau Bahuluang",
            '<span class="chip"><b>●</b> 3 Hari 2 Malam</span><span class="chip"><b>●</b> 4 Dewasa + 2 Anak</span><span class="chip"><b>●</b> Semua sudah termasuk</span>')
-p += f'<div class="hero">{img("hero", 330, "center 55%")}<div class="tag">Pantai Bone Bakka, Pulau Bahuluang</div></div>'
+p += f'<div class="hero">{img("hero", 310, "center 55%")}<div class="tag">Pantai Bone Bakka, Pulau Bahuluang</div></div>'
 p += '<div class="grid4">' + card("Durasi", "3 Hari", "2 malam menginap") + card("Peserta", "6 Orang", "4 dewasa + 2 anak") + card("Penginapan", "Family Superior", "1 bungalow dua lantai") + card("Harga paket", "Rp 10.000.000", "seluruh rombongan", "color:#A84A24;font-size:17px") + "</div>"
 p += '<p class="lead">Anda cukup datang. <b>Penginapan, makan, antar-jemput, kapal, guide, alat snorkeling, dan dokumentasi</b> sudah kami siapkan, supaya keluarga bisa menikmati laut Selayar tanpa repot mengatur apa pun.</p>'
 p += '<div class="cols" style="margin-top:14px"><div class="card" style="text-align:center"><h4>Cocok <span class="it">untuk</span></h4><p>Keluarga dengan anak yang ingin liburan pantai, laut, dan petualangan ringan.</p></div>' \
      '<div class="card" style="text-align:center"><h4>Sorotan <span class="it">trip</span></h4><p>Pantai Bone Bakka, Goa Lipang, snorkeling di Makam Karang, dan berjalan di Pasir Timbul Bahuluang.</p></div></div>'
 pages.append(p)
+
+# ---------------------------------------------------------------- Alur trip (diagram, juga diekspor sebagai png/Alur_Trip_Bahuluang.png)
+ICON = {
+ "plane": '<path d="M2 14l20-7-7 15-3-6-6-2z"/><path d="M12 16l3-3"/>',
+ "home": '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+ "food": '<path d="M7 3v8M5 3v5a2 2 0 004 0V3M7 11v10"/><path d="M17 3c-2 0-3 3-3 6s1 4 3 4v8"/>',
+ "cup": '<path d="M4 9h13v5a5 5 0 01-5 5H9a5 5 0 01-5-5z"/><path d="M17 11h2a2 2 0 010 4h-2"/><path d="M8 3v3M12 3v3"/>',
+ "sun": '<circle cx="12" cy="14" r="4"/><path d="M2 18h20M12 5v3M4.5 8l2 2M19.5 8l-2 2"/>',
+ "moon": '<path d="M20 15A8 8 0 019 4a8 8 0 1011 11z"/>',
+ "car": '<path d="M3 16v-4l2-5h14l2 5v4z"/><circle cx="7.5" cy="17" r="1.8"/><circle cx="16.5" cy="17" r="1.8"/>',
+ "boat": '<path d="M3 15h18l-3 5H6z"/><path d="M12 3v12M12 4l6 9h-6"/>',
+ "beach": '<path d="M3 20c3-2 6-2 9 0s6 2 9 0"/><path d="M12 17V7"/><path d="M5 9c2-4 12-4 14 0z"/>',
+ "cave": '<path d="M2 20c0-9 4-15 10-15s10 6 10 15z"/><path d="M8 20c0-4 2-7 4-7s4 3 4 7"/>',
+ "fish": '<path d="M3 12c3-5 10-5 14 0-4 5-11 5-14 0z"/><path d="M17 12l4-3v6z"/>',
+ "sand": '<path d="M2 17c3-3 6-3 10-3s7 0 10 3"/><path d="M2 21h20"/><path d="M7 9l1.5-3L10 9M15 8l1.5-3L18 8"/>',
+ "bag": '<rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V4h6v3"/>',
+}
+def step(s, last):
+    t, ic, ti, ds = s[:4]; mode = s[4] if len(s) > 4 else ""; cls = s[5] if len(s) > 5 else ""
+    arrow = "" if last else f'<div class="nx">→{f"<small>{mode}</small>" if mode else ""}</div>'
+    return f'<div class="st {cls}"><div class="ic"><svg viewBox="0 0 24 24">{ICON[ic]}</svg></div><div class="tm">{t}</div><div class="ti">{ti}</div><div class="ds">{ds}</div>{arrow}</div>'
+def flow_rows(steps):
+    out = ""
+    for i in range(0, len(steps), 4):
+        chunk = steps[i:i + 4]
+        out += '<div class="row">' + "".join(step(s, j == len(chunk) - 1) for j, s in enumerate(chunk)) + '</div>'
+        if i + 4 < len(steps):
+            mode = steps[i + 3][4] if len(steps[i + 3]) > 4 else ""
+            out += f'<div class="turn">lanjut ke baris berikutnya ↵{(" · " + mode.lower()) if mode else ""}</div>'
+    return f'<div class="rows">{out}</div>'
+def flow_day(n, sub, steps):
+    return f'<div class="day"><div class="lbl">HARI<b>{n}</b><i>{sub}</i></div>{flow_rows(steps)}</div>'
+H1 = [("Siang", "plane", "Tiba di Selayar", "Dijemput di bandara / pelabuhan", "Mobil", "key"),
+      ("12.30", "food", "Lunch", "Makan siang setibanya"),
+      ("14.00", "home", "Check-in", "Family Superior Bungalow", "", "home"),
+      ("16.00", "cup", "Afternoon tea", "Teh/kopi &amp; kudapan"),
+      ("Sore", "sun", "Senja di pantai", "Acara bebas, main di pantai"),
+      ("19.00", "moon", "Dinner", "Istirahat untuk trip besok")]
+H2 = [("06.30", "food", "Breakfast", "Sarapan di resort", "Mobil"),
+      ("07.30", "car", "Ke dermaga", "Briefing jadwal &amp; keselamatan", "Kapal"),
+      ("08.00", "boat", "Menyeberang", "Pelampung untuk semua", "Kapal"),
+      ("09.30", "beach", "Pantai Bone Bakka", "Paddleboard, foto drone &amp; DSLR", "Kapal", "key"),
+      ("11.00", "cave", "Goa Lipang", "Jelajah goa bersama guide", "", "key"),
+      ("12.30", "food", "Lunch di pulau", "Makan &amp; minum bersama", "Kapal"),
+      ("13.30", "fish", "Makam Karang", "Snorkeling, kamera underwater", "Kapal", "key"),
+      ("14.30", "sand", "Pasir Timbul", "Waktu ikut pasang-surut", "Kapal", "key"),
+      ("15.30", "boat", "Kembali", "Kapal ke dermaga, mobil ke resort", "Mobil"),
+      ("16.30", "cup", "Afternoon tea", "Bersantai di resort", "", "home"),
+      ("19.00", "moon", "Dinner", "Makan malam di resort")]
+H3 = [("07.00", "food", "Breakfast", "Sarapan di resort"),
+      ("Pagi", "sun", "Acara bebas", "Main di pantai, berkemas"),
+      ("12.00", "bag", "Lunch &amp; check-out", "Check-out dari bungalow", "Mobil", "home"),
+      ("Siang", "plane", "Pulang", "Diantar ke bandara / pelabuhan", "", "key")]
+p = mini("Alur trip")
+p += '<h2 style="margin-top:12px">Alur trip <span class="it">dari tiba sampai pulang</span></h2><div class="sub">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan dan mengikuti penerbangan, cuaca, serta pasang-surut.</div>'
+FLOW = ('<div class="flow">'
+      + flow_day("1", "Tiba &amp; santai", H1) + flow_day("2", "Trip Bahuluang", H2) + flow_day("3", "Pulang", H3)
+      + '<div class="legend"><span><i style="background:#D9703F"></i>Momen utama</span><span><i style="background:#A67C64"></i>Di resort</span>'
+        '<span><i style="background:#7BA7B6"></i>Kegiatan lain</span><span><b style="color:#4E7F91;font-size:9px;letter-spacing:.06em">MOBIL / KAPAL</b> = moda perjalanan</span></div></div>')
+p += FLOW
+pages.append(p)
+# gambar mandiri (png/Alur_Trip_Bahuluang.png): logo, judul, diagram, kontak
+EXPORT = f'''<template data-export="Alur_Trip_Bahuluang"><div class="page" style="height:auto;margin:0;padding:40px 46px 34px">
+  <div class="frame"></div><div class="frame2"></div>
+  <div class="hd"><img src="../assets/logo-sunari-color.png" style="width:150px"><div class="rule"><i></i>{SUN}<i></i></div>
+  <div class="caps" style="font-size:10px">Paket Wisata All Included Bahuluang · 4 Dewasa + 2 Anak</div>
+  <h1 style="font-size:32px">Alur Trip <span class="it">dari tiba sampai pulang</span></h1>
+  <p style="font-size:12px">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan.</p></div>
+  {FLOW}
+  <div style="text-align:center;margin-top:18px;padding-top:12px;border-top:1px solid rgba(138,95,72,.45)">
+  <div class="caps" style="font-size:9px">Informasi &amp; reservasi</div>
+  <div style="font-family:'Playfair Display',serif;font-size:19px;margin-top:2px"><span class="it">WhatsApp</span> {WA} · SunaRi Beach Resort Selayar</div></div>
+</div></template>'''
 
 # ---------------------------------------------------------------- 2. Yang didapat
 p = mini("Yang Anda dapatkan")
@@ -146,5 +252,5 @@ pages.append(p)
 html = "".join(page(x, i + 1, TOTAL) for i, x in enumerate(pages))
 assert len(pages) == TOTAL
 (H / "06_Paket_All_Included_Bahuluang.html").write_text(
-    f'<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Paket All Included Bahuluang</title>{FONTS}<style>{CSS}{EXTRA}</style></head><body>{html}</body></html>')
+    f'<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Paket All Included Bahuluang</title>{FONTS}<style>{CSS}{EXTRA}</style></head><body>{html}{EXPORT}</body></html>')
 print("ok", len(pages), "halaman")
