@@ -282,6 +282,7 @@ Ada yang bisa kami siapkan sebelum Kakak tiba? (antar-jemput, Senja Dinner, extr
 | Family Superior Bungalow | `family-superior-bungalow/01-eksterior-taman.jpg` | 6 orang (maks. 8) · 2 lantai · 2 kamar mandi · sarapan |
 | Senja Dinner | `resto/05-makan-malam-taman.jpg` | Ikan bakar & seafood saat senja · pesan H-1 |
 | Sewa Kayak | `senja/03-kayak-matahari-merah.jpg` | Single Rp 50.000 · Double Rp 100.000 *(harga boleh diisi)* |
+| 3H2M di Selayar · Sehari ke Bahuluang | 6 gambar di `whatsapp/katalog-paket-bahuluang/` | Paket keluarga 4 dewasa + 2 anak, tanpa harga. Teks lengkap: `katalog-paket-bahuluang/KATALOG.md` |
 
 ---
 
