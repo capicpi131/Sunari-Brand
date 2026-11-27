@@ -80,3 +80,17 @@ Ubah menu/harga di `build_menu.py` (bagian `MENU`), lalu jalankan `python3 resto
 - Arti singkatan **D.** (Beef/Egg Sandwich D.), **M.S** dan **L.M**. Bisa ditulis lengkap agar tamu asing paham.
 - **Ikan bakar** belum ada di daftar menu, padahal disebut di caption & deskripsi. Apakah ikan bakar menu Senja Dinner saja / harga sesuai berat?
 - Ejaan yang saya rapikan: *Manggo* → **Mango**, *SeaFood* → **Seafood**.
+## Menu Sarapan (termasuk harga kamar)
+Sumber: Breakfast Menu resmi dari pemilik (27 Nov 2026), salinan di `menu-sarapan/_referensi_breakfast_menu_pemilik.jpg`.
+1 pax = 1 makanan + 1 minuman. Standard & VIP Standard 2 pax · Superior & VIP Superior 2 pax · Family Superior 6 pax · Extra bed 1 pax.
+
+| Makanan | Minuman |
+|---|---|
+| Fried Rice (Nasi Goreng) | Black Coffee (Kopi Hitam) |
+| Fried Noodles (Mie Goreng) | Coffee Milk (Kopi Susu) |
+| Toast Omelette | Tea (Teh) |
+| Toast Scrambled Egg | Milk Tea (Teh Susu) |
+| Toast Coklat/Cheese | |
+| Pancake | |
+
+Desain menu sarapan: `menu-sarapan/` (`python3 resto/menu-sarapan/build.py && node resto/menu-sarapan/render.js`).
