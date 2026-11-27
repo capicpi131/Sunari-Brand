@@ -6,22 +6,22 @@ import pathlib
 H = pathlib.Path(__file__).parent
 LOGO = "../../assets/logo-sunari-color.png"
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">'
-# (nama di menu pemilik, harga ribu, terjemahan di bawahnya: Inggris untuk nama Indonesia, Indonesia untuk nama Inggris)
+# (nama Indonesia di atas, harga ribu, nama English di bawah; "" = tanpa terjemahan)
 FOODS = [("Nasi Goreng Sunari", 45, "Sunari fried rice"), ("Nasi Goreng Seafood", 45, "Seafood fried rice"),
          ("Nasi Goreng Egois", 45, "Egois fried rice"), ("Nasi Goreng Kampung", 45, "Village-style fried rice"),
          ("Ayam Lalapan", 50, "Fried chicken &amp; fresh vegetables"), ("Ayam Bakar", 50, "Grilled chicken"),
-         ("Beef Sandwich", 30, "Sandwich daging sapi"), ("Beef Sandwich D.", 40, "Sandwich daging sapi D."),
-         ("Egg Sandwich", 25, "Sandwich telur"), ("Egg Sandwich D.", 35, "Sandwich telur D."),
+         ("Sandwich Daging Sapi", 30, "Beef sandwich"), ("Sandwich Daging Sapi D.", 40, "Beef sandwich D."),
+         ("Sandwich Telur", 25, "Egg sandwich"), ("Sandwich Telur D.", 35, "Egg sandwich D."),
          ("Indomie Goreng", 20, "Fried instant noodles"), ("Indomie Kuah", 20, "Instant noodle soup")]
-SNACK = [("French Fries", 25, "Kentang goreng"), ("Toast", 25, "Roti bakar"), ("Banana Roll", 25, "Pisang gulung"),
-         ("Fried Cassava", 25, "Singkong goreng"), ("Fried Banana", 25, "Pisang goreng")]
-DRINKS = [("Chocolate M.S", 25, "Cokelat M.S"), ("Oreo M.S", 25, "Oreo M.S"), ("Orange Punch", 25, "Punch jeruk"),
-          ("Watermelon L.M", 25, "Semangka L.M"), ("Green Tea", 25, "Teh hijau"), ("Hot Tea", 10, "Teh panas"),
-          ("Ice Tea", 20, "Es teh"), ("Black Coffee", 20, "Kopi hitam"), ("Coffee Milk", 20, "Kopi susu"),
-          ("Milk Tea", 25, "Teh susu"), ("Original Coconut", 25, "Kelapa muda"), ("Saronso", 25, "")]
-JUICE = [("Avocado", 25, "Alpukat"), ("Watermelon", 25, "Semangka"), ("Melon", 25, "Melon"), ("Mango", 25, "Mangga"),
-         ("Dragon Fruit", 25, "Buah naga"), ("Soursop Fruit", 25, "Sirsak"), ("Apple", 25, "Apel"), ("Orange", 25, "Jeruk")]
-SOFT = [("Coke", 15, ""), ("Fanta", 15, ""), ("Sprite", 15, ""), ("Fresh Tea", 15, ""), ("Pulpy", 15, ""), ("Mineral Water", 10, "Air mineral")]
+SNACK = [("Kentang Goreng", 25, "French fries"), ("Roti Bakar", 25, "Toast"), ("Banana Roll", 25, ""),
+         ("Singkong Goreng", 25, "Fried cassava"), ("Pisang Goreng", 25, "Fried banana")]
+DRINKS = [("Cokelat M.S", 25, "Chocolate M.S"), ("Oreo M.S", 25, ""), ("Punch Jeruk", 25, "Orange punch"),
+          ("Semangka L.M", 25, "Watermelon L.M"), ("Teh Hijau", 25, "Green tea"), ("Teh Panas", 10, "Hot tea"),
+          ("Es Teh", 20, "Ice tea"), ("Kopi Hitam", 20, "Black coffee"), ("Kopi Susu", 20, "Coffee milk"),
+          ("Teh Susu", 25, "Milk tea"), ("Kelapa Muda", 25, "Original coconut"), ("Saronso", 25, "")]
+JUICE = [("Alpukat", 25, "Avocado"), ("Semangka", 25, "Watermelon"), ("Melon", 25, ""), ("Mangga", 25, "Mango"),
+         ("Buah Naga", 25, "Dragon fruit"), ("Sirsak", 25, "Soursop"), ("Apel", 25, "Apple"), ("Jeruk", 25, "Orange")]
+SOFT = [("Coke", 15, ""), ("Fanta", 15, ""), ("Sprite", 15, ""), ("Fresh Tea", 15, ""), ("Pulpy", 15, ""), ("Air Mineral", 10, "Mineral water")]
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}body{background:#bbb;font-family:Montserrat,sans-serif;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums tabular-nums}
 .pg{position:relative;width:1080px;height:1920px;margin:20px auto;background:#FBF4EC;color:#3A2819;overflow:hidden}
@@ -81,8 +81,8 @@ HTML = f'''<div class="pg" id="menu-bajoy"><div class="f1"></div><div class="f2"
 <div class="in"><div class="top"><img class="lg" src="{LOGO}"><div class="kick">Resto &amp; Bar · Pantai Sunari</div>
 <h1>Bajoy <i>Beach Resto</i></h1><div class="rule"><span></span><b></b><span></span></div>
 <div class="hours"><span>Buka 09.00 WITA<i class="en">Open 9:00 AM</i></span><span class="o">Tutup 21.00 WITA<i class="en">Close 9:00 PM</i></span></div></div>
-<div class="cols"><div>{card("Foods", "Makanan", FOODS)}{card("Snack", "Camilan", SNACK)}{card("Soft Drink", "Minuman ringan", SOFT)}</div>
-<div>{card("Drinks", "Minuman", DRINKS)}{card("Juice", "Jus buah", JUICE)}<div class="note" style="margin-top:22px">Harga dalam ribuan rupiah (k = 1.000)<div class="en">Prices in thousand rupiah (k = 1,000)</div></div></div></div></div>
+<div class="cols"><div>{card("Makanan", "Foods", FOODS)}{card("Camilan", "Snack", SNACK)}{card("Minuman Ringan", "Soft drink", SOFT)}</div>
+<div>{card("Minuman", "Drinks", DRINKS)}{card("Jus Buah", "Juice", JUICE)}<div class="note" style="margin-top:22px">Harga dalam ribuan rupiah (k = 1.000)<div class="en">Prices in thousand rupiah (k = 1,000)</div></div></div></div></div>
 <div class="ft"><div class="t">Informasi &amp; reservasi</div><div class="en">Information &amp; reservation</div><div class="s">WhatsApp 0813-4150-4973 · 0821-8903-3044</div></div></div>'''
 (H / "menu_bajoy.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{HTML}</body></html>')
 print("ok")

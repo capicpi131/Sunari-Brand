@@ -6,7 +6,7 @@
 | Menginap | 07.00 | 21.00 WITA |
 | Tidak menginap | 07.00 | 19.00 WITA |
 
-> Jam buka terbaru dari pemilik (27 Nov 2026): **09.00–21.00 WITA** (dipakai di `menu-bajoy-wa/`). Tabel di atas belum diubah; sarapan tamu tetap disajikan mulai 07.00.
+> Jam buka terbaru dari pemilik (27 Nov 2026): **09.00–21.00 WITA** (dipakai di `menu-bajoy-wa/`). Tabel di atas belum diubah. Sarapan tamu disajikan **07.00–10.00 WITA**.
 
 File desain:
 - **Versi WhatsApp (PNG HD 2160x3840, teks timbul):** `menu-bajoy-wa/Menu_Bajoy_Beach_Resto_HD.png`

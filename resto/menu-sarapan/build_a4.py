@@ -32,6 +32,6 @@ HTML = f'''<div class="pg" id="menu-sarapan-a4"><div class="f1"></div><div class
 <div class="card"><div class="hd"><div class="no">1</div><div class="tt">Makanan<span>pilih 1</span>{en("Food · choose 1")}</div></div>{rows(MAKANAN)}</div>
 <div class="card"><div class="hd"><div class="no">2</div><div class="tt">Minuman<span>pilih 1</span>{en("Drink · choose 1")}</div></div>{rows(MINUMAN)}</div></div>
 <div class="porsi"><div class="hd">Jumlah sarapan per kamar{en("Breakfast per room")}</div>{porsi}</div></div>
-<div class="ft"><div class="t">Disajikan mulai pukul 07.00 WITA</div>{en("Served from 07.00 WITA")}<div class="s">WhatsApp 0813-4150-4973 · 0821-8903-3044</div></div></div>'''
+<div class="ft"><div class="t">Disajikan pukul 07.00 – 10.00 WITA</div>{en("Served 07.00 – 10.00 WITA")}<div class="s">WhatsApp 0813-4150-4973 · 0821-8903-3044</div></div></div>'''
 (H / "menu_sarapan_a4.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8">{FONTS}<style>{CSS}</style></head><body>{HTML}</body></html>')
 print("ok a4")
