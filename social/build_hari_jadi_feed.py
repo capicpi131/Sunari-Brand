@@ -1,10 +1,10 @@
-"""Feed carousel Instagram (1080x1350) Hari Jadi ke-421 Kabupaten Kepulauan Selayar (29 November 2026), 6 slide, gaya feed SunaRi.
+"""Feed carousel Instagram (1080x1350) Hari Jadi ke-421 Kabupaten Kepulauan Selayar (29 November 2026), 10 slide, gaya feed SunaRi.
 Tanpa jualan/harga. Foto: hasil color grading tema SunaRi di assets/photos/graded/.
 Run: python3 social/build_hari_jadi_feed.py && node social/render_hari_jadi_feed.js -> social/hari-jadi-selayar-feed/*.png"""
 import pathlib
 H = pathlib.Path(__file__).parent
 exec((H / "build_vipsuperior.py").read_text().split("KICK =")[0].replace("__file__", repr(str(H / "build_vipsuperior.py"))))
-P = "hari-jadi-selayar-feed/foto/"; N = 6; KICK = "Hari Jadi Selayar ke-421"
+P = "hari-jadi-selayar-feed/foto/"; N = 10; KICK = "Hari Jadi Selayar ke-421"
 CSS += """
 .big{font-family:'Playfair Display',serif;font-size:230px;line-height:.9;color:#FBF4EC;text-shadow:0 3px 18px rgba(0,0,0,.45)}
 .ph.grid{display:grid;gap:10px;background:#FBF4EC}
@@ -21,14 +21,22 @@ T.append(f'''<div class="t fc" id="hari-jadi-01"><img class="bgf" src="{P}senja_
   <div class="fs" style="top:620px">Kabupaten Kepulauan Selayar</div>
   <div class="fg">Geser &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''')
 SL = [
- ([(P + "pantai__02-perahu-nelayan-biru.jpg", "40% 55%", "Dari laut"), (P + "resto__02-bakar-cumi-ayam.jpg", "50% 50%", "ke meja makan")], "", 'Bangga <em>pangan lokal</em>',
+  ([(P + "pantai__02-perahu-nelayan-biru.jpg", "40% 55%", "Dari laut"), (P + "resto__02-bakar-cumi-ayam.jpg", "50% 50%", "ke meja makan")], "", 'Bangga <em>pangan lokal</em>',
   'Tema tahun ini: “Pangan Lokal Mendukung Ketahanan Pangan Nasional”. Dari laut dan kebun Selayar, untuk Indonesia.'),
  (P + "bahuluang__21-laut-toska-dari-kapal.jpg", "50% 70%", 'Laut yang <em>memberi</em>',
   'Air toska, pasir putih, dan karang yang terjaga. Laut Selayar adalah rumah, sumber kehidupan, dan kebanggaan kita.'),
+ (P + "bahuluang__29-snorkeling-masker-penuh.jpg", "50% 50%", 'Taman <em>bawah laut</em>',
+  'Karang dan ikan warna-warni di perairan Selayar. Jaga bersama, wariskan untuk anak cucu.'),
  ([(P + "bahuluang__51-pantai-barat-teluk-pasir-putih.jpg", "45% 50%", "Bahuluang"), (P + "pantai__03-pulau-di-seberang.jpg", "50% 60%", "Gusung"), (P + "polassi-tambolongan__07-punggung-bukit-nane-dan-teluk.jpg", "50% 50%", "Polassi")], "", 'Pulau-pulau <em>yang memesona</em>',
   'Bahuluang, Gusung, Polassi, Tambolongan. Hanya sebagian kecil dari keindahan Kepulauan Selayar.'),
+ (P + "bahuluang__12-berjalan-di-pasir-timbul.jpg", "50% 55%", 'Pasir yang <em>muncul</em>',
+  'Saat air surut, gosong pasir putih muncul di tengah laut. Keajaiban kecil dari pasang-surut Selayar.'),
+ (P + "bahuluang__47-dalam-gua-lipang-stalaktit-rombongan.jpg", "50% 40%", 'Gua yang <em>dibentuk laut</em>',
+  'Gua Lipang di Pulau Bahuluang: stalaktit menggantung, lantai pasir putih, sejuk di dalam.'),
  (P + "senja__21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Senja di <em>pesisir barat</em>',
   'Setiap sore matahari tenggelam di depan Pantai Sunari. Hadiah kecil dari Selayar untuk siapa saja yang singgah.'),
+ (P + "malam__18-kelapa-dan-bintang.jpg", "50% 50%", 'Malam yang <em>tenang</em>',
+  'Langit berbintang di antara pohon kelapa. Selayar mengajarkan kita untuk berjalan pelan.'),
 ]
 for k, (img, pos, t, sub) in enumerate(SL, 2):
     if isinstance(img, list):
@@ -41,7 +49,7 @@ for k, (img, pos, t, sub) in enumerate(SL, 2):
     T.append(f'''<div class="t" id="hari-jadi-{k:02d}">{ph}
   <div class="kick">{KICK}</div><div class="ttl emb">{t}</div><div class="sub">{sub}</div>
   <div class="bt"><span>SunaRi · Selayar</span><span class="h">#HariJadiSelayar421</span><span>{k:02d} / {N:02d}</span></div></div>''')
-T.append(f'''<div class="t" id="hari-jadi-06"><div class="frame"></div>
+T.append(f'''<div class="t" id="hari-jadi-10"><div class="frame"></div>
   <img src="{LOGO}" style="position:absolute;left:50%;transform:translateX(-50%);top:90px;width:280px" alt="">
   <div style="position:absolute;left:100px;right:100px;top:320px;text-align:center;color:#45301F">
     <div style="font-weight:700;font-size:21px;letter-spacing:.32em;text-transform:uppercase;color:#7A5039">29 November 2026</div>
