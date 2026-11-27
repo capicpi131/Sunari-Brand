@@ -1,4 +1,4 @@
-// Render menu sarapan ke PNG (HD 2x) + JPG. Usage: node resto/menu-sarapan/render.js
+// Render menu sarapan ke PNG HD (2160x3840). Usage: node resto/menu-sarapan/render.js
 const { chromium } = require('playwright'); const path = require('path');
 (async () => {
   const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1200, height: 2000 }, deviceScaleFactor: 2 });
