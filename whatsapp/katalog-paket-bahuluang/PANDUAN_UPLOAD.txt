@@ -1,0 +1,168 @@
+=====================================================================
+ PANDUAN KATALOG WHATSAPP BUSINESS
+ Paket: 3 Hari 2 Malam di Selayar · Sehari ke Bahuluang
+ SunaRi Beach Resort Selayar · WhatsApp +62 821-8903-3044
+=====================================================================
+
+ATURAN PENTING
+- Harga TIDAK dicantumkan di katalog. Kolom "Harga" dikosongkan.
+- Harga, DP, dan nomor rekening hanya dikirim lewat chat pribadi,
+  setelah tamu menyebutkan tanggal dan jumlah tamu.
+
+
+---------------------------------------------------------------------
+1. ISI FOLDER INI
+---------------------------------------------------------------------
+Gambar katalog (1080 x 1080, persegi). Nomor = urutan unggah:
+
+  01_sampul.jpg               Sampul: Pantai Bone Bakka + judul paket
+  02_termasuk.jpg             8 hal yang sudah termasuk
+  03_destinasi.jpg            Bone Bakka, Goa Lipang, Makam Karang,
+                              Pasir Timbul
+  04_kedatangan.jpg           Pilihan tiba: A pesawat / B ferri Bira
+  05_alur_trip.jpg            Ringkasan Hari 1 - Hari 3
+  06_jadwal_hari2.jpg         Jadwal jam per jam trip Bahuluang
+  07_penginapan.jpg           Family Superior Bungalow
+  08_makan.jpg                Welcome drink & 8x makan
+  09_persiapan_ketentuan.jpg  Barang dibawa, tips keselamatan,
+                              DP / ganti jadwal / pembatalan
+  10_cara_pesan.jpg           3 langkah memesan + nomor WhatsApp
+
+Teks:
+  PANDUAN_UPLOAD.txt          File ini
+  KATALOG.md                  Teks katalog (sama dengan bagian 3)
+
+
+---------------------------------------------------------------------
+2. CARA UPLOAD KE KATALOG (sekali saja)
+---------------------------------------------------------------------
+Persiapan
+  a. Ekstrak (unzip) file ini di HP yang memakai WhatsApp Business.
+  b. Pastikan 10 gambar sudah masuk Galeri / folder Download.
+
+Android
+  1. Buka WhatsApp Business.
+  2. Ketuk titik tiga (kanan atas) > Alat bisnis > Katalog.
+  3. Ketuk "Tambah item baru" (atau tombol +).
+  4. Ketuk "Tambahkan gambar", pilih 10 gambar SESUAI URUTAN NOMOR
+     (01 dulu, terakhir 10). Gambar pertama menjadi sampul.
+  5. Isi kolom dengan teks di bagian 3 (salin-tempel).
+  6. Kolom Harga: BIARKAN KOSONG.
+  7. Ketuk "Simpan".
+
+iPhone
+  1. Buka WhatsApp Business.
+  2. Ketuk Pengaturan (kanan bawah) > Alat bisnis > Katalog.
+  3. Lanjutkan seperti langkah 3 - 7 Android.
+
+Catatan
+  - Nama menu bisa sedikit berbeda tergantung versi aplikasi.
+  - Setelah disimpan, item ditinjau dulu oleh WhatsApp sebelum
+    tampil ke tamu (biasanya cepat, kadang sampai 24 jam).
+    Jika ditolak, cek isi teks; jangan memakai kata yang dilarang
+    kebijakan perdagangan WhatsApp.
+  - Urutan gambar bisa diubah lagi: buka item > Edit > tahan dan
+    geser gambar.
+
+
+---------------------------------------------------------------------
+3. TEKS UNTUK KOLOM KATALOG (salin-tempel)
+---------------------------------------------------------------------
+NAMA ITEM:
+3H2M di Selayar · Sehari ke Bahuluang
+
+HARGA:
+(kosongkan)
+
+DESKRIPSI:
+Liburan keluarga 3 hari 2 malam di SunaRi Beach Resort Selayar, dengan sehari penuh menjelajah Pulau Bahuluang. Untuk 4 dewasa + 2 anak.
+
+SUDAH TERMASUK
+• Family Superior Bungalow 2 malam (rumah dua lantai)
+• Welcome drink & 8x makan
+• Antar-jemput bandara / pelabuhan, pergi & pulang
+• Mobil & kapal untuk trip Bahuluang
+• Guide & tim selama trip
+• Alat snorkeling lengkap & paddleboard
+• Tiket masuk semua lokasi
+• Dokumentasi drone, DSLR & underwater (file mentah via Google Drive)
+
+SOROTAN BAHULUANG
+Pantai Bone Bakka · Goa Lipang · snorkeling di Makam Karang · Pasir Timbul
+
+KEDATANGAN
+Pesawat (tiba 07.00–08.00) atau ferri dari Bira (tiba ±12.00). Keduanya kami jemput.
+
+Catatan: jadwal trip ke Bahuluang menyesuaikan kondisi pasang-surut air laut.
+
+Tanya harga & ketersediaan: chat kami dengan tanggal kedatangan dan jumlah tamu.
+
+TAUTAN (opsional):
+https://maps.app.goo.gl/iUWWHNCT7Vyu4i537
+
+KODE ITEM:
+PAKET-3H2M-BAHULUANG
+
+
+---------------------------------------------------------------------
+4. CARA MEMBAGIKAN KATALOG KE TAMU
+---------------------------------------------------------------------
+Di dalam chat
+  1. Buka chat tamu.
+  2. Ketuk ikon klip / lampiran > Katalog.
+  3. Pilih item "3H2M di Selayar · Sehari ke Bahuluang" > Kirim.
+
+Lewat tautan (untuk status, Instagram, grup)
+  1. Buka Katalog > ketuk item.
+  2. Ketuk ikon bagikan / titik tiga > "Salin tautan".
+  3. Tempel di status WhatsApp, bio Instagram, atau grup.
+
+Saran: simpan tautan item ini di Balasan Cepat (misalnya /bahuluang)
+supaya tinggal ketik "/" saat ada tamu yang bertanya.
+
+
+---------------------------------------------------------------------
+5. BALASAN CEPAT (siapkan di Alat bisnis > Balasan cepat)
+---------------------------------------------------------------------
+/bahuluang  (saat tamu tanya paket)
+.....................................................................
+Halo Kak, terima kasih sudah tertarik 🌅
+Ini paket 3 Hari 2 Malam di Selayar · Sehari ke Bahuluang dari
+SunaRi Beach Resort Selayar: [tempel tautan katalog]
+
+Boleh info:
+1. Tanggal kedatangan
+2. Jumlah tamu (dewasa & anak)
+3. Datang dengan pesawat atau ferri dari Bira?
+Nanti kami kirim harga dan ketersediaannya 🙏
+.....................................................................
+
+/hargabahuluang  (kirim harga, isi manual)
+.....................................................................
+Terima kasih Kak, berikut penawarannya 🌅
+
+📦 Paket: 3 Hari 2 Malam di Selayar · Sehari ke Bahuluang
+📅 Tanggal: [tanggal tiba] – [tanggal pulang]
+👥 Tamu: [x] dewasa + [x] anak
+✈️ Kedatangan: [pesawat / ferri dari Bira]
+💰 Harga: Rp [harga] untuk seluruh rombongan
+
+Pembayaran: DP 50% untuk mengunci tanggal, sisanya dilunasi
+sebelum kedatangan. Jadwal bisa diganti; tidak ada refund
+setelah DP.
+
+Mau kami bantu amankan tanggalnya, Kak?
+.....................................................................
+(Nomor rekening dikirim terpisah lewat balasan cepat /bayar
+setelah tamu setuju.)
+
+
+---------------------------------------------------------------------
+6. CEK SEBELUM SELESAI
+---------------------------------------------------------------------
+[ ] 10 gambar terunggah, urutan 01 sampai 10
+[ ] Kolom harga kosong
+[ ] Nama, deskripsi, dan kode item sudah ditempel
+[ ] Item sudah lolos tinjauan WhatsApp (tampil di katalog)
+[ ] Tautan item disimpan di balasan cepat /bahuluang
+[ ] Coba kirim katalog ke nomor sendiri untuk melihat tampilannya
