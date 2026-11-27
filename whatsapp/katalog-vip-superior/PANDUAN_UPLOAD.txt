@@ -23,7 +23,7 @@ Gambar katalog (1080 x 1080, persegi). Nomor = urutan unggah:
   06_teras.jpg                Teras kayu pribadi
   07_suasana_pagi.jpg         Pemandangan kamar dari loteng
   08_info_menginap.jpg        Kapasitas, check-in/out, sarapan, dll.
-  09_sekitar_bungalow.jpg     Senja, pantai, kayak, Bajoy Beach Resto
+  09_sekitar_bungalow.jpg     Senja, kayak, ayunan raksasa, Bajoy Beach Resto
   10_cara_pesan.jpg           3 langkah memesan + nomor WhatsApp
 
 Teks:
