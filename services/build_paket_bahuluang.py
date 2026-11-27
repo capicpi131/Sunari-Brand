@@ -17,7 +17,12 @@ EXTRA = """
 .mini .caps{font-size:9.5px;text-align:right;line-height:1.7}
 .lead{font-family:'Playfair Display',serif;font-size:15.5px;line-height:1.65;text-align:center;margin:18px 14px 4px}
 .lead b{color:#A84A24;font-weight:500}
-.big-price{text-align:center;padding:22px 10px}
+.big-price{text-align:center;padding:14px 10px}
+.pay{display:flex;align-items:center;gap:18px;margin-top:12px;padding:11px 16px;border-radius:4px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px #5A3E31,0 1px 0 #fff}
+.pay .k{flex:0 0 auto;background:#5A3E31;color:#FBF4EC;text-shadow:none;font-weight:700;font-size:9.5px;letter-spacing:.18em;padding:7px 10px;border-radius:3px;line-height:1.4;text-align:center}
+.pay .f{flex:1;display:grid;grid-template-columns:auto auto auto;gap:4px 22px}
+.pay .f div{font-size:9px;font-weight:700;letter-spacing:.16em;color:#7A5038;text-transform:uppercase}
+.pay .f b{display:block;font-size:14.5px;letter-spacing:.02em;text-transform:none;color:#3A2819;margin-top:2px}
 .big-price .v{font-family:'Playfair Display',serif;font-size:40px;font-weight:500;color:#A84A24;margin:4px 0 2px}
 td.c,th.c{text-align:center}
 .qa{font-size:12.5px;line-height:1.55;margin-bottom:9px} .qa b{display:block;font-weight:700;color:#45301F}
@@ -244,9 +249,9 @@ pages.append(p)
 p = mini("Kepulangan &amp; harga")
 p += '<h2 style="margin-top:12px"><span class="n">HARI 03</span>Kepulangan</h2><div class="sub">Berangkat pagi; jam menyesuaikan pesawat atau kapal Anda. Mohon berkemas malam sebelumnya.</div>'
 p += sched([("05.30", "Bangun &amp; bersiap", "Barang dibawa ke mobil; sarapan take away kami siapkan"),
-            ("06.00 – 07.00", "Check-out &amp; berangkat", "Check-out dari Family Superior Bungalow, berangkat dari SunaRi"),
+            ("06.00 – 07.00", "Check-out &amp; berangkat", "Check-out dari bungalow, berangkat dari SunaRi"),
             ("Perjalanan", "Breakfast take away", "Sarapan dibawa dan dinikmati di perjalanan"),
-            ("Tiba", "Antar ke bandara / pelabuhan", "Tim mengantar sampai bandara atau pelabuhan; trip selesai")])
+            ("Tiba", "Diantar pulang", "Sampai bandara atau pelabuhan; trip selesai")])
 p += '<h2><span class="n">04</span>Harga <span class="it">paket</span></h2>'
 p += '''<div class="card big-price"><div class="caps" style="font-size:10px">All Included Bahuluang 3H2M · 4 dewasa + 2 anak</div><div class="v">Rp 10.000.000</div>
 <div style="font-size:12px">untuk seluruh rombongan (6 orang), bukan per orang &nbsp;·&nbsp; setara ± Rp 1.667.000 per orang</div></div>'''
@@ -256,14 +261,16 @@ p += '<div class="cols" style="margin-top:6px"><div><h2><span class="n">05</span
     "Tip untuk guide dan kru (sukarela)", "Asuransi perjalanan"], "no") + '</div><div><h2><span class="n">06</span>Cara <span class="it">pemesanan</span></h2><ol class="steps">' + "".join(f"<li>{x}</li>" for x in [
     "Hubungi kami dan sebutkan tanggal kedatangan serta jam pesawat atau ferri.",
     "Kami cek ketersediaan bungalow dan kapal untuk tanggal tersebut.",
-    "Bayar DP 50% untuk mengunci tanggal, lalu lunasi sisanya sebelum kedatangan.",
+    "Bayar DP 50% ke rekening di bawah untuk mengunci tanggal, lalu lunasi sisanya sebelum kedatangan.",
     "Kami kirim konfirmasi beserta kontak guide yang akan menjemput."]) + '</ol></div></div>'
-p += '<h2><span class="n">07</span>Ketentuan <span class="it">pembayaran</span></h2>'
+p += '<h2 style="margin-top:16px"><span class="n">07</span>Ketentuan <span class="it">pembayaran</span></h2>'
 p += '<div class="grid3" style="margin:6px 0 0">' + "".join(
     f'<div class="card" style="text-align:center"><div class="caps" style="font-size:9px">{k}</div><h4 style="margin-top:4px">{v}</h4><p>{d}</p></div>' for k, v, d in [
-    ("Uang muka", "DP 50%", "Dibayar untuk mengunci tanggal; sisanya dilunasi sebelum kedatangan."),
-    ("Ganti jadwal", "Bisa", "Tanggal trip dapat dipindah; hubungi kami untuk cek ketersediaan."),
-    ("Pembatalan", "Tanpa refund", "Pembayaran yang sudah masuk tidak dapat dikembalikan setelah DP.")]) + '</div>'
+    ("Uang muka", "DP 50%", "Sisanya lunas sebelum tiba."),
+    ("Ganti jadwal", "Bisa", "Sesuai ketersediaan."),
+    ("Pembatalan", "Tanpa refund", "Setelah DP dibayar.")]) + '</div>'
+p += ('<div class="pay"><div class="k">INFORMASI<br>PEMBAYARAN</div><div class="f">'
+      '<div>Bank<b>BRI</b></div><div>No. rekening<b>025701011852534</b></div><div>Atas nama<b>A A Gede Eka Putra</b></div></div></div>')
 pages.append(p)
 
 # ---------------------------------------------------------------- 5. Persiapan & tanya jawab
