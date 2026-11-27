@@ -1,5 +1,5 @@
 """Gambar katalog WhatsApp Business: paket 3 Hari 2 Malam di Selayar · Sehari ke Bahuluang.
-6 gambar persegi 1080x1080, TANPA HARGA.
+10 gambar persegi 1080x1080, TANPA HARGA.
 Run: python3 whatsapp/katalog-paket-bahuluang/build.py && node whatsapp/katalog-paket-bahuluang/render.js"""
 import pathlib
 H = pathlib.Path(__file__).parent
@@ -142,6 +142,92 @@ S.append(sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style
     "Kami kirim harga, ketersediaan, dan detail pembayaran"]) + '</ol>'
   + f'<div style="height:250px;border-radius:8px;overflow:hidden;margin-top:28px"><img class="ph" src="{PH}pasir2.jpg" style="object-position:center 60%"></div>'
   + f'<div class="cta" style="margin-top:24px"><div class="t">Tanya harga &amp; jadwal</div><div class="w">WhatsApp {WA}</div></div></div>'))
+
+# ---------------------------------------------------------------- tambahan: total 10 gambar
+CSS_ADD = """
+.ab{display:grid;grid-template-columns:1fr 70px 1fr;margin-top:34px}
+.ab .or{display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-style:italic;font-size:28px;color:#94532B}
+.ab .or::before,.ab .or::after{content:"";flex:1;border-left:2px dashed #A67C64}
+.ab .or span{padding:10px 0}
+.opt{border-radius:10px;background:#FFFDF9;box-shadow:inset 0 0 0 2.5px var(--c);padding:24px 24px 26px}
+.opt.a{--c:#D9703F} .opt.b{--c:#4E7F91}
+.opt .tg{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;letter-spacing:.14em;color:var(--c);text-transform:uppercase}
+.opt .tg b{width:40px;height:40px;border-radius:50%;background:var(--c);color:#fff;text-shadow:none;display:inline-flex;align-items:center;justify-content:center;font-size:22px;letter-spacing:0}
+.opt .tm{font-family:'Playfair Display',serif;font-size:48px;margin:14px 0 10px}
+.opt ul{list-style:none} .opt li{font-size:22px;line-height:1.35;padding:7px 0 7px 22px;position:relative}
+.opt li::before{content:"";position:absolute;left:2px;top:17px;width:9px;height:9px;border-radius:50%;background:var(--c)}
+.joinb{margin-top:26px;text-align:center}
+.joinb span{display:inline-block;background:#5A3E31;color:#FBF4EC;text-shadow:none;font-weight:700;font-size:19px;letter-spacing:.14em;padding:12px 26px;border-radius:30px}
+.tl{margin-top:26px;position:relative}
+.tl .r{display:grid;grid-template-columns:110px 34px 1fr;align-items:center;min-height:48px}
+.tl .t{font-weight:700;font-size:22px;color:#C0592C}
+.tl .d{width:16px;height:16px;border-radius:50%;background:#7BA7B6;justify-self:center;position:relative;z-index:1;box-shadow:0 0 0 4px #FBF4EC}
+.tl .r.k .d{background:#D9703F;width:20px;height:20px}
+.tl::before{content:"";position:absolute;left:127px;top:20px;bottom:20px;border-left:2px solid rgba(138,95,72,.35)}
+.tl .x{font-size:22px;line-height:1.3} .tl .x b{font-weight:700} .tl .x span{color:#6B4A37;font-size:19px}
+.meal{width:100%;border-collapse:collapse;margin-top:26px;font-size:23px}
+.meal th{font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:#7A5038;padding:12px 8px;border-bottom:2px solid rgba(138,95,72,.5);text-align:center}
+.meal td{padding:16px 8px;border-bottom:1px solid rgba(138,95,72,.25);text-align:center}
+.meal th:first-child,.meal td:first-child{text-align:left;font-weight:700}
+.meal .ok{color:#D9703F;font-weight:700;font-size:28px} .meal .no{color:#B9A99C}
+.ph2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px;height:350px}
+.ph2 div{border-radius:8px;overflow:hidden}
+.c2{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px}
+.c2 h3{font-family:'Playfair Display',serif;font-weight:500;font-size:34px;margin-bottom:8px}
+.c2 h3 i{color:#94532B}
+.c2 ul{list-style:none} .c2 li{font-size:20px;line-height:1.35;padding:6px 0 6px 22px;position:relative}
+.c2 li::before{content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;border-radius:50%;background:#8A5F48}
+.terms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.terms>div{text-align:center;padding:20px 12px;border-radius:8px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px rgba(138,95,72,.3)}
+.terms .k{font-size:14px;font-weight:700;letter-spacing:.2em;color:#7A5038}
+.terms .v{font-family:'Playfair Display',serif;font-size:36px;margin:6px 0 4px}
+.terms .s{font-size:18px;color:#6B4A37}
+"""
+def opt(cls, letter, label, time, items):
+    return (f'<div class="opt {cls}"><div class="tg"><b>{letter}</b>{label}</div><div class="tm">{time}</div><ul>'
+            + "".join(f"<li>{x}</li>" for x in items) + "</ul></div>")
+ARR = sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style=\"color:#C0592C\">Kedatangan Hari 1</span>")
+  + '<div class="h1 serif" style="font-size:58px;margin-top:26px">Pilih <span class="it">cara tiba</span></div>'
+  + '<div class="ab">' + opt("a", "A", "Pesawat", "07.00 – 08.00", ["Dijemput di Bandara H. Aroeppala", "Kamar siap: langsung check-in", "Belum siap: titip barang &amp; santai di pantai", "Welcome drink, lunch 12.30"])
+  + '<div class="or"><span>atau</span></div>'
+  + opt("b", "B", "Ferri dari Bira", "± 12.00", ["Dijemput di Pelabuhan Pamatata", "Mobil langsung ke resort", "Welcome drink &amp; lunch setibanya"]) + '</div>'
+  + '<div class="joinb"><span>▼ SETELAH TIBA, JADWAL SAMA UNTUK SEMUA TAMU</span></div>'
+  + '<div class="note" style="margin-top:22px">Check-in <b>saat kamar siap</b>, paling lambat 14.00.</div></div>' + foot())
+
+D2 = [("07.00", "", "Breakfast", "di resort"), ("08.00", "", "Berangkat ke dermaga", "briefing keselamatan"), ("08.30", "", "Menyeberang", "kapal ke Pulau Bahuluang"),
+      ("10.00", "k", "Pantai Bone Bakka", "paddleboard, foto drone &amp; DSLR"), ("11.30", "k", "Goa Lipang", "jelajah goa bersama guide"), ("13.00", "", "Lunch di pulau", ""),
+      ("14.00", "k", "Makam Karang", "snorkeling, kamera underwater"), ("15.00", "k", "Pasir Timbul", "pasir putih di tengah laut"), ("16.00", "", "Kembali ke resort", ""),
+      ("17.00", "", "Afternoon tea", ""), ("19.00", "", "Dinner", "")]
+DAY2 = sq('<div class="pad">' + head("Sehari ke Bahuluang<br><span style=\"color:#C0592C\">Jadwal Hari 2</span>")
+  + '<div class="h1 serif" style="font-size:54px;margin-top:22px">Sehari penuh <span class="it">di Bahuluang</span></div>'
+  + '<div class="tl" style="margin-top:16px">' + "".join(f'<div class="r {c}"><div class="t">{t}</div><div class="d"></div><div class="x"><b>{a}</b>{f" <span>· {d}</span>" if d else ""}</div></div>' for t, c, a, d in D2) + '</div>'
+  + '<div class="note" style="margin-top:12px;font-size:19px;padding:10px 18px"><b>Catatan:</b> jadwal menyesuaikan kondisi pasang-surut air laut.</div></div>' + foot())
+
+ok = '<span class="ok">✓</span>'; no = '<span class="no">–</span>'
+FOOD = sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style=\"color:#C0592C\">Makan &amp; minum</span>")
+  + '<div class="h1 serif" style="font-size:58px;margin-top:26px">Welcome drink <span class="it">&amp; 8x makan</span></div>'
+  + '<table class="meal"><tr><th>Hari</th><th>Breakfast</th><th>Lunch</th><th>Afternoon tea</th><th>Dinner</th></tr>'
+  + f'<tr><td>Hari 1</td><td>{no}</td><td>{ok}</td><td>{ok}</td><td>{ok}</td></tr>'
+  + f'<tr><td>Hari 2</td><td>{ok}</td><td>{ok} <span style="font-size:17px">di pulau</span></td><td>{ok}</td><td>{ok}</td></tr>'
+  + f'<tr><td>Hari 3</td><td>{ok} <span style="font-size:17px">take away</span></td><td>{no}</td><td>{no}</td><td>{no}</td></tr></table>'
+  + f'<div class="ph2"><div><img class="ph" src="{PH}bakar.jpg" style="object-position:center 55%"></div><div><img class="ph" src="{PH}resto.jpg" style="object-position:center 60%"></div></div>'
+  + '</div>' + foot("Air minum selama trip"))
+
+PREP = sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style=\"color:#C0592C\">Persiapan &amp; ketentuan</span>")
+  + '<div class="h1 serif" style="font-size:54px;margin-top:22px">Sebelum <span class="it">berangkat</span></div>'
+  + '<div class="c2"><div><h3>Barang <i>dibawa</i></h3><ul>' + "".join(f"<li>{x}</li>" for x in [
+      "Baju renang &amp; baju ganti", "Sunblock, topi, kacamata hitam", "Sandal / sepatu air", "Dry bag untuk barang basah", "Obat pribadi &amp; anti mabuk laut"])
+  + '</ul></div><div><h3>Tips <i>keselamatan</i></h3><ul>' + "".join(f"<li>{x}</li>" for x in [
+      "Anak wajib pakai pelampung", "Anak selalu didampingi orang tua", "Ikuti arahan guide di goa", "Info guide bila ada yang belum bisa berenang", "Laut tidak aman: trip ditunda"])
+  + '</ul></div></div>'
+  + '<div class="terms"><div><div class="k">UANG MUKA</div><div class="v">DP 50%</div><div class="s">kunci tanggal</div></div>'
+  + '<div><div class="k">GANTI JADWAL</div><div class="v">Bisa</div><div class="s">sesuai ketersediaan</div></div>'
+  + '<div><div class="k">PEMBATALAN</div><div class="v">Tanpa refund</div><div class="s">setelah DP</div></div></div>'
+  + f'<div style="height:200px;border-radius:8px;overflow:hidden;margin-top:24px"><img class="ph" src="{PH}kayak.jpg" style="object-position:center 50%"></div>'
+  + '</div>' + foot())
+
+S = [S[0], S[1], S[2], ARR, S[3], DAY2, S[4], FOOD, PREP, S[5]]
+CSS += CSS_ADD
 
 html = "".join(S)
 (H / "katalog.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Katalog WhatsApp</title>{FONTS}<style>{CSS}</style></head><body>{html}</body></html>')

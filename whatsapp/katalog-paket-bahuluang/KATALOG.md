@@ -4,17 +4,21 @@
 
 *WhatsApp Business → Alat bisnis → Katalog → Tambah item baru.*
 
-## Gambar (unggah sesuai urutan, maks. 10 per item)
+## Gambar (unggah sesuai urutan, 10 gambar = batas maksimal per item)
 | Urutan | File | Isi |
 |---|---|---|
 | 1 (sampul) | `01_sampul.jpg` | Pantai Bone Bakka, judul paket |
 | 2 | `02_termasuk.jpg` | 8 hal yang sudah termasuk |
 | 3 | `03_destinasi.jpg` | Bone Bakka, Goa Lipang, Makam Karang, Pasir Timbul |
-| 4 | `04_alur_trip.jpg` | Ringkasan Hari 1–3 + catatan pasang-surut |
-| 5 | `05_penginapan.jpg` | Family Superior Bungalow |
-| 6 | `06_cara_pesan.jpg` | 3 langkah pesan + nomor WhatsApp |
+| 4 | `04_kedatangan.jpg` | Pilihan tiba: A pesawat / B ferri dari Bira, check-in saat kamar siap |
+| 5 | `05_alur_trip.jpg` | Ringkasan Hari 1–3 + catatan pasang-surut |
+| 6 | `06_jadwal_hari2.jpg` | Jadwal jam per jam trip Bahuluang |
+| 7 | `07_penginapan.jpg` | Family Superior Bungalow |
+| 8 | `08_makan.jpg` | Tabel welcome drink & 8x makan |
+| 9 | `09_persiapan_ketentuan.jpg` | Barang dibawa, tips keselamatan, DP 50% / ganti jadwal / tanpa refund |
+| 10 | `10_cara_pesan.jpg` | 3 langkah pesan + nomor WhatsApp |
 
-Semua gambar 1080×1080 (persegi, tampil penuh di katalog). Opsional: tambahkan `../../services/png/Alur_Trip_Bahuluang.png` sebagai gambar ke-7.
+Semua gambar 1080×1080 (persegi, tampil penuh di katalog). Tidak ada harga, nominal, maupun nomor rekening di gambar.
 
 ## Nama item
 ```
