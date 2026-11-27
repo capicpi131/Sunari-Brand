@@ -49,10 +49,10 @@ CSS += """
 .info{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
 .info>div{display:flex;gap:18px;align-items:center;padding:20px 22px;border-radius:8px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px rgba(138,95,72,.3)}
 .info b{display:block;font-size:24px;line-height:1.2} .info span{display:block;font-size:18px;color:#6B4A37;margin-top:3px}
-.near{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
-.near>div{border-radius:8px;overflow:hidden;position:relative;height:430px}
+.near{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.near>div{border-radius:8px;overflow:hidden;position:relative;height:268px}
 .near .lbl{position:absolute;left:0;right:0;bottom:0;padding:50px 14px 16px;color:#FBF4EC;text-shadow:0 2px 8px rgba(0,0,0,.5);background:linear-gradient(180deg,rgba(30,20,12,0),rgba(30,20,12,.72))}
-.near .lbl b{display:block;font-family:'Playfair Display',serif;font-size:27px;font-weight:500;line-height:1.1} .near .lbl span{font-size:16px}
+.near .lbl b{display:block;font-family:'Playfair Display',serif;font-size:30px;font-weight:500;line-height:1.1} .near .lbl span{font-size:16px}
 .quote{font-family:'Playfair Display',serif;font-style:italic;font-size:30px;color:#94532B;margin-top:22px;line-height:1.35}
 """
 S = []
@@ -87,7 +87,7 @@ S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">
 # 5 kamar mandi
 S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">Kamar mandi</span>")
   + h1('Segar, terang, <span class="it">dekat alam</span>')
-  + f'<div class="three"><div>{img("bathtub", "center 55%")}</div><div>{img("wastafel", "center 50%")}</div><div>{img("sabun", "center 45%")}</div></div>'
+  + f'<div class="three"><div>{img("bathtub", "center 55%")}</div><div>{img("wastafel", "center 50%")}</div><div>{img("toilet", "center 55%")}</div></div>'
   + '<ul class="bul">' + "".join(f"<li>{x}</li>" for x in [
       "Atap kaca: mandi dengan cahaya dan langit terbuka", "Bathtub, rain shower, toilet duduk", "Perlengkapan mandi lengkap &amp; handuk bersih setiap tamu"]) + '</ul></div>' + foot()))
 
@@ -114,12 +114,12 @@ S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">
   + f'<div style="height:165px;border-radius:8px;overflow:hidden;margin-top:18px">{img("eksterior", "center 45%")}</div></div>' + foot()))
 
 # 9 di sekitar bungalow
-near = [("senja", "center 60%", "Senja", "tepat di depan pantai"), ("pantai", "center 50%", "Pantai landai", "aman untuk anak"),
-        ("kayak", "center 60%", "Kayak", "sewa saat senja"), ("resto", "center 55%", "Bajoy Beach Resto", "07.00–21.00")]
+near = [("senja", "center 78%", "Senja", "tepat di depan pantai"), ("pantai", "center 50%", "Pantai landai", "aman untuk anak"),
+        ("kayak", "center 62%", "Kayak", "sewa saat senja"), ("resto", "center 62%", "Bajoy Beach Resto", "07.00–21.00")]
 S.append(sq('<div class="pad">' + head(f"SunaRi Beach Resort Selayar<br><span style=\"color:#C0592C\">Di sekitar bungalow</span>")
   + h1('Selangkah <span class="it">ke Pantai Sunari</span>')
   + '<div class="near">' + "".join(f'<div>{img(k, p)}<div class="lbl"><b>{t}</b><span>{d}</span></div></div>' for k, p, t, d in near) + '</div>'
-  + '<div class="note" style="margin-top:22px">Juga tersedia: ayunan raksasa, Senja Dinner (pesan H-1), dan tur pulau.</div></div>' + foot()))
+  + '<div class="note" style="margin-top:16px">Juga tersedia: ayunan raksasa, Senja Dinner (pesan H-1), dan tur pulau.</div></div>' + foot()))
 
 # 10 cara pesan
 S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">Cara memesan</span>")

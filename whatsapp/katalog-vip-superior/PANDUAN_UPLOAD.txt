@@ -19,7 +19,7 @@ Gambar katalog (1080 x 1080, persegi). Nomor = urutan unggah:
   02_kamar_mandi_bathtub.jpg  Sorotan: bathtub, rain shower, air panas
   03_kamar.jpg                King bed, loteng, jendela segitiga
   04_fasilitas.jpg            12 fasilitas kamar (ikon)
-  05_kamar_mandi.jpg          Kamar mandi semi-outdoor beratap kaca
+  05_kamar_mandi.jpg          Bathtub, wastafel, toilet (beratap kaca)
   06_teras.jpg                Teras kayu pribadi
   07_suasana_pagi.jpg         Pemandangan kamar dari loteng
   08_info_menginap.jpg        Kapasitas, check-in/out, sarapan, dll.
