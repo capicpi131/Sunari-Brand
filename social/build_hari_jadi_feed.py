@@ -35,7 +35,7 @@ SL = [
   'Gua Lipang di Pulau Bahuluang: stalaktit menggantung, lantai pasir putih, sejuk di dalam.'),
  (P + "senja__21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Senja di <em>pesisir barat</em>',
   'Setiap sore matahari tenggelam di depan Pantai Sunari. Hadiah kecil dari Selayar untuk siapa saja yang singgah.'),
- (P + "malam__18-kelapa-dan-bintang.jpg", "50% 50%", 'Malam yang <em>tenang</em>',
+ (P + "malam__30-ayunan-kelapa-bintang.jpg", "50% 86%", 'Malam yang <em>tenang</em>',
   'Langit berbintang di antara pohon kelapa. Selayar mengajarkan kita untuk berjalan pelan.'),
 ]
 for k, (img, pos, t, sub) in enumerate(SL, 2):

@@ -270,6 +270,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `malam/16-tangga-kayu-lantai-2.jpg` | Tangga kayu menuju lantai 2 | ✅ | Family Superior (akses lantai 2) |
 | `malam/17-tepi-pantai-lampu-gantung.jpg` | Meja di tepi pantai, lampu gantung, dua tamu (siluet) | ✅ | Bajoy / Senja Dinner |
 | `malam/18-kelapa-dan-bintang.jpg` | Pohon kelapa & langit berbintang | ✅ | Penutup feed, quote malam |
+| `malam/30-ayunan-kelapa-bintang.jpg` | Ayunan raksasa di antara pohon kelapa, langit berbintang & bima sakti (dari pemilik, 27 Nov 2026) | ✅ (tanpa orang) | **Dipakai: feed Hari Jadi Selayar slide 9**, konten malam |
 | `malam/19-taman-bulan-jembatan.jpg` | Bulan purnama, taman bougenvil, jembatan kayu | ✅ | Sampul feed malam |
 | `malam/20-gazebo-berlampu-kelapa.jpg` | Gazebo bambu berlampu di bawah deretan kelapa, bougenvil | ✅ | Sampul feed malam, OTA |
 | `malam/21-bajoy-beach-resto-malam.jpg` | Papan nama & area Bajoy Beach Resto malam | ✅ | Konten resto |
