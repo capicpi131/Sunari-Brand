@@ -14,7 +14,7 @@ FOODS = [("Nasi Goreng Sunari", 45, "Sunari fried rice"), ("Nasi Goreng Seafood"
          ("Sandwich Telur", 25, "Egg sandwich"), ("Sandwich Telur D.", 35, "Egg sandwich D."),
          ("Indomie Goreng", 20, "Fried instant noodles"), ("Indomie Kuah", 20, "Instant noodle soup")]
 SNACK = [("Kentang Goreng", 25, "French fries"), ("Roti Bakar", 25, "Toast"), ("Banana Roll", 25, ""),
-         ("Singkong Goreng", 25, "Fried cassava"), ("Pisang Goreng", 25, "Fried banana")]
+         ("Ubi Goreng", 25, "Fried cassava"), ("Pisang Goreng", 25, "Fried banana")]
 DRINKS = [("Cokelat M.S", 25, "Chocolate M.S"), ("Oreo M.S", 25, ""), ("Punch Jeruk", 25, "Orange punch"),
           ("Semangka L.M", 25, "Watermelon L.M"), ("Teh Hijau", 25, "Green tea"), ("Teh Panas", 10, "Hot tea"),
           ("Es Teh", 20, "Ice tea"), ("Kopi Hitam", 20, "Black coffee"), ("Kopi Susu", 20, "Coffee milk"),
