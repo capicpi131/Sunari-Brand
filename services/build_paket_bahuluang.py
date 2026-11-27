@@ -106,7 +106,9 @@ ICON = {
 }
 def step(s, last):
     t, ic, ti, ds = s[:4]; mode = s[4] if len(s) > 4 else ""; cls = s[5] if len(s) > 5 else ""
-    arrow = "" if last else f'<div class="nx">→{f"<small>{mode}</small>" if mode else ""}</div>'
+    if last: arrow = ""
+    elif mode == "atau": arrow = '<div class="nx" style="font-family:\'Playfair Display\',serif;font-style:italic;font-size:14px;top:30px;color:#94532B">atau</div>'
+    else: arrow = f'<div class="nx">→{f"<small>{mode}</small>" if mode else ""}</div>'
     return f'<div class="st {cls}"><div class="ic"><svg viewBox="0 0 24 24">{ICON[ic]}</svg></div><div class="tm">{t}</div><div class="ti">{ti}</div><div class="ds">{ds}</div>{arrow}</div>'
 def flow_rows(steps):
     out = ""
@@ -119,8 +121,9 @@ def flow_rows(steps):
     return f'<div class="rows">{out}</div>'
 def flow_day(n, sub, steps):
     return f'<div class="day"><div class="lbl">HARI<b>{n}</b><i>{sub}</i></div>{flow_rows(steps)}</div>'
-H1 = [("Siang", "plane", "Tiba di Selayar", "Dijemput di bandara / pelabuhan", "Mobil", "key"),
-      ("12.30", "food", "Lunch", "Makan siang setibanya"),
+H1 = [("07.00 – 08.00", "plane", "Tiba dengan pesawat", "Dijemput di Bandara H. Aroeppala", "atau", "key"),
+      ("± 12.00", "boat", "Tiba dengan ferri", "Dari Bira, dijemput di Pelabuhan Pamatata", "Mobil", "key"),
+      ("Siang", "food", "Lunch", "12.30, atau setibanya di resort"),
       ("14.00", "home", "Check-in", "Family Superior Bungalow", "", "home"),
       ("16.00", "cup", "Afternoon tea", "Teh/kopi &amp; kudapan"),
       ("Sore", "sun", "Senja di pantai", "Acara bebas, main di pantai"),
@@ -188,10 +191,11 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 3. Jadwal Hari 1-2
 p = mini("Jadwal perjalanan")
-p += '<div class="sub" style="margin:8px 0 0">Jam di bawah adalah perkiraan. Jadwal kami sesuaikan dengan jam penerbangan Anda serta kondisi cuaca dan laut pada hari itu.</div>'
-p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2><div class="sub">Hari pertama dibuat santai agar keluarga bisa beristirahat setelah perjalanan.</div>'
-p += sched([("Siang", "Penjemputan di bandara / pelabuhan", "Tim kami menjemput, lalu mengantar ke resort"),
-            ("12.30", "Lunch", "Makan siang setibanya di Selayar"),
+p += '<div class="sub" style="margin:8px 0 0">Jam di bawah adalah perkiraan. Jadwal kami sesuaikan dengan jam pesawat atau ferri Anda serta kondisi cuaca dan laut pada hari itu.</div>'
+p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2><div class="sub">Jam tiba tergantung moda perjalanan: pesawat tiba pagi, ferri dari Bira tiba siang. Keduanya kami jemput.</div>'
+p += sched([("07.00 – 08.00", "Tiba dengan pesawat", "Dijemput di Bandara H. Aroeppala, lalu ke resort; titip barang dan bersantai di pantai sampai lunch"),
+            ("± 12.00", "Tiba dengan ferri", "Ferri dari Pelabuhan Bira tiba di Pelabuhan Pamatata; dijemput, lalu ke resort"),
+            ("12.30 / setibanya", "Lunch", "Makan siang di resort (tamu ferri: setibanya di resort)"),
             ("14.00", "Check-in SunaRi Beach Resort", "Masuk ke Family Superior Bungalow, istirahat"),
             ("16.00", "Afternoon tea", "Teh/kopi dan kudapan sore"),
             ("Sore", "Acara bebas", "Jalan di pantai, berenang, atau menikmati matahari terbenam"),
@@ -224,7 +228,7 @@ p += '<div class="cols" style="margin-top:6px"><div><h2><span class="n">05</span
     "Tiket pesawat atau kapal ke Selayar pulang-pergi",
     "Pengeluaran pribadi: laundry, minibar, makanan/minuman di luar jadwal, oleh-oleh",
     "Tip untuk guide dan kru (sukarela)", "Asuransi perjalanan"], "no") + '</div><div><h2><span class="n">06</span>Cara <span class="it">pemesanan</span></h2><ol class="steps">' + "".join(f"<li>{x}</li>" for x in [
-    "Hubungi kami dan sebutkan tanggal kedatangan serta jam penerbangan.",
+    "Hubungi kami dan sebutkan tanggal kedatangan serta jam pesawat atau ferri.",
     "Kami cek ketersediaan bungalow dan kapal untuk tanggal tersebut.",
     "Bayar DP untuk mengunci tanggal, lalu lunasi sebelum kedatangan (ketentuan dikonfirmasi saat pemesanan).",
     "Kami kirim konfirmasi beserta kontak guide yang akan menjemput."]) + '</ol></div></div>'
@@ -246,7 +250,7 @@ p += '<div class="qa"><b>Kapan hasil dokumentasi diterima?</b>Foto dan video dro
 p += '<div class="qa"><b>Bagaimana bila cuaca buruk di hari trip?</b>Kapten dan guide mengatur ulang urutan atau rute di hari itu. Bila laut tidak aman, trip ditunda demi keselamatan dan kami bicarakan penggantinya bersama Anda.</div>'
 p += '<div class="qa"><b>Apakah Pasir Timbul selalu muncul?</b>Pasir Timbul muncul saat air surut. Kapten mengatur urutan kunjungan hari itu agar rombongan tiba saat airnya pas.</div>'
 p += '<div class="qa"><b>Apakah bisa menambah peserta?</b>Bisa, hubungi kami untuk penyesuaian harga dan kamar.</div></div></div>'
-p += '<div class="card" style="margin-top:12px;text-align:center"><h4>Siap <span class="it">berangkat?</span></h4><p>Kirim tanggal kedatangan dan jam penerbangan Anda lewat WhatsApp <b>' + WA + '</b>. Kami bantu atur sisanya, dan hari Anda berakhir dengan senja di Pantai Sunari.</p></div>'
+p += '<div class="card" style="margin-top:12px;text-align:center"><h4>Siap <span class="it">berangkat?</span></h4><p>Kirim tanggal kedatangan dan jam pesawat atau ferri Anda lewat WhatsApp <b>' + WA + '</b>. Kami bantu atur sisanya, dan hari Anda berakhir dengan senja di Pantai Sunari.</p></div>'
 pages.append(p)
 
 html = "".join(page(x, i + 1, TOTAL) for i, x in enumerate(pages))
