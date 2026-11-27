@@ -229,7 +229,7 @@ PREP = sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style=\
   + '</ul></div></div>'
   + '<div class="tb"><div class="tl2">' + "".join(f'<div><div><div class="k">{k}</div><div class="s">{d}</div></div><div class="v">{v}</div></div>' for k, v, d in [
       ("UANG MUKA", "DP 50%", "untuk kunci tanggal"), ("GANTI JADWAL", "Bisa", "sesuai ketersediaan"), ("PEMBATALAN", "Tanpa refund", "setelah DP dibayar")]) + '</div>'
-  + f'<div class="tp"><img class="ph" src="{PH}senja_siluet.jpg" style="object-position:center 72%"></div></div>'
+  + f'<div class="tp"><img class="ph" src="{PH}kru_bantu.jpg" style="object-position:center 80%"></div></div>'
   + '</div>' + foot())
 
 S = [S[0], S[1], S[2], ARR, S[3], DAY2, S[4], FOOD, PREP, S[5]]
