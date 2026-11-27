@@ -73,6 +73,7 @@ ul.l.ok li::before{background:#D9703F;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,6
 .flow.inpage .arr ul{font-size:10px;line-height:1.3} .flow.inpage .arr li::before{top:6px}
 .flow.inpage .join{font-size:9px} .flow.inpage .join span{padding:4px 12px}
 .flow.inpage .legend{margin-top:10px;font-size:10px}
+.tide{margin:2px 0 8px;padding:7px 12px;border-left:3px solid #D9703F;background:#FFFDF9;font-size:11.5px;border-radius:0 3px 3px 0}
 /* alur trip */
 .flow .day{display:flex;gap:14px;margin-top:16px}
 .flow .lbl{flex:0 0 70px;width:70px;border-radius:4px;background:#5A3E31;color:#FBF4EC;text-shadow:none;display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -190,7 +191,7 @@ H3 = [("05.30", "bag", "Bersiap", "Barang dibawa ke mobil", "", "home"),
       ("Perjalanan", "food", "Breakfast take away", "Sarapan di perjalanan", "Mobil"),
       ("Tiba", "plane", "Pulang", "Diantar ke bandara / pelabuhan", "", "key")]
 p = mini("Alur trip")
-p += '<h2 style="margin-top:12px">Alur trip <span class="it">dari tiba sampai pulang</span></h2><div class="sub">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan.</div>'
+p += '<h2 style="margin-top:12px">Alur trip <span class="it">dari tiba sampai pulang</span></h2><div class="sub">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan; jadwal trip ke Bahuluang menyesuaikan pasang-surut air laut.</div>'
 FLOW = ('<div class="flow">'
       + flow_day("1", "Tiba &amp; santai", H1, arrival()) +flow_day("2", "Trip Bahuluang", H2) + flow_day("3", "Pulang", H3)
       + '<div class="legend"><span><i style="background:#D9703F"></i>Momen utama</span><span><i style="background:#A67C64"></i>Di resort</span>'
@@ -203,7 +204,7 @@ EXPORT = f'''<template data-export="Alur_Trip_Bahuluang"><div class="page" style
   <div class="hd"><img src="../assets/logo-sunari-color.png" style="width:150px"><div class="rule"><i></i>{SUN}<i></i></div>
   <div class="caps" style="font-size:10px">3 Hari 2 Malam di Selayar · Sehari ke Bahuluang · 4 Dewasa + 2 Anak</div>
   <h1 style="font-size:32px">Alur Trip <span class="it">dari tiba sampai pulang</span></h1>
-  <p style="font-size:12px">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan.</p></div>
+  <p style="font-size:12px">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan.<br><b style="color:#A2461F">Catatan:</b> jadwal trip ke Bahuluang menyesuaikan kondisi pasang-surut air laut.</p></div>
   {FLOW}
   <div style="text-align:center;margin-top:18px;padding-top:12px;border-top:1px solid rgba(138,95,72,.45)">
   <div class="caps" style="font-size:9px">Informasi &amp; reservasi</div>
@@ -237,18 +238,18 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 3. Jadwal Hari 1-2
 p = mini("Jadwal perjalanan")
-p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2><div class="sub">Jam adalah perkiraan, menyesuaikan jam pesawat atau ferri Anda. Kedua pilihan kami jemput.</div>'
+p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2>'
 p += arrival()
 p += sched([("Saat kamar siap", "Check-in", "Paling lambat 14.00; istirahat di Family Superior Bungalow"),
             ("16.00", "Afternoon tea", "Teh/kopi dan kudapan sore"),
             ("Sore", "Acara bebas", "Jalan di pantai, berenang, menikmati senja"),
             ("19.00", "Dinner", "Makan malam, lalu istirahat untuk trip besok")])
-p += '<h2 style="margin-top:20px"><span class="n">HARI 02</span>Trip sehari <span class="it">ke Pulau Bahuluang</span></h2><div class="sub">Hari utama liburan Anda. Berangkat pagi agar laut masih tenang dan waktu di pulau lebih panjang.</div>'
+p += '<h2 style="margin-top:14px"><span class="n">HARI 02</span>Trip sehari <span class="it">ke Pulau Bahuluang</span></h2><div class="sub">Hari utama liburan Anda. Berangkat pagi agar waktu di pulau lebih panjang.</div><div class="tide"><b style="color:#A2461F">Catatan:</b> jadwal trip ke Bahuluang menyesuaikan kondisi pasang-surut air laut.</div>'
 p += sched([("07.00", "Breakfast", "Sarapan di resort"),
             ("08.00", "Berangkat ke dermaga", "Naik mobil; guide memberi briefing keselamatan"),
             ("08.30", "Menyeberang", "Naik kapal ke Pulau Bahuluang, pelampung untuk semua"),
             ("10.00", "Pantai Bone Bakka", "Main di pantai, paddleboard, foto drone &amp; DSLR"),
-            ("11.30", "Goa Lipang", "Menjelajah goa bersama guide; jalan pelan dan ikuti arahan guide"),
+            ("11.30", "Goa Lipang", "Jelajah goa bersama guide"),
             ("13.00", "Lunch di pulau", "Makan siang dan minum bersama rombongan"),
             ("14.00", "Makam Karang", "Snorkeling bersama tim, dokumentasi underwater"),
             ("15.00", "Pasir Timbul", "Jalan di pasir putih tengah laut; waktu ikut pasang-surut"),
