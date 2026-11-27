@@ -97,7 +97,7 @@ def sq(inner, cls=""): return f'<div class="sq {cls}"><div class="frame"></div>{
 S = []
 
 # 1 sampul
-S.append(sq(f'''<div class="bg"><img class="ph" src="{PH}hero.jpg" style="object-position:center 55%"></div><div class="shade"></div>
+S.append(sq(f'''<div class="bg"><img class="ph" src="{PH}g_hero.jpg" style="object-position:center 55%"></div><div class="shade"></div>
 <div class="top"><img src="{LOGO_CREAM}"></div>
 <div class="txt"><div class="k">SUNARI BEACH RESORT SELAYAR</div><div class="t serif">3 Hari 2 Malam<br>di Selayar</div><div class="s serif">Sehari ke Bahuluang</div>
 <div class="chips"><span>Keluarga 4 Dewasa + 2 Anak</span><span>Semua sudah termasuk</span></div></div>''', "cover"))
@@ -115,7 +115,7 @@ S.append(sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style
 dest = [("pantai", "center 50%", "Pantai Bone Bakka"), ("gua", "center 60%", "Goa Lipang"), ("karang", "center 55%", "Makam Karang"), ("pasir", "center 70%", "Pasir Timbul")]
 S.append(sq('<div class="pad">' + head("Sehari ke Bahuluang<br><span style=\"color:#C0592C\">Destinasi trip</span>")
   + '<div class="h1 serif" style="font-size:58px;margin-top:26px">Empat sorotan <span class="it">Pulau Bahuluang</span></div>'
-  + '<div class="g4">' + "".join(f'<div><img class="ph" src="{PH}{k}.jpg" style="object-position:{p}"><div class="lbl">{t}</div></div>' for k, p, t in dest) + '</div></div>' + foot()))
+  + '<div class="g4">' + "".join(f'<div><img class="ph" src="{PH}g_{k}.jpg" style="object-position:{p}"><div class="lbl">{t}</div></div>' for k, p, t in dest) + '</div></div>' + foot()))
 
 # 4 alur 3 hari
 days = [("1", "TIBA &amp; SANTAI", [("k", "Tiba: pesawat 07.00–08.00 atau ferri dari Bira ±12.00"), ("", "Welcome drink &amp; lunch"), ("", "Check-in saat kamar siap"), ("", "Senja di pantai"), ("", "Dinner")]),
@@ -129,7 +129,7 @@ S.append(sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style
 # 5 penginapan
 S.append(sq('<div class="pad">' + head("SunaRi Beach Resort Selayar<br><span style=\"color:#C0592C\">Penginapan</span>")
   + '<div class="h1 serif" style="font-size:58px;margin-top:26px">Family <span class="it">Superior Bungalow</span></div>'
-  + f'<div class="room"><div class="p"><img class="ph" src="{PH}bungalow.jpg"></div><div class="p"><img class="ph" src="{PH}kamar.jpg"></div></div>'
+  + f'<div class="room"><div class="p"><img class="ph" src="{PH}g_bungalow.jpg"></div><div class="p"><img class="ph" src="{PH}g_kamar.jpg"></div></div>'
   + '<ul class="room" style="display:block;list-style:none;margin-top:20px">' + "".join(f'<li style="font-size:24px;line-height:1.4;padding:7px 0 7px 30px;position:relative"><span style="position:absolute;left:4px;top:18px;width:11px;height:11px;border-radius:50%;background:#D9703F"></span>{x}</li>' for x in [
     "Satu rumah dua lantai untuk 4 dewasa + 2 anak", "2 kamar mandi, AC, Wi-Fi, teras pribadi", "Di tepi Pantai Sunari, menghadap senja"]) + '</ul></div>' + foot("Sarapan setiap pagi")))
 
@@ -140,7 +140,7 @@ S.append(sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style
     "Chat kami: sebutkan tanggal kedatangan dan jumlah tamu",
     "Pilih kedatangan: pesawat atau ferri dari Bira",
     "Kami kirim harga, ketersediaan, dan detail pembayaran"]) + '</ol>'
-  + f'<div style="height:250px;border-radius:8px;overflow:hidden;margin-top:28px"><img class="ph" src="{PH}pasir2.jpg" style="object-position:center 60%"></div>'
+  + f'<div style="height:250px;border-radius:8px;overflow:hidden;margin-top:28px"><img class="ph" src="{PH}g_pasir2.jpg" style="object-position:center 60%"></div>'
   + f'<div class="cta" style="margin-top:24px"><div class="t">Tanya harga &amp; jadwal</div><div class="w">WhatsApp {WA}</div></div></div>'))
 
 # ---------------------------------------------------------------- tambahan: total 10 gambar
@@ -217,7 +217,7 @@ FOOD = sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style=\
   + f'<tr><td>Hari 1</td><td>{no}</td><td>{ok}</td><td>{ok}</td><td>{ok}</td></tr>'
   + f'<tr><td>Hari 2</td><td>{ok}</td><td>{ok} <span style="font-size:17px">di pulau</span></td><td>{ok}</td><td>{ok}</td></tr>'
   + f'<tr><td>Hari 3</td><td>{ok} <span style="font-size:17px">take away</span></td><td>{no}</td><td>{no}</td><td>{no}</td></tr></table>'
-  + f'<div class="ph2"><div><img class="ph" src="{PH}bakar.jpg" style="object-position:center 55%"></div><div><img class="ph" src="{PH}resto.jpg" style="object-position:center 60%"></div></div>'
+  + f'<div class="ph2"><div><img class="ph" src="{PH}g_bakar.jpg" style="object-position:center 55%"></div><div><img class="ph" src="{PH}g_resto.jpg" style="object-position:center 60%"></div></div>'
   + '</div>' + foot("Air minum selama trip"))
 
 PREP = sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style=\"color:#C0592C\">Persiapan &amp; ketentuan</span>")
