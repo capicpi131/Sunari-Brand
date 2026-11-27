@@ -2,31 +2,40 @@
 *{margin:0;padding:0;box-sizing:border-box}body{background:#bbb;font-family:Montserrat,sans-serif;-webkit-font-smoothing:antialiased}
 .pg{position:relative;width:1080px;height:1920px;margin:20px auto;background:#FBF4EC;color:#3A2819;overflow:hidden}
 .f1{position:absolute;inset:40px;border:1.5px solid rgba(138,95,72,.45)}.f2{position:absolute;inset:52px;border:1px solid rgba(138,95,72,.22)}
-.in{position:absolute;left:120px;right:120px;top:120px;text-align:center}
-.lg{width:230px}
-.kick{font-weight:600;font-size:18px;letter-spacing:.42em;text-transform:uppercase;color:#7A5038;margin-top:30px}
-h1{font-family:'Playfair Display',serif;font-weight:400;font-size:90px;line-height:1;margin-top:18px;letter-spacing:.01em}
+.in{position:absolute;left:110px;right:110px;top:140px;text-align:center}
+.lg{width:210px}
+.kick{font-weight:600;font-size:17px;letter-spacing:.42em;text-transform:uppercase;color:#7A5038;margin-top:22px}
+h1{font-family:'Playfair Display',serif;font-weight:400;font-size:84px;line-height:1;margin-top:14px}
 h1 i{color:#94532B}
-.rule{display:flex;align-items:center;justify-content:center;gap:16px;margin:34px 0 0}
+.rule{display:flex;align-items:center;justify-content:center;gap:16px;margin:26px 0 0}
 .rule span{width:90px;height:1px;background:rgba(138,95,72,.6)}.rule b{width:7px;height:7px;transform:rotate(45deg);background:#D9703F}
-.how{font-family:'Playfair Display',serif;font-style:italic;font-size:27px;color:#5A3E31;margin-top:28px}
-.sec{margin-top:44px}
-.grid{display:grid;grid-template-columns:1fr 1fr;column-gap:30px}
-.st{font-weight:600;font-size:17px;letter-spacing:.5em;text-transform:uppercase;color:#A2461F}
-.it{margin-top:14px}
-.it .n{font-family:'Playfair Display',serif;font-size:35px;line-height:1.1}
-.it .e{font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:#9A7B66;margin-top:4px}
-.porsi{margin:44px auto 0;width:560px;padding:20px 34px;border:1px solid rgba(138,95,72,.35)}
-.pg2{display:grid;grid-template-columns:1fr;gap:6px;margin-top:12px;font-size:20px;color:#5A3E31}
-.pg2 div{display:flex;justify-content:space-between;border-bottom:1px dotted rgba(138,95,72,.4);padding-bottom:4px}.pg2 b{color:#A2461F;font-weight:600}
-.ft{position:absolute;left:130px;right:130px;bottom:100px;text-align:center}
-.ft .t{font-weight:600;font-size:16px;letter-spacing:.34em;text-transform:uppercase;color:#7A5038}
-.ft .s{font-family:'Playfair Display',serif;font-style:italic;font-size:24px;color:#94532B;margin-top:10px}
+/* aturan singkat */
+.how{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:26px;font-size:20px;color:#5A3E31}
+.how .pill{padding:8px 18px;border-radius:30px;background:#5A3E31;color:#FBF4EC;font-weight:600;letter-spacing:.04em}
+.how .eq{font-family:'Playfair Display',serif;font-size:28px;color:#A2461F}
+/* kartu langkah */
+.card{margin-top:46px;border:1.5px solid rgba(138,95,72,.4);border-radius:10px;background:#FFFDF9;text-align:left;overflow:hidden}
+.card .hd{display:flex;align-items:center;gap:16px;padding:16px 26px;background:#F3E7DA;border-bottom:1.5px solid rgba(138,95,72,.3)}
+.card .no{width:42px;height:42px;border-radius:50%;background:#D9703F;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center;flex:0 0 42px}
+.card .tt{font-weight:700;font-size:19px;letter-spacing:.2em;text-transform:uppercase;color:#5A3E31}
+.card .tt span{font-weight:500;letter-spacing:.04em;text-transform:none;color:#94532B;font-size:18px;margin-left:8px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:15px 26px;border-bottom:1px dashed rgba(138,95,72,.35)}
+.row:last-child{border-bottom:0}
+.row .n{font-family:'Playfair Display',serif;font-size:31px;line-height:1.15}
+.row .e{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#9A7B66;white-space:nowrap}
+/* porsi */
+.porsi{margin-top:46px;border:1.5px solid rgba(138,95,72,.4);border-radius:10px;overflow:hidden;text-align:left}
+.porsi .hd{padding:14px 26px;background:#5A3E31;color:#FBF4EC;font-weight:700;font-size:16px;letter-spacing:.24em;text-transform:uppercase}
+.porsi .r{display:flex;justify-content:space-between;padding:11px 26px;font-size:21px;border-bottom:1px dashed rgba(138,95,72,.35);background:#FFFDF9}
+.porsi .r:last-child{border-bottom:0}.porsi .r b{color:#A2461F}
+.ft{position:absolute;left:110px;right:110px;bottom:84px;text-align:center}
+.ft .t{font-weight:600;font-size:16px;letter-spacing:.32em;text-transform:uppercase;color:#7A5038}
+.ft .s{font-family:'Playfair Display',serif;font-style:italic;font-size:24px;color:#94532B;margin-top:8px}
 </style></head><body><div class="pg" id="menu-sarapan"><div class="f1"></div><div class="f2"></div>
 <div class="in"><img class="lg" src="../../assets/logo-sunari-color.png"><div class="kick">Bajoy Beach Resto</div>
 <h1>Menu <i>Sarapan</i></h1><div class="rule"><span></span><b></b><span></span></div>
-<div class="how">Termasuk harga kamar · 1 pax = 1 makanan &amp; 1 minuman</div>
-<div class="sec"><div class="st">Makanan</div><div class="it"><div class="n">Nasi Goreng</div><div class="e">Fried rice</div></div><div class="it"><div class="n">Mie Goreng</div><div class="e">Fried noodles</div></div><div class="it"><div class="n">Roti Bakar Omelet</div><div class="e">Toast omelette</div></div><div class="it"><div class="n">Roti Bakar Telur Orak-arik</div><div class="e">Toast scrambled egg</div></div><div class="it"><div class="n">Roti Bakar Cokelat / Keju</div><div class="e">Toast chocolate / cheese</div></div><div class="it"><div class="n">Pancake</div><div class="e">Pancake</div></div></div>
-<div class="sec"><div class="st">Minuman</div><div class="it"><div class="n">Kopi Hitam</div><div class="e">Black coffee</div></div><div class="it"><div class="n">Kopi Susu</div><div class="e">Coffee milk</div></div><div class="it"><div class="n">Teh</div><div class="e">Tea</div></div><div class="it"><div class="n">Teh Susu</div><div class="e">Milk tea</div></div></div>
-<div class="porsi"><div class="st" style="font-size:15px">Porsi sarapan per kamar</div><div class="pg2"><div><span>Standard &amp; VIP Standard</span><b>2 pax</b></div><div><span>Superior &amp; VIP Superior</span><b>2 pax</b></div><div><span>Family Superior</span><b>6 pax</b></div><div><span>Extra bed</span><b>1 pax</b></div></div></div></div>
+<div class="how"><span>Termasuk harga kamar</span><span class="eq">·</span><span class="pill">1 orang = 1 makanan + 1 minuman</span></div>
+<div class="card"><div class="hd"><div class="no">1</div><div class="tt">Makanan<span>pilih 1</span></div></div><div class="row"><div class="n">Nasi Goreng</div><div class="e">Fried rice</div></div><div class="row"><div class="n">Mie Goreng</div><div class="e">Fried noodles</div></div><div class="row"><div class="n">Roti Bakar Omelet</div><div class="e">Toast omelette</div></div><div class="row"><div class="n">Roti Bakar Telur Orak-arik</div><div class="e">Toast scrambled egg</div></div><div class="row"><div class="n">Roti Bakar Cokelat / Keju</div><div class="e">Toast chocolate / cheese</div></div><div class="row"><div class="n">Pancake</div><div class="e">Pancake</div></div></div>
+<div class="card"><div class="hd"><div class="no">2</div><div class="tt">Minuman<span>pilih 1</span></div></div><div class="row"><div class="n">Kopi Hitam</div><div class="e">Black coffee</div></div><div class="row"><div class="n">Kopi Susu</div><div class="e">Coffee milk</div></div><div class="row"><div class="n">Teh</div><div class="e">Tea</div></div><div class="row"><div class="n">Teh Susu</div><div class="e">Milk tea</div></div></div>
+<div class="porsi"><div class="hd">Jumlah sarapan per kamar</div><div class="r"><span>Standard &amp; VIP Standard</span><b>2 orang</b></div><div class="r"><span>Superior &amp; VIP Superior</span><b>2 orang</b></div><div class="r"><span>Family Superior</span><b>6 orang</b></div><div class="r"><span>Tambahan extra bed</span><b>1 orang</b></div></div></div>
 <div class="ft"><div class="t">Disajikan mulai pukul 07.00 WITA</div><div class="s">WhatsApp 0813-4150-4973 · 0821-8903-3044</div></div></div></body></html>
