@@ -1,0 +1,70 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#bbb;font-family:Montserrat,sans-serif;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums tabular-nums}
+.pg{position:relative;width:1080px;height:1920px;margin:20px auto;background:#FBF4EC;color:#3A2819;overflow:hidden}
+.f1{position:absolute;inset:40px;border:1.5px solid rgba(138,95,72,.45)}.f2{position:absolute;inset:52px;border:1px solid rgba(138,95,72,.22)}
+.in{position:absolute;left:84px;right:84px;top:110px}
+.top{text-align:center}
+.lg{width:180px}
+.kick{font-weight:600;font-size:15px;letter-spacing:.42em;text-transform:uppercase;color:#7A5038;margin-top:14px}
+h1{font-family:'Playfair Display',serif;font-weight:400;font-size:76px;line-height:1;margin-top:10px}h1 i{color:#94532B}
+.rule{display:flex;align-items:center;justify-content:center;gap:16px;margin:20px 0 0}
+.rule span{width:90px;height:1px;background:rgba(138,95,72,.6)}.rule b{width:7px;height:7px;transform:rotate(45deg);background:#D9703F}
+.hours{display:flex;justify-content:center;gap:14px;margin-top:20px}
+.hours span{padding:8px 20px;border-radius:30px;background:#5A3E31;color:#FBF4EC;font-weight:600;font-size:18px;letter-spacing:.06em}
+.hours span.o{background:transparent;color:#5A3E31;box-shadow:inset 0 0 0 1.5px #5A3E31}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:30px;align-items:start}
+.card{border:1.5px solid rgba(138,95,72,.4);border-radius:10px;background:#FFFDF9;overflow:hidden;margin-bottom:22px}
+.card .hd{display:flex;justify-content:space-between;align-items:center;padding:11px 20px;background:#F3E7DA;border-bottom:1.5px solid rgba(138,95,72,.3)}
+.card .hd b{font-weight:700;font-size:16px;letter-spacing:.24em;text-transform:uppercase;color:#5A3E31}
+.card .hd span{font-size:12px;font-weight:600;letter-spacing:.12em;color:#94532B;text-transform:uppercase}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:8px 20px;border-bottom:1px dashed rgba(138,95,72,.32)}
+.row:last-child{border-bottom:0}
+.row .n{font-family:'Playfair Display',serif;font-size:23px;line-height:1.2}
+.row .p{font-weight:600;font-size:19px;color:#A2461F}
+.note{font-size:14px;color:#7A5038;text-align:center;margin-top:-4px;letter-spacing:.04em}
+.ft{position:absolute;left:84px;right:84px;bottom:76px;text-align:center}
+/* teks timbul (emboss) & mudah dibaca: warna lebih gelap, highlight putih tajam di bawah, bayangan tipis di atas */
+.pg{color:#2E1F14}
+h1,.row .n,.ft .s{text-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.35)}
+h1 i,.ft .s{color:#8A4A22}
+.kick,.card .hd b,.ft .t,.note{text-shadow:0 1px 0 #fff;color:#5A3E31}
+.row .n{font-size:25px;color:#2E1F14;font-weight:500}
+.row .p{font-size:21px;font-weight:700;color:#9A3E17;text-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.25)}
+.card{box-shadow:inset 1px 1px 2px rgba(90,62,49,.18),inset -1px -1px 0 #fff,0 1px 0 #fff}
+.card .hd b{font-size:17px}
+.hours span{text-shadow:0 -1px 0 rgba(0,0,0,.35);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 1px 0 #fff}
+.hours span.o{text-shadow:0 1px 0 #fff}
+.note{font-size:15px}
+.ft .t{font-weight:600;font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:#7A5038}
+.ft .s{font-family:'Playfair Display',serif;font-style:italic;font-size:23px;color:#94532B;margin-top:6px}
+/* terjemahan di bawah setiap teks */
+.en{display:block;font-family:'Playfair Display',serif;font-style:italic;font-weight:400;letter-spacing:0;text-transform:none;font-size:15px;line-height:1.2;color:#8A5F48;text-shadow:0 1px 0 #fff;margin-top:1px}
+.row{padding:4px 18px 5px!important;align-items:center!important}
+.row .n{font-size:22px!important;line-height:1.15!important}
+.row .p{font-size:19px!important}
+.card .hd{padding:7px 18px!important}.card .hd .en{font-size:14px;color:#94532B}
+.card{margin-bottom:14px!important}
+.cols{margin-top:22px!important;gap:22px!important}
+.hours span{display:flex;flex-direction:column;align-items:center;padding:6px 20px!important;border-radius:16px!important;font-size:17px!important}
+.hours span .en{font-size:13px;color:#F3D9B8;text-shadow:none}.hours span.o .en{color:#8A5F48}
+.in{top:88px!important}.lg{width:160px!important}h1{font-size:68px!important}
+.note .en{font-size:13px}.ft .en{font-size:14px}.ft{bottom:66px!important}
+
+/* ---- A4 ---- */
+.pg{width:1240px!important;height:1754px!important}
+.in{left:84px!important;right:84px!important;top:92px!important}
+.lg{width:180px!important}h1{font-size:80px!important}
+.cols{grid-template-columns:1fr 1fr 1fr!important;gap:22px!important;margin-top:30px!important}
+.row{padding:6px 16px 7px!important}
+.row .n{font-size:22px!important}.row .p{font-size:19px!important}
+.card .hd{padding:8px 16px!important}
+.card{margin-bottom:18px!important}
+.ft{bottom:72px!important}
+</style></head><body><div class="pg" id="menu-bajoy-a4"><div class="f1"></div><div class="f2"></div>
+<div class="in"><div class="top"><img class="lg" src="../../assets/logo-sunari-color.png"><div class="kick">Resto &amp; Bar · Pantai Sunari</div>
+<h1>Bajoy <i>Beach Resto</i></h1><div class="rule"><span></span><b></b><span></span></div>
+<div class="hours"><span>Buka 09.00 WITA<i class="en">Open 9:00 AM</i></span><span class="o">Tutup 21.00 WITA<i class="en">Close 9:00 PM</i></span></div></div>
+<div class="cols"><div><div class="card"><div class="hd"><div><b>Foods</b><div class="en">Makanan</div></div><span>12 menu</span></div><div class="row"><div><div class="n">Nasi Goreng Sunari</div><div class=en>Sunari fried rice</div></div><div class="p">45k</div></div><div class="row"><div><div class="n">Nasi Goreng Seafood</div><div class=en>Seafood fried rice</div></div><div class="p">45k</div></div><div class="row"><div><div class="n">Nasi Goreng Egois</div><div class=en>Egois fried rice</div></div><div class="p">45k</div></div><div class="row"><div><div class="n">Nasi Goreng Kampung</div><div class=en>Village-style fried rice</div></div><div class="p">45k</div></div><div class="row"><div><div class="n">Ayam Lalapan</div><div class=en>Fried chicken &amp; fresh vegetables</div></div><div class="p">50k</div></div><div class="row"><div><div class="n">Ayam Bakar</div><div class=en>Grilled chicken</div></div><div class="p">50k</div></div><div class="row"><div><div class="n">Beef Sandwich</div><div class=en>Sandwich daging sapi</div></div><div class="p">30k</div></div><div class="row"><div><div class="n">Beef Sandwich D.</div><div class=en>Sandwich daging sapi D.</div></div><div class="p">40k</div></div><div class="row"><div><div class="n">Egg Sandwich</div><div class=en>Sandwich telur</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Egg Sandwich D.</div><div class=en>Sandwich telur D.</div></div><div class="p">35k</div></div><div class="row"><div><div class="n">Indomie Goreng</div><div class=en>Fried instant noodles</div></div><div class="p">20k</div></div><div class="row"><div><div class="n">Indomie Kuah</div><div class=en>Instant noodle soup</div></div><div class="p">20k</div></div></div><div class="card"><div class="hd"><div><b>Snack</b><div class="en">Camilan</div></div><span>5 menu</span></div><div class="row"><div><div class="n">French Fries</div><div class=en>Kentang goreng</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Toast</div><div class=en>Roti bakar</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Banana Roll</div><div class=en>Pisang gulung</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Fried Cassava</div><div class=en>Singkong goreng</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Fried Banana</div><div class=en>Pisang goreng</div></div><div class="p">25k</div></div></div></div>
+<div><div class="card"><div class="hd"><div><b>Drinks</b><div class="en">Minuman</div></div><span>12 menu</span></div><div class="row"><div><div class="n">Chocolate M.S</div><div class=en>Cokelat M.S</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Oreo M.S</div><div class=en>Oreo M.S</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Orange Punch</div><div class=en>Punch jeruk</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Watermelon L.M</div><div class=en>Semangka L.M</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Green Tea</div><div class=en>Teh hijau</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Hot Tea</div><div class=en>Teh panas</div></div><div class="p">10k</div></div><div class="row"><div><div class="n">Ice Tea</div><div class=en>Es teh</div></div><div class="p">20k</div></div><div class="row"><div><div class="n">Black Coffee</div><div class=en>Kopi hitam</div></div><div class="p">20k</div></div><div class="row"><div><div class="n">Coffee Milk</div><div class=en>Kopi susu</div></div><div class="p">20k</div></div><div class="row"><div><div class="n">Milk Tea</div><div class=en>Teh susu</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Original Coconut</div><div class=en>Kelapa muda</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Saronso</div></div><div class="p">25k</div></div></div><div class="card"><div class="hd"><div><b>Soft Drink</b><div class="en">Minuman ringan</div></div><span>6 menu</span></div><div class="row"><div><div class="n">Coke</div></div><div class="p">15k</div></div><div class="row"><div><div class="n">Fanta</div></div><div class="p">15k</div></div><div class="row"><div><div class="n">Sprite</div></div><div class="p">15k</div></div><div class="row"><div><div class="n">Fresh Tea</div></div><div class="p">15k</div></div><div class="row"><div><div class="n">Pulpy</div></div><div class="p">15k</div></div><div class="row"><div><div class="n">Mineral Water</div><div class=en>Air mineral</div></div><div class="p">10k</div></div></div></div>
+<div><div class="card"><div class="hd"><div><b>Juice</b><div class="en">Jus buah</div></div><span>8 menu</span></div><div class="row"><div><div class="n">Avocado</div><div class=en>Alpukat</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Watermelon</div><div class=en>Semangka</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Melon</div><div class=en>Melon</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Mango</div><div class=en>Mangga</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Dragon Fruit</div><div class=en>Buah naga</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Soursop Fruit</div><div class=en>Sirsak</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Apple</div><div class=en>Apel</div></div><div class="p">25k</div></div><div class="row"><div><div class="n">Orange</div><div class=en>Jeruk</div></div><div class="p">25k</div></div></div><div class="note" style="margin-top:22px">Harga dalam ribuan rupiah (k = 1.000)<div class="en">Prices in thousand rupiah (k = 1,000)</div></div></div></div></div>
+<div class="ft"><div class="t">Informasi &amp; reservasi</div><div class="en">Information &amp; reservation</div><div class="s">WhatsApp 0813-4150-4973 · 0821-8903-3044</div></div></div></body></html>

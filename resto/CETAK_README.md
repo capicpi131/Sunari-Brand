@@ -16,3 +16,15 @@
 - Saran bahan: art carton / fancy paper 260–310 gsm, laminasi doff, atau dimasukkan ke akrilik/menu holder.
 
 Membuat ulang: `node resto/render_print.js` (setelah build.py masing-masing menu).
+
+## Versi A4 (210 x 297 mm)
+| File | Isi |
+|---|---|
+| `menu-sarapan/A4_Menu_Sarapan_SunaRi_CETAK.pdf` | Menu sarapan A4, bleed 3 mm (216 x 303 mm) |
+| `menu-sarapan/A4_Menu_Sarapan_SunaRi_CETAK_crop-marks.pdf` | Sama, + tanda potong |
+| `menu-sarapan/A4_Menu_Sarapan_SunaRi_HD.png` | PNG 2480 x 3508 px (A4 300 dpi) |
+| `menu-bajoy-wa/A4_Menu_Bajoy_Beach_Resto_CETAK.pdf` | Menu Bajoy A4, bleed 3 mm |
+| `menu-bajoy-wa/A4_Menu_Bajoy_Beach_Resto_CETAK_crop-marks.pdf` | Sama, + tanda potong |
+| `menu-bajoy-wa/A4_Menu_Bajoy_Beach_Resto_HD.png` | PNG 2480 x 3508 px (A4 300 dpi) |
+
+Membuat ulang: `python3 resto/menu-sarapan/build_a4.py && python3 resto/menu-bajoy-wa/build_a4.py && node resto/render_a4.js`
