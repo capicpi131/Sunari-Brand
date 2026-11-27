@@ -1,9 +1,9 @@
-// Render each document to PDF + PNG pages. Usage: python3 services/build_docs.py && node services/render.js
+// Render each document to PDF + PNG pages. Usage: python3 services/build_docs.py && node services/render.js [prefix, mis. 06_Paket]
 const { chromium } = require('playwright'); const path = require('path'); const fs = require('fs');
 (async () => {
   const b = await chromium.launch();
   fs.mkdirSync(path.join(__dirname, 'png'), { recursive: true });
-  for (const f of fs.readdirSync(__dirname).filter(f => /^\d\d_.*\.html$/.test(f))) {
+  for (const f of fs.readdirSync(__dirname).filter(f => /^\d\d_.*\.html$/.test(f) && (!process.argv[2] || f.startsWith(process.argv[2])))) {
     const key = f.replace('.html', '');
     const p = await b.newPage({ viewport: { width: 900, height: 1200 }, deviceScaleFactor: 2 });
     await p.goto('file://' + path.join(__dirname, f)); await p.waitForLoadState('networkidle'); await p.evaluate(() => document.fonts.ready);
