@@ -136,10 +136,10 @@ H2 = [("06.30", "food", "Breakfast", "Sarapan di resort", "Mobil"),
       ("15.30", "boat", "Kembali", "Kapal ke dermaga, mobil ke resort", "Mobil"),
       ("16.30", "cup", "Afternoon tea", "Bersantai di resort", "", "home"),
       ("19.00", "moon", "Dinner", "Makan malam di resort")]
-H3 = [("07.00", "food", "Breakfast", "Sarapan di resort"),
-      ("Pagi", "sun", "Acara bebas", "Main di pantai, berkemas"),
-      ("12.00", "bag", "Lunch &amp; check-out", "Check-out dari bungalow", "Mobil", "home"),
-      ("Siang", "plane", "Pulang", "Diantar ke bandara / pelabuhan", "", "key")]
+H3 = [("05.30", "bag", "Bersiap", "Barang dibawa ke mobil", "", "home"),
+      ("06.00 – 07.00", "car", "Check-out &amp; berangkat", "Berangkat dari SunaRi", "Mobil", "home"),
+      ("Perjalanan", "food", "Breakfast take away", "Sarapan di perjalanan", "Mobil"),
+      ("Tiba", "plane", "Pulang", "Diantar ke bandara / pelabuhan", "", "key")]
 p = mini("Alur trip")
 p += '<h2 style="margin-top:12px">Alur trip <span class="it">dari tiba sampai pulang</span></h2><div class="sub">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan dan mengikuti penerbangan, cuaca, serta pasang-surut.</div>'
 FLOW = ('<div class="flow">'
@@ -164,16 +164,16 @@ EXPORT = f'''<template data-export="Alur_Trip_Bahuluang"><div class="page" style
 # ---------------------------------------------------------------- 2. Yang didapat
 p = mini("Yang Anda dapatkan")
 p += '<h2><span class="n">01</span>Penginapan <span class="it">&amp; transportasi</span></h2>'
-p += f'''<div class="cols" style="align-items:flex-start"><div>{img("bungalow", 150)}<div class="cap">Family Superior Bungalow</div></div><div>
+p += f'''<div class="cols" style="align-items:flex-start"><div>{img("bungalow", 140)}<div class="cap">Family Superior Bungalow</div></div><div>
 {ul(["<b>Family Superior Bungalow</b> selama 2 malam: satu rumah dua lantai, cukup untuk 4 dewasa dan 2 anak.",
-     "Check-in Hari 1 pukul 14.00, check-out Hari 3 pukul 12.00.",
+     "Check-in Hari 1 pukul 14.00, check-out Hari 3 pukul 06.00–07.00.",
      "<b>Antar-jemput bandara atau pelabuhan</b> saat tiba dan pulang, dari dan ke mana pun di Selayar.",
      "<b>Mobil</b> dari resort ke dermaga dan kembali pada hari trip.",
      "<b>Kapal</b> pulang-pergi ke Pulau Bahuluang, lengkap dengan awak kapal."])}</div></div>'''
-p += '<h2><span class="n">02</span>Makan <span class="it">&amp; minum</span></h2><div class="sub">9 kali makan selama tiga hari, ditambah air minum untuk seluruh rombongan saat trip Bahuluang.</div>'
+p += '<h2><span class="n">02</span>Makan <span class="it">&amp; minum</span></h2><div class="sub">8 kali makan (sarapan Hari 3 take away), ditambah air minum untuk rombongan saat trip Bahuluang.</div>'
 ok = "✓"; no = "–"
 p += '<div class="mealtbl big">' + table(["Hari", "Breakfast", "Lunch", "Afternoon tea", "Dinner"], [
-    ("Hari 1", no, ok, ok, ok), ("Hari 2", ok, ok + " (di pulau)", ok, ok), ("Hari 3", ok, ok, no, no)], right_from=1) + "</div>"
+    ("Hari 1", no, ok, ok, ok), ("Hari 2", ok, ok + " (di pulau)", ok, ok), ("Hari 3", ok + " (take away)", no, no, no)], right_from=1) + "</div>"
 p += '<h2><span class="n">03</span>Trip sehari <span class="it">ke Pulau Bahuluang</span></h2>'
 p += '<div class="cols"><div>' + ul([
     "<b>Guide &amp; tim</b> mendampingi dari berangkat sampai kembali, termasuk saat masuk goa dan snorkeling.",
@@ -212,11 +212,11 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 4. Hari 3, harga, pemesanan
 p = mini("Kepulangan &amp; harga")
-p += '<h2 style="margin-top:12px"><span class="n">HARI 03</span>Kepulangan</h2><div class="sub">Pagi masih bisa dinikmati sebelum pulang.</div>'
-p += sched([("07.00", "Breakfast", "Sarapan di resort"),
-            ("Pagi", "Acara bebas", "Bermain di pantai terakhir kali, lalu berkemas"),
-            ("12.00", "Lunch &amp; check-out", "Makan siang, lalu check-out dari bungalow"),
-            ("Siang", "Antar ke bandara / pelabuhan", "Tim mengantar ke bandara atau pelabuhan; trip selesai")])
+p += '<h2 style="margin-top:12px"><span class="n">HARI 03</span>Kepulangan</h2><div class="sub">Berangkat pagi dari SunaRi. Jam pasti menyesuaikan jadwal pesawat atau kapal Anda; mohon berkemas sejak malam sebelumnya.</div>'
+p += sched([("05.30", "Bangun &amp; bersiap", "Barang dibawa ke mobil; sarapan take away kami siapkan"),
+            ("06.00 – 07.00", "Check-out &amp; berangkat", "Check-out dari Family Superior Bungalow, berangkat dari SunaRi"),
+            ("Perjalanan", "Breakfast take away", "Sarapan dibawa dan dinikmati di perjalanan"),
+            ("Tiba", "Antar ke bandara / pelabuhan", "Tim mengantar sampai bandara atau pelabuhan; trip selesai")])
 p += '<h2><span class="n">04</span>Harga <span class="it">paket</span></h2>'
 p += '''<div class="card big-price"><div class="caps" style="font-size:10px">All Included Bahuluang 3H2M · 4 dewasa + 2 anak</div><div class="v">Rp 10.000.000</div>
 <div style="font-size:12px">untuk seluruh rombongan (6 orang), bukan per orang &nbsp;·&nbsp; setara ± Rp 1.667.000 per orang</div></div>'''
@@ -232,18 +232,18 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 5. Persiapan & tanya jawab
 p = mini("Persiapan &amp; tanya jawab")
-p += f'<div style="margin:14px 6px 0">{img("pasir2", 190, "center 60%")}</div>'
+p += f'<div style="margin:14px 6px 0">{img("pasir2", 150, "center 60%")}</div>'
 p += '<div class="cols"><div><h2><span class="n">07</span>Barang yang <span class="it">dibawa</span></h2>' + ul([
     "Baju renang dan baju ganti (bawa lebih untuk anak)", "Sunblock, topi, kacamata hitam", "Sandal air atau sepatu air, nyaman untuk pantai dan goa",
     "Handuk kecil dan dry bag/kantong plastik untuk baju basah", "Obat pribadi, termasuk obat anti mabuk laut bila perlu", "Kartu identitas dan uang tunai secukupnya"], "dot") + \
      '</div><div><h2><span class="n">08</span>Tips <span class="it">keselamatan</span></h2>' + ul([
     "Anak wajib memakai pelampung di kapal, saat snorkeling, dan paddleboard.", "Anak selalu didampingi orang tua dan diawasi guide selama di air.",
     "Di Goa Lipang, jalan pelan dan ikuti jalur dari guide.", "Beri tahu guide bila ada peserta yang belum bisa berenang atau punya kondisi kesehatan tertentu.",
-    "Bila cuaca atau gelombang tidak aman, trip dipindah ke hari lain atau jadwalnya diubah."], "dot") + '</div></div>'
+    "Bila cuaca atau gelombang tidak aman, trip ditunda atau jadwalnya diubah."], "dot") + '</div></div>'
 p += '<h2><span class="n">09</span>Tanya <span class="it">jawab</span></h2><div class="cols"><div>'
 p += '<div class="qa"><b>Apakah anak yang belum bisa berenang boleh snorkeling?</b>Boleh, dengan pelampung dan didampingi orang tua serta tim kami. Anak juga bisa bermain di pantai bila tidak ingin turun ke air.</div>'
 p += '<div class="qa"><b>Kapan hasil dokumentasi diterima?</b>Foto dan video drone, DSLR, dan underwater kami kirim setelah trip selesai.</div></div><div>'
-p += '<div class="qa"><b>Bagaimana bila cuaca buruk di hari trip?</b>Kami atur ulang jadwal, misalnya menukar kegiatan Hari 2 dengan Hari 3 bila memungkinkan.</div>'
+p += '<div class="qa"><b>Bagaimana bila cuaca buruk di hari trip?</b>Kapten dan guide mengatur ulang urutan atau rute di hari itu. Bila laut tidak aman, trip ditunda demi keselamatan dan kami bicarakan penggantinya bersama Anda.</div>'
 p += '<div class="qa"><b>Apakah Pasir Timbul selalu muncul?</b>Pasir Timbul muncul saat air surut. Kapten mengatur urutan kunjungan hari itu agar rombongan tiba saat airnya pas.</div>'
 p += '<div class="qa"><b>Apakah bisa menambah peserta?</b>Bisa, hubungi kami untuk penyesuaian harga dan kamar.</div></div></div>'
 p += '<div class="card" style="margin-top:12px;text-align:center"><h4>Siap <span class="it">berangkat?</span></h4><p>Kirim tanggal kedatangan dan jam penerbangan Anda lewat WhatsApp <b>' + WA + '</b>. Kami bantu atur sisanya, dan hari Anda berakhir dengan senja di Pantai Sunari.</p></div>'
