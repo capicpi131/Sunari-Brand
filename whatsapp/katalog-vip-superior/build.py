@@ -7,6 +7,13 @@ base = (H.parent / "katalog-paket-bahuluang" / "build.py").read_text().split("\n
 g = {"__file__": str(H.parent / "katalog-paket-bahuluang" / "build.py")}
 exec(base, g)
 CSS, ICON, ic, foot, sq, LOGO, LOGO_CREAM, WA, FONTS = (g[k] for k in ("CSS", "ICON", "ic", "foot", "sq", "LOGO", "LOGO_CREAM", "WA", "FONTS"))
+
+# Nomor WhatsApp: nomor baru di atas nomor lama
+WA2 = "+62 813-4150-4973"
+CSS += ".foot .wa{font-size:24px;line-height:1.35} .foot{padding-top:12px} .cta .w{font-size:26px;margin-top:4px;line-height:1.35} .bul{margin-top:14px!important} .bul li{padding-top:4px!important;padding-bottom:4px!important}"
+def foot(tag="Tanya harga &amp; jadwal via chat"):
+    return f'<div class="foot"><div class="wa"><div><i>WhatsApp</i> {WA2}</div><div><i>WhatsApp</i> {WA}</div></div><div class="tag">{tag}</div></div>'
+
 F = "foto/"
 TAG = "VIP Superior Bungalow"
 def head(right): return f'<div class="head"><img src="{LOGO}"><div class="caps">{right}</div></div>'
@@ -128,7 +135,7 @@ S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">
     "Chat kami: sebutkan tanggal check-in &amp; check-out", "Sebutkan jumlah tamu dan perlu extra bed atau tidak",
     "Kami kirim harga, ketersediaan, dan detail pembayaran"]) + '</ol>'
   + f'<div style="height:250px;border-radius:8px;overflow:hidden;margin-top:28px">{img("terasdepan", "center 55%")}</div>'
-  + f'<div class="cta" style="margin-top:24px"><div class="t">Tanya harga &amp; ketersediaan</div><div class="w">WhatsApp {WA}</div></div></div>'))
+  + f'<div class="cta" style="margin-top:24px"><div class="t">Tanya harga &amp; ketersediaan</div><div class="w">WhatsApp {WA2}</div><div class="w">WhatsApp {WA}</div></div></div>'))
 
 html = "".join(S)
 (H / "katalog.html").write_text(f'<!doctype html><html lang="id"><head><meta charset="utf-8"><title>Katalog VIP Superior</title>{FONTS}<style>{CSS}</style></head><body>{html}</body></html>')
