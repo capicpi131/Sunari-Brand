@@ -116,12 +116,12 @@ S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">
   + f'<div class="two" style="height:290px;margin-top:18px"><div>{img("depan", "center 45%")}</div><div>{img("teras", "center 55%")}</div></div></div>' + foot()))
 
 # 9 di sekitar bungalow
-near = [("senja", "center 78%", "Senja", "tepat di depan pantai"), ("pantai", "center 50%", "Pantai landai", "aman untuk anak"),
-        ("kayak", "center 62%", "Kayak", "sewa saat senja"), ("resto", "center 62%", "Bajoy Beach Resto", "07.00–21.00")]
+near = [("senja2", "center 70%", "Senja", "tepat di depan pantai"), ("kayak2", "center 65%", "Kayak", "sewa saat senja"),
+        ("ayunan", "center 45%", "Ayunan raksasa", "gratis untuk tamu"), ("resto2", "center 70%", "Bajoy Beach Resto", "makan sambil menikmati senja")]
 S.append(sq('<div class="pad">' + head(f"SunaRi Beach Resort Selayar<br><span style=\"color:#C0592C\">Di sekitar bungalow</span>")
   + h1('Selangkah <span class="it">ke Pantai Sunari</span>')
   + '<div class="near">' + "".join(f'<div>{img(k, p)}<div class="lbl"><b>{t}</b><span>{d}</span></div></div>' for k, p, t, d in near) + '</div>'
-  + '<div class="note" style="margin-top:16px">Juga tersedia: ayunan raksasa, Senja Dinner (pesan H-1), dan tur pulau.</div></div>' + foot()))
+  + '<div class="note" style="margin-top:16px">Pantai landai &amp; aman untuk anak. Juga tersedia Senja Dinner (pesan H-1) dan tur pulau.</div></div>' + foot()))
 
 # 10 cara pesan
 S.append(sq('<div class="pad">' + head(f"{TAG}<br><span style=\"color:#C0592C\">Cara memesan</span>")
