@@ -33,7 +33,7 @@ SL = [
   'Saat air surut, gosong pasir putih muncul di tengah laut. Keajaiban kecil dari pasang-surut Selayar.'),
  (P + "bahuluang__47-dalam-gua-lipang-stalaktit-rombongan.jpg", "50% 40%", 'Gua yang <em>dibentuk laut</em>',
   'Gua Lipang di Pulau Bahuluang: stalaktit menggantung, lantai pasir putih, sejuk di dalam.'),
- (P + "senja__21-siluet-tamu-tepi-pantai.jpg", "50% 55%", 'Senja di <em>pesisir barat</em>',
+ (P + "senja__86-matahari-merah-dua-perahu.jpg", "50% 53%", 'Senja di <em>pesisir barat</em>',
   'Setiap sore matahari tenggelam di depan Pantai Sunari. Hadiah kecil dari Selayar untuk siapa saja yang singgah.'),
  (P + "malam__30-ayunan-kelapa-bintang.jpg", "50% 86%", 'Malam yang <em>tenang</em>',
   'Langit berbintang di antara pohon kelapa. Selayar mengajarkan kita untuk berjalan pelan.'),
