@@ -147,9 +147,9 @@ def arrival():
         return (f'<div class="opt {cls}"><div class="tag2"><b>{letter}</b>{label}</div><div class="tm2">{time}</div>'
                 + "<ul>" + "".join(f"<li>{x}</li>" for x in items) + "</ul></div>")
     a = opt("a", "A", "Tiba dengan pesawat", "07.00 – 08.00",
-            ["Dijemput di Bandara H. Aroeppala", "Kamar siap: langsung check-in. Belum siap: titip barang &amp; bersantai di pantai", "Lunch pukul 12.30 di resort"])
+            ["Dijemput di Bandara H. Aroeppala", "Kamar siap: langsung check-in. Belum siap: titip barang &amp; bersantai di pantai", "Welcome drink setibanya di resort", "Lunch pukul 12.30 di resort"])
     b = opt("b", "B", "Tiba dengan ferri dari Bira", "± 12.00",
-            ["Dijemput di Pelabuhan Pamatata", "Perjalanan dengan mobil ke resort", "Lunch setibanya di resort"])
+            ["Dijemput di Pelabuhan Pamatata", "Perjalanan dengan mobil ke resort", "Welcome drink &amp; lunch setibanya di resort"])
     return (f'<div class="arr"><div class="hd2">PILIH SALAH SATU, SESUAI KEDATANGAN ANDA</div>'
             f'<div class="opts">{a}<div class="or"><span>atau</span></div>{b}</div></div>'
             '<div class="join"><span>▼ SETELAH TIBA, JADWAL SAMA UNTUK SEMUA TAMU</span></div>')
@@ -202,7 +202,7 @@ p += f'''<div class="cols" style="align-items:flex-start"><div>{img("bungalow", 
      "<b>Antar-jemput bandara atau pelabuhan</b> saat tiba dan pulang, dari dan ke mana pun di Selayar.",
      "<b>Mobil</b> dari resort ke dermaga dan kembali pada hari trip.",
      "<b>Kapal</b> pulang-pergi ke Pulau Bahuluang, lengkap dengan awak kapal."])}</div></div>'''
-p += '<h2><span class="n">02</span>Makan <span class="it">&amp; minum</span></h2><div class="sub">8 kali makan (sarapan Hari 3 take away), ditambah air minum untuk rombongan saat trip Bahuluang.</div>'
+p += '<h2><span class="n">02</span>Makan <span class="it">&amp; minum</span></h2><div class="sub">Welcome drink saat tiba dan 8 kali makan; Hari 3 hanya breakfast (take away).</div>'
 ok = "✓"; no = "–"
 p += '<div class="mealtbl big">' + table(["Hari", "Breakfast", "Lunch", "Afternoon tea", "Dinner"], [
     ("Hari 1", no, ok, ok, ok), ("Hari 2", ok, ok + " (di pulau)", ok, ok), ("Hari 3", ok + " (take away)", no, no, no)], right_from=1) + "</div>"
@@ -212,7 +212,7 @@ p += '<div class="cols"><div>' + ul([
     "<b>Tiket masuk</b> semua lokasi, termasuk Pasir Timbul.",
     "<b>Alat snorkeling lengkap</b> untuk 6 orang: masker, snorkel, fins, dan pelampung."]) + '</div><div>' + ul([
     "<b>Paddleboard</b> untuk dicoba bergantian di Pantai Bone Bakka.",
-    "<b>Dokumentasi lengkap:</b> foto dan video drone, kamera DSLR, serta kamera underwater.",
+    "<b>Dokumentasi:</b> foto dan video drone, DSLR, serta underwater; file mentah dikirim lewat Google Drive.",
     "<b>Air minum</b> untuk seluruh rombongan selama trip."]) + '</div></div>'
 p += '<div class="grid3" style="grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px">' + "".join(f'<div>{img(k, 85, pos)}<div class="cap">{c}</div></div>' for k, pos, c in [
     ("pantai", "center 50%", "Pantai Bone Bakka"), ("gua", "center 60%", "Goa Lipang"), ("karang", "center 55%", "Makam Karang"), ("pasir", "center 70%", "Pasir Timbul")]) + '</div>'
@@ -242,7 +242,7 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 4. Hari 3, harga, pemesanan
 p = mini("Kepulangan &amp; harga")
-p += '<h2 style="margin-top:12px"><span class="n">HARI 03</span>Kepulangan</h2><div class="sub">Berangkat pagi dari SunaRi. Jam pasti menyesuaikan jadwal pesawat atau kapal Anda; mohon berkemas sejak malam sebelumnya.</div>'
+p += '<h2 style="margin-top:12px"><span class="n">HARI 03</span>Kepulangan</h2><div class="sub">Berangkat pagi; jam menyesuaikan pesawat atau kapal Anda. Mohon berkemas malam sebelumnya.</div>'
 p += sched([("05.30", "Bangun &amp; bersiap", "Barang dibawa ke mobil; sarapan take away kami siapkan"),
             ("06.00 – 07.00", "Check-out &amp; berangkat", "Check-out dari Family Superior Bungalow, berangkat dari SunaRi"),
             ("Perjalanan", "Breakfast take away", "Sarapan dibawa dan dinikmati di perjalanan"),
@@ -256,23 +256,29 @@ p += '<div class="cols" style="margin-top:6px"><div><h2><span class="n">05</span
     "Tip untuk guide dan kru (sukarela)", "Asuransi perjalanan"], "no") + '</div><div><h2><span class="n">06</span>Cara <span class="it">pemesanan</span></h2><ol class="steps">' + "".join(f"<li>{x}</li>" for x in [
     "Hubungi kami dan sebutkan tanggal kedatangan serta jam pesawat atau ferri.",
     "Kami cek ketersediaan bungalow dan kapal untuk tanggal tersebut.",
-    "Bayar DP untuk mengunci tanggal, lalu lunasi sebelum kedatangan (ketentuan dikonfirmasi saat pemesanan).",
+    "Bayar DP 50% untuk mengunci tanggal, lalu lunasi sisanya sebelum kedatangan.",
     "Kami kirim konfirmasi beserta kontak guide yang akan menjemput."]) + '</ol></div></div>'
+p += '<h2><span class="n">07</span>Ketentuan <span class="it">pembayaran</span></h2>'
+p += '<div class="grid3" style="margin:6px 0 0">' + "".join(
+    f'<div class="card" style="text-align:center"><div class="caps" style="font-size:9px">{k}</div><h4 style="margin-top:4px">{v}</h4><p>{d}</p></div>' for k, v, d in [
+    ("Uang muka", "DP 50%", "Dibayar untuk mengunci tanggal; sisanya dilunasi sebelum kedatangan."),
+    ("Ganti jadwal", "Bisa", "Tanggal trip dapat dipindah; hubungi kami untuk cek ketersediaan."),
+    ("Pembatalan", "Tanpa refund", "Pembayaran yang sudah masuk tidak dapat dikembalikan setelah DP.")]) + '</div>'
 pages.append(p)
 
 # ---------------------------------------------------------------- 5. Persiapan & tanya jawab
 p = mini("Persiapan &amp; tanya jawab")
 p += f'<div style="margin:14px 6px 0">{img("pasir2", 150, "center 60%")}</div>'
-p += '<div class="cols"><div><h2><span class="n">07</span>Barang yang <span class="it">dibawa</span></h2>' + ul([
+p += '<div class="cols"><div><h2><span class="n">08</span>Barang yang <span class="it">dibawa</span></h2>' + ul([
     "Baju renang dan baju ganti (bawa lebih untuk anak)", "Sunblock, topi, kacamata hitam", "Sandal air atau sepatu air, nyaman untuk pantai dan goa",
     "Handuk kecil dan dry bag/kantong plastik untuk baju basah", "Obat pribadi, termasuk obat anti mabuk laut bila perlu", "Kartu identitas dan uang tunai secukupnya"], "dot") + \
-     '</div><div><h2><span class="n">08</span>Tips <span class="it">keselamatan</span></h2>' + ul([
+     '</div><div><h2><span class="n">09</span>Tips <span class="it">keselamatan</span></h2>' + ul([
     "Anak wajib memakai pelampung di kapal, saat snorkeling, dan paddleboard.", "Anak selalu didampingi orang tua dan diawasi guide selama di air.",
     "Di Goa Lipang, jalan pelan dan ikuti jalur dari guide.", "Beri tahu guide bila ada peserta yang belum bisa berenang atau punya kondisi kesehatan tertentu.",
     "Bila cuaca atau gelombang tidak aman, trip ditunda atau jadwalnya diubah."], "dot") + '</div></div>'
-p += '<h2><span class="n">09</span>Tanya <span class="it">jawab</span></h2><div class="cols"><div>'
+p += '<h2><span class="n">10</span>Tanya <span class="it">jawab</span></h2><div class="cols"><div>'
 p += '<div class="qa"><b>Apakah anak yang belum bisa berenang boleh snorkeling?</b>Boleh, dengan pelampung dan didampingi orang tua serta tim kami. Anak juga bisa bermain di pantai bila tidak ingin turun ke air.</div>'
-p += '<div class="qa"><b>Kapan hasil dokumentasi diterima?</b>Foto dan video drone, DSLR, dan underwater kami kirim setelah trip selesai.</div></div><div>'
+p += '<div class="qa"><b>Kapan hasil dokumentasi diterima?</b>Semua foto dan video (drone, DSLR, underwater) dikirim sebagai file mentah tanpa edit lewat link Google Drive setelah trip selesai.</div></div><div>'
 p += '<div class="qa"><b>Bagaimana bila cuaca buruk di hari trip?</b>Kapten dan guide mengatur ulang urutan atau rute di hari itu. Bila laut tidak aman, trip ditunda demi keselamatan dan kami bicarakan penggantinya bersama Anda.</div>'
 p += '<div class="qa"><b>Apakah Pasir Timbul selalu muncul?</b>Pasir Timbul muncul saat air surut. Kapten mengatur urutan kunjungan hari itu agar rombongan tiba saat airnya pas.</div>'
 p += '<div class="qa"><b>Apakah bisa menambah peserta?</b>Bisa, hubungi kami untuk penyesuaian harga dan kamar.</div></div></div>'
