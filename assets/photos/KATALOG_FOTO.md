@@ -130,6 +130,7 @@ Pasangan mirip (60/61, 66/67): pakai salah satu dalam satu seri, atau beda crop.
 | `resto/03-resto-malam.jpg` | Resto bambu dengan lampu gantung | ✅ | Story resto, Google |
 | `resto/04-resto-malam-pohon-kelapa.jpg` | Resto malam dari pantai | ✅ | **Dipakai: story `sd-05`** |
 | `resto/05-makan-malam-taman.jpg` | Makan malam di taman tepi laut | ✅ (wajah kecil) | **Dipakai: story `sd-09` (Senja Dinner)** |
+| `resto/06-bakar-ikan-tuna-bara.jpg` | Ikan tuna dibakar di atas bara, tangan memegang tongkat, pohon kelapa (dari pemilik, 27 Nov 2026) | ✅ (hanya tangan) | **Dipakai: feed & story Hari Jadi Selayar slide 2** ("ke meja makan"), konten kuliner |
 
 ## Aktivitas
 | File | Isi | Status | Catatan |

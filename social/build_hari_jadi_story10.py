@@ -9,7 +9,7 @@ LOGO = "../assets/logo-sunari-color.png"; LOGO_D = "../assets/logo-sunari-color-
 src = (H / "build_hari_jadi_feed.py").read_text()
 SL = eval(re.search(r"^SL = (\[.*?^\])", src, re.S | re.M).group(1))
 # posisi foto untuk format tegak 9:16
-POS = {"bahuluang__21-laut-toska-dari-kapal.jpg": "45% 60%", "bahuluang__12-berjalan-di-pasir-timbul.jpg": "50% 50%",
+POS = {"resto__06-bakar-ikan-tuna-bara.jpg": "50% 60%", "bahuluang__21-laut-toska-dari-kapal.jpg": "45% 60%", "bahuluang__12-berjalan-di-pasir-timbul.jpg": "50% 50%",
        "senja__86-matahari-merah-dua-perahu.jpg": "50% 50%", "malam__30-ayunan-kelapa-bintang.jpg": "50% 50%",
        "bahuluang__47-dalam-gua-lipang-stalaktit-rombongan.jpg": "50% 45%", "bahuluang__29-snorkeling-masker-penuh.jpg": "50% 45%"}
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'

@@ -14,7 +14,7 @@ exec(p.read_text().split("JOBS =")[0], g)
 R = g["R"]
 OUT = ROOT / "social" / "hari-jadi-selayar-feed" / "foto"
 TARGET = 28          # kehangatan rata-rata (R-B) yang dituju
-SRCS = ["senja/85-siluet-tirai-senja-persegi-lurus.jpg", "pantai/02-perahu-nelayan-biru.jpg", "resto/02-bakar-cumi-ayam.jpg",
+SRCS = ["senja/85-siluet-tirai-senja-persegi-lurus.jpg", "pantai/02-perahu-nelayan-biru.jpg", "resto/06-bakar-ikan-tuna-bara.jpg",
         "bahuluang/21-laut-toska-dari-kapal.jpg", "bahuluang/29-snorkeling-masker-penuh.jpg", "bahuluang/51-pantai-barat-teluk-pasir-putih.jpg",
         "pantai/03-pulau-di-seberang.jpg", "polassi-tambolongan/07-punggung-bukit-nane-dan-teluk.jpg", "bahuluang/12-berjalan-di-pasir-timbul.jpg",
         "bahuluang/47-dalam-gua-lipang-stalaktit-rombongan.jpg", "senja/86-matahari-merah-dua-perahu.jpg", "malam/30-ayunan-kelapa-bintang.jpg",
@@ -33,6 +33,9 @@ def look(src):
     elif w > TARGET + 50:   # senja terlalu panas -> redam sedikit
         k = min((w - TARGET - 50) / 120, 0.6)
         a = L + (a - L) * (1 - 0.30 * k)
+    # bara/lampu magenta -> jingga: kurangi biru di piksel magenta (R & B jauh di atas G)
+    m = np.clip((np.minimum(a[..., 0], a[..., 2]) - a[..., 1]) / 0.25, 0, 1)[..., None]
+    a = a.copy(); a[..., 2:3] = a[..., 2:3] - m * (a[..., 2:3] - a[..., 1:2]) * 0.8
     a = np.clip(a, 0, 1); L = (0.299 * a[..., 0] + 0.587 * a[..., 1] + 0.114 * a[..., 2])[..., None]
     hi = np.clip((L - 0.55) / 0.45, 0, 1); sh = np.clip((0.35 - L) / 0.35, 0, 1)
     a = a * (1 - 0.10 * hi) + np.array([0xE6, 0xC8, 0x9B]) / 255 * 0.10 * hi     # highlight Sandy Shore
