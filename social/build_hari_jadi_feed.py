@@ -4,7 +4,7 @@ Run: python3 social/build_hari_jadi_feed.py && node social/render_hari_jadi_feed
 import pathlib
 H = pathlib.Path(__file__).parent
 exec((H / "build_vipsuperior.py").read_text().split("KICK =")[0].replace("__file__", repr(str(H / "build_vipsuperior.py"))))
-P = "../assets/photos/graded/"; N = 6; KICK = "Hari Jadi Selayar ke-421"
+P = "hari-jadi-selayar-feed/foto/"; N = 6; KICK = "Hari Jadi Selayar ke-421"
 CSS += """
 .big{font-family:'Playfair Display',serif;font-size:230px;line-height:.9;color:#FBF4EC;text-shadow:0 3px 18px rgba(0,0,0,.45)}
 .ph.grid{display:grid;gap:10px;background:#FBF4EC}

@@ -3,6 +3,7 @@
 Jadwal unggah: **29 November 2026** (pagi, sekitar 08.00–09.00 WITA).
 File: `hari-jadi-01.png` … `hari-jadi-06.png` (unggah sesuai urutan sebagai carousel).
 Pasangan story: `../hari-jadi-selayar/story-hari-jadi-421.png`.
+Foto: color grading tema SunaRi 0.8 (resep `social/grade_photos.py`), salinan khusus di `foto/`; foto laut & pulau saturasinya diredam agar senada.
 
 ## Caption
 ```
