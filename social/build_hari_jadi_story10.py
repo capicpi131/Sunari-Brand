@@ -9,7 +9,7 @@ LOGO = "../assets/logo-sunari-color.png"; LOGO_D = "../assets/logo-sunari-color-
 src = (H / "build_hari_jadi_feed.py").read_text()
 SL = eval(re.search(r"^SL = (\[.*?^\])", src, re.S | re.M).group(1))
 # posisi foto untuk format tegak 9:16
-POS = {"resto__06-bakar-ikan-tuna-dekat.jpg": "40% 8%", "bahuluang__21-laut-toska-dari-kapal.jpg": "45% 60%", "bahuluang__12-berjalan-di-pasir-timbul.jpg": "50% 50%",
+POS = {"resto__06-bakar-ikan-tuna-bara-story.jpg": "50% 0%", "bahuluang__21-laut-toska-dari-kapal.jpg": "45% 60%", "bahuluang__12-berjalan-di-pasir-timbul.jpg": "50% 50%",
        "senja__86-matahari-merah-dua-perahu.jpg": "50% 50%", "malam__30-ayunan-kelapa-bintang.jpg": "50% 50%",
        "bahuluang__47-dalam-gua-lipang-stalaktit-rombongan.jpg": "50% 45%", "bahuluang__29-snorkeling-masker-penuh.jpg": "50% 45%"}
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">'
@@ -47,8 +47,9 @@ T.append(f'''<div class="s" id="story-hari-jadi-01"><img class="bg" src="{P}senj
     <div class="tag" style="margin-top:34px">#HariJadiSelayar421</div></div></div>''')
 for k, (img, pos, t, sub) in enumerate(SL, 2):
     if isinstance(img, list):
-        grid = "grid-template-rows:0.78fr 1.22fr" if len(img) == 2 else "grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr"
+        grid = "grid-template-rows:0.7fr 1.3fr" if len(img) == 2 else "grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr"
         def cell(i, a, c):
+            a = a.replace("resto__06-bakar-ikan-tuna-bara.jpg", "resto__06-bakar-ikan-tuna-bara-story.jpg")
             span = "grid-column:1/3;" if len(img) == 3 and i == 2 else ""
             capst = "top:270px;" if i == 0 or (len(img) == 3 and i == 1) else ""
             return f'<div style="{span}"><img src="{a}" style="object-position:{POS.get(a.split("/")[-1], "50% 50%")}" alt=""><div class="cap" style="{capst}">{c}</div></div>'

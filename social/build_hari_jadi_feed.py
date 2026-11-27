@@ -21,7 +21,7 @@ T.append(f'''<div class="t fc" id="hari-jadi-01"><img class="bgf" src="{P}senja_
   <div class="fs" style="top:620px">Kabupaten Kepulauan Selayar</div>
   <div class="fg">Geser &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''')
 SL = [
-  ([(P + "pantai__02-perahu-nelayan-biru.jpg", "40% 55%", "Dari laut"), (P + "resto__06-bakar-ikan-tuna-dekat.jpg", "45% 50%", "ke meja makan")], "", 'Bangga <em>pangan lokal</em>',
+  ([(P + "pantai__02-perahu-nelayan-biru.jpg", "40% 55%", "Dari laut"), (P + "resto__06-bakar-ikan-tuna-bara.jpg", "50% 52%", "ke meja makan")], "", 'Bangga <em>pangan lokal</em>',
   'Tema tahun ini: “Pangan Lokal Mendukung Ketahanan Pangan Nasional”. Dari laut dan kebun Selayar, untuk Indonesia.'),
  (P + "bahuluang__21-laut-toska-dari-kapal.jpg", "50% 70%", 'Laut yang <em>memberi</em>',
   'Air toska, pasir putih, dan karang yang terjaga. Laut Selayar adalah rumah, sumber kehidupan, dan kebanggaan kita.'),
