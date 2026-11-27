@@ -35,12 +35,24 @@ h1{font-family:'Playfair Display',serif;font-weight:400;font-size:76px;line-heig
 .card .hd{display:flex;justify-content:space-between;align-items:center;padding:11px 20px;background:#F3E7DA;border-bottom:1.5px solid rgba(138,95,72,.3)}
 .card .hd b{font-weight:700;font-size:16px;letter-spacing:.24em;text-transform:uppercase;color:#5A3E31}
 .card .hd span{font-size:12px;font-weight:600;letter-spacing:.12em;color:#94532B;text-transform:uppercase}
-.row{display:flex;justify-content:space-between;align-items:baseline;padding:9px 20px;border-bottom:1px dashed rgba(138,95,72,.32)}
+.row{display:flex;justify-content:space-between;align-items:baseline;padding:8px 20px;border-bottom:1px dashed rgba(138,95,72,.32)}
 .row:last-child{border-bottom:0}
 .row .n{font-family:'Playfair Display',serif;font-size:23px;line-height:1.2}
 .row .p{font-weight:600;font-size:19px;color:#A2461F}
 .note{font-size:14px;color:#7A5038;text-align:center;margin-top:-4px;letter-spacing:.04em}
 .ft{position:absolute;left:84px;right:84px;bottom:76px;text-align:center}
+/* teks timbul (emboss) & mudah dibaca: warna lebih gelap, highlight putih tajam di bawah, bayangan tipis di atas */
+.pg{color:#2E1F14}
+h1,.row .n,.ft .s{text-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.35)}
+h1 i,.ft .s{color:#8A4A22}
+.kick,.card .hd b,.ft .t,.note{text-shadow:0 1px 0 #fff;color:#5A3E31}
+.row .n{font-size:25px;color:#2E1F14;font-weight:500}
+.row .p{font-size:21px;font-weight:700;color:#9A3E17;text-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.25)}
+.card{box-shadow:inset 1px 1px 2px rgba(90,62,49,.18),inset -1px -1px 0 #fff,0 1px 0 #fff}
+.card .hd b{font-size:17px}
+.hours span{text-shadow:0 -1px 0 rgba(0,0,0,.35);box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 1px 0 #fff}
+.hours span.o{text-shadow:0 1px 0 #fff}
+.note{font-size:15px}
 .ft .t{font-weight:600;font-size:15px;letter-spacing:.3em;text-transform:uppercase;color:#7A5038}
 .ft .s{font-family:'Playfair Display',serif;font-style:italic;font-size:23px;color:#94532B;margin-top:6px}
 """
