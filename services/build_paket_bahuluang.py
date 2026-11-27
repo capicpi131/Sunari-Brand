@@ -38,6 +38,24 @@ td.c,th.c{text-align:center}
 .caps{color:#7A5038}
 ul.l.ok li::before{background:#D9703F;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.3)}
 .steps li::before{background:#D9703F;box-shadow:0 1px 0 #fff,0 -1px 0 rgba(90,62,49,.35)}
+/* pilihan kedatangan: A pesawat / B ferri, dipisah jelas */
+.arr{border:1.5px dashed #A67C64;border-radius:6px;padding:10px 12px 12px;margin-top:6px}
+.arr .hd2{text-align:center;font-weight:700;font-size:9.5px;letter-spacing:.2em;color:#7A5038;margin-bottom:8px}
+.arr .opts{display:grid;grid-template-columns:1fr 46px 1fr;align-items:stretch}
+.arr .or{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.arr .or::before,.arr .or::after{content:"";flex:1;border-left:1.5px dashed #A67C64}
+.arr .or span{font-family:'Playfair Display',serif;font-style:italic;font-size:13px;color:#94532B;padding:5px 0}
+.arr .opt{border-radius:4px;padding:9px 12px 10px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px var(--c),0 1px 0 #fff}
+.arr .opt.a{--c:#D9703F} .arr .opt.b{--c:#4E7F91}
+.arr .tag2{display:flex;align-items:center;gap:8px;font-weight:700;font-size:10px;letter-spacing:.14em;color:var(--c);text-transform:uppercase}
+.arr .tag2 b{width:22px;height:22px;border-radius:50%;background:var(--c);color:#fff;text-shadow:none;display:inline-flex;align-items:center;justify-content:center;font-size:12px;letter-spacing:0}
+.arr .tm2{font-family:'Playfair Display',serif;font-size:20px;margin:4px 0 3px;color:#3A2819}
+.arr ul{list-style:none;font-size:11.5px;line-height:1.4} .arr li{padding:1.5px 0 1.5px 12px;position:relative}
+.arr li::before{content:"";position:absolute;left:1px;top:7.5px;width:5px;height:5px;border-radius:50%;background:var(--c)}
+.join{text-align:center;margin:8px 0 2px;font-weight:700;font-size:10px;letter-spacing:.16em;color:#FBF4EC;text-shadow:none}
+.join span{display:inline-block;background:#5A3E31;border-radius:14px;padding:5px 14px}
+.flow .arr{margin-top:0;padding:8px 10px 10px} .flow .arr ul{font-size:10.5px} .flow .arr .tm2{font-size:17px}
+.flow .join{margin:0}
 /* alur trip */
 .flow .day{display:flex;gap:14px;margin-top:16px}
 .flow .lbl{flex:0 0 70px;width:70px;border-radius:4px;background:#5A3E31;color:#FBF4EC;text-shadow:none;display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -119,12 +137,23 @@ def flow_rows(steps):
             mode = steps[i + 3][4] if len(steps[i + 3]) > 4 else ""
             out += f'<div class="turn">lanjut ke baris berikutnya ↵{(" · " + mode.lower()) if mode else ""}</div>'
     return f'<div class="rows">{out}</div>'
-def flow_day(n, sub, steps):
-    return f'<div class="day"><div class="lbl">HARI<b>{n}</b><i>{sub}</i></div>{flow_rows(steps)}</div>'
-H1 = [("07.00 – 08.00", "plane", "Tiba dengan pesawat", "Dijemput di Bandara H. Aroeppala", "atau", "key"),
-      ("± 12.00", "boat", "Tiba dengan ferri", "Dari Bira, dijemput di Pelabuhan Pamatata", "Mobil", "key"),
-      ("Siang", "food", "Lunch", "12.30, atau setibanya di resort"),
-      ("Saat kamar siap", "home", "Check-in", "Paling lambat 14.00", "", "home"),
+def flow_day(n, sub, steps, before=""):
+    rows = flow_rows(steps)
+    if before: rows = rows.replace('<div class="rows">', '<div class="rows">' + before, 1)
+    return f'<div class="day"><div class="lbl">HARI<b>{n}</b><i>{sub}</i></div>{rows}</div>'
+def arrival():
+    """Dua pilihan kedatangan Hari 1, dipisah garis putus-putus dan 'atau'."""
+    def opt(cls, letter, label, time, items):
+        return (f'<div class="opt {cls}"><div class="tag2"><b>{letter}</b>{label}</div><div class="tm2">{time}</div>'
+                + "<ul>" + "".join(f"<li>{x}</li>" for x in items) + "</ul></div>")
+    a = opt("a", "A", "Tiba dengan pesawat", "07.00 – 08.00",
+            ["Dijemput di Bandara H. Aroeppala", "Kamar siap: langsung check-in. Belum siap: titip barang &amp; bersantai di pantai", "Lunch pukul 12.30 di resort"])
+    b = opt("b", "B", "Tiba dengan ferri dari Bira", "± 12.00",
+            ["Dijemput di Pelabuhan Pamatata", "Perjalanan dengan mobil ke resort", "Lunch setibanya di resort"])
+    return (f'<div class="arr"><div class="hd2">PILIH SALAH SATU, SESUAI KEDATANGAN ANDA</div>'
+            f'<div class="opts">{a}<div class="or"><span>atau</span></div>{b}</div></div>'
+            '<div class="join"><span>▼ SETELAH TIBA, JADWAL SAMA UNTUK SEMUA TAMU</span></div>')
+H1 = [("Saat kamar siap", "home", "Check-in", "Paling lambat 14.00", "", "home"),
       ("16.00", "cup", "Afternoon tea", "Teh/kopi &amp; kudapan"),
       ("Sore", "sun", "Senja di pantai", "Acara bebas, main di pantai"),
       ("19.00", "moon", "Dinner", "Istirahat untuk trip besok")]
@@ -146,7 +175,7 @@ H3 = [("05.30", "bag", "Bersiap", "Barang dibawa ke mobil", "", "home"),
 p = mini("Alur trip")
 p += '<h2 style="margin-top:12px">Alur trip <span class="it">dari tiba sampai pulang</span></h2><div class="sub">Baca dari kiri ke kanan, baris demi baris. Jam adalah perkiraan dan mengikuti penerbangan, cuaca, serta pasang-surut.</div>'
 FLOW = ('<div class="flow">'
-      + flow_day("1", "Tiba &amp; santai", H1) + flow_day("2", "Trip Bahuluang", H2) + flow_day("3", "Pulang", H3)
+      + flow_day("1", "Tiba &amp; santai", H1, arrival()) +flow_day("2", "Trip Bahuluang", H2) + flow_day("3", "Pulang", H3)
       + '<div class="legend"><span><i style="background:#D9703F"></i>Momen utama</span><span><i style="background:#A67C64"></i>Di resort</span>'
         '<span><i style="background:#7BA7B6"></i>Kegiatan lain</span><span><b style="color:#4E7F91;font-size:9px;letter-spacing:.06em">MOBIL / KAPAL</b> = moda perjalanan</span></div></div>')
 p += FLOW
@@ -191,23 +220,21 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 3. Jadwal Hari 1-2
 p = mini("Jadwal perjalanan")
-p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2><div class="sub">Jam adalah perkiraan dan menyesuaikan jam pesawat atau ferri, cuaca, serta kondisi laut. Pesawat tiba pagi, ferri dari Bira tiba siang; keduanya kami jemput.</div>'
-p += sched([("07.00 – 08.00", "Tiba dengan pesawat", "Dijemput di Bandara H. Aroeppala. Kamar sudah siap: langsung check-in; belum siap: titip barang &amp; bersantai di pantai"),
-            ("± 12.00", "Tiba dengan ferri", "Ferri dari Pelabuhan Bira tiba di Pelabuhan Pamatata; dijemput, lalu ke resort"),
-            ("12.30 / setibanya", "Lunch", "Makan siang di resort (tamu ferri: setibanya di resort)"),
-            ("Saat kamar siap", "Check-in SunaRi Beach Resort", "Paling lambat 14.00; istirahat di Family Superior Bungalow"),
+p += '<h2 style="margin-top:12px"><span class="n">HARI 01</span>Tiba di Selayar <span class="it">&amp; bersantai</span></h2><div class="sub">Jam adalah perkiraan, menyesuaikan jam pesawat atau ferri Anda. Kedua pilihan kami jemput.</div>'
+p += arrival()
+p += sched([("Saat kamar siap", "Check-in", "Paling lambat 14.00; istirahat di Family Superior Bungalow"),
             ("16.00", "Afternoon tea", "Teh/kopi dan kudapan sore"),
-            ("Sore", "Acara bebas", "Jalan di pantai, berenang, atau menikmati matahari terbenam"),
+            ("Sore", "Acara bebas", "Jalan di pantai, berenang, menikmati senja"),
             ("19.00", "Dinner", "Makan malam, lalu istirahat untuk trip besok")])
 p += '<h2 style="margin-top:20px"><span class="n">HARI 02</span>Trip sehari <span class="it">ke Pulau Bahuluang</span></h2><div class="sub">Hari utama liburan Anda. Berangkat pagi agar laut masih tenang dan waktu di pulau lebih panjang.</div>'
 p += sched([("06.30", "Breakfast", "Sarapan di resort"),
-            ("07.30", "Berangkat ke dermaga", "Naik mobil; guide memberi pengarahan singkat soal jadwal dan keselamatan"),
-            ("08.00", "Menyeberang ke Pulau Bahuluang", "Naik kapal, pelampung tersedia untuk semua peserta"),
-            ("09.30", "Pantai Bone Bakka", "Bermain di pantai, mencoba paddleboard, foto dan video drone &amp; DSLR"),
+            ("07.30", "Berangkat ke dermaga", "Naik mobil; guide memberi briefing keselamatan"),
+            ("08.00", "Menyeberang", "Naik kapal ke Pulau Bahuluang, pelampung untuk semua"),
+            ("09.30", "Pantai Bone Bakka", "Main di pantai, paddleboard, foto drone &amp; DSLR"),
             ("11.00", "Goa Lipang", "Menjelajah goa bersama guide; jalan pelan dan ikuti arahan guide"),
             ("12.30", "Lunch di pulau", "Makan siang dan minum bersama rombongan"),
-            ("13.30", "Makam Karang", "Snorkeling melihat karang dan ikan, didampingi tim, dokumentasi underwater"),
-            ("14.30", "Pasir Timbul Bahuluang", "Berjalan di gosong pasir putih di tengah laut; waktunya mengikuti pasang-surut, kapten memilih saat air paling pas"),
+            ("13.30", "Makam Karang", "Snorkeling bersama tim, dokumentasi underwater"),
+            ("14.30", "Pasir Timbul", "Jalan di pasir putih tengah laut; waktu ikut pasang-surut"),
             ("15.30", "Kembali ke Selayar", "Naik kapal ke dermaga, lalu mobil ke resort"),
             ("16.30", "Afternoon tea", "Bersantai setelah seharian di laut"),
             ("19.00", "Dinner", "Makan malam di resort")])
