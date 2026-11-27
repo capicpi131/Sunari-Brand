@@ -20,7 +20,7 @@ ROOMS = [
   "2 orang · maks. 3 dengan extra bed", "Turun tangga, langsung pasir",
   ["King bed", "Rumah panggung tepi pantai", "Lebih luas dari Standard", "Teras view laut atau taman"]),
  ("superior", "Superior", "Bungalow", 1_500_000, "../katalog-superior/foto/", "g_eksterior",
-  ["g_depan", "g_teras", "g_kamar", "g_loteng", "g_meja", "g_tv", "g_taman", "g_wastafel", "g_shower", "g_toilet"],
+  ["g_depan", "g_kamar", "g_loteng", "g_meja", "g_tv", "g_taman", "g_wastafel", "g_shower", "g_toilet:48% 75%", "g_teras"],
   "2 orang · maks. 3 dengan extra bed", "Rumah kayu di antara pohon kelapa",
   ["King bed &amp; loteng", "TV di kamar", "Kamar mandi semi-outdoor bertaman", "Rain shower &amp; teras kayu"]),
  ("vip-superior", "VIP Superior", "Bungalow", 2_500_000, "../katalog-vip-superior/foto/", "g_eksterior",
@@ -69,7 +69,8 @@ for key, a, b, price, F, main, rest, cap, tag, hl in ROOMS:
         span = ""
         if i == n - 1 and n % cols:
             span = f"grid-column:span {cols - (n % cols) + 1};"
-        cells.append(f'<div style="{span}"><img src="{F}{k}.jpg"></div>')
+        name, _, pos = k.partition(":")
+        cells.append(f'<div style="{span}"><img src="{F}{name}.jpg" style="object-position:{pos or "center"}"></div>')
     gal = f'<div class="gal" style="grid-template-columns:repeat({cols},1fr);grid-template-rows:repeat({rows},1fr)">{"".join(cells)}</div>'
     PAGES.append(f'''<div class="pg" id="harga-{key}">
   <div class="main"><img class="bg" src="{F}{main}.jpg"><div class="sh"></div><img class="lg" src="{LOGO_D}"><div class="pt">Harga kamar</div></div>
