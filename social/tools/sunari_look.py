@@ -14,7 +14,7 @@ exec(p.read_text().split("JOBS =")[0], g)
 R = g["R"]
 OUT = ROOT / "social" / "hari-jadi-selayar-feed" / "foto"
 TARGET = 28          # kehangatan rata-rata (R-B) yang dituju
-SRCS = ["senja/85-siluet-tirai-senja-persegi-lurus.jpg", "pantai/02-perahu-nelayan-biru.jpg", "resto/06-bakar-ikan-tuna-bara.jpg",
+SRCS = ["senja/85-siluet-tirai-senja-persegi-lurus.jpg", "pantai/06-nelayan-hasil-laut-kerang.jpg", "resto/06-bakar-ikan-tuna-bara.jpg",
         "bahuluang/21-laut-toska-dari-kapal.jpg", "bahuluang/29-snorkeling-masker-penuh.jpg", "bahuluang/51-pantai-barat-teluk-pasir-putih.jpg",
         "pantai/03-pulau-di-seberang.jpg", "polassi-tambolongan/07-punggung-bukit-nane-dan-teluk.jpg", "bahuluang/12-berjalan-di-pasir-timbul.jpg",
         "bahuluang/47-dalam-gua-lipang-stalaktit-rombongan.jpg", "senja/86-matahari-merah-dua-perahu.jpg", "malam/30-ayunan-kelapa-bintang.jpg",

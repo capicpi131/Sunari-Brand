@@ -9,6 +9,7 @@ CSS += """
 .big{font-family:'Playfair Display',serif;font-size:230px;line-height:.9;color:#FBF4EC;text-shadow:0 3px 18px rgba(0,0,0,.45)}
 .ph.grid{display:grid;gap:10px;background:#FBF4EC}
 .ph.grid>div{position:relative;overflow:hidden}
+.ph.grid .lg{left:auto!important;right:28px}
 .ph.grid>div img{width:100%;height:100%;object-fit:cover}
 .ph.grid .cap{position:absolute;left:0;right:0;bottom:0;padding:40px 20px 14px;color:#FBF4EC;font-family:'Playfair Display',serif;font-size:32px;text-shadow:0 2px 8px rgba(0,0,0,.55);background:linear-gradient(180deg,rgba(20,12,6,0),rgba(20,12,6,.6))}
 .fc .vb{height:520px;background:linear-gradient(0deg,rgba(20,12,6,.7),rgba(20,12,6,0))}
@@ -21,7 +22,7 @@ T.append(f'''<div class="t fc" id="hari-jadi-01"><img class="bgf" src="{P}senja_
   <div class="fs" style="top:620px">Kabupaten Kepulauan Selayar</div>
   <div class="fg">Geser &nbsp;→</div><img class="fl" src="{LOGO_D}" alt=""></div>''')
 SL = [
-  ([(P + "pantai__02-perahu-nelayan-biru.jpg", "40% 55%", "Dari laut"), (P + "resto__06-bakar-ikan-tuna-bara.jpg", "50% 52%", "ke meja makan")], "", 'Bangga <em>pangan lokal</em>',
+  ([(P + "pantai__06-nelayan-hasil-laut-kerang.jpg", "36% 50%", "Dari laut"), (P + "resto__06-bakar-ikan-tuna-bara.jpg", "50% 52%", "ke meja makan")], "", 'Bangga <em>pangan lokal</em>',
   'Tema tahun ini: “Pangan Lokal Mendukung Ketahanan Pangan Nasional”. Dari laut dan kebun Selayar, untuk Indonesia.'),
  (P + "bahuluang__21-laut-toska-dari-kapal.jpg", "50% 70%", 'Laut yang <em>memberi</em>',
   'Air toska, pasir putih, dan karang yang terjaga. Laut Selayar adalah rumah, sumber kehidupan, dan kebanggaan kita.'),
