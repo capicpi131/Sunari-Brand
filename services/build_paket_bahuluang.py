@@ -104,7 +104,7 @@ def page(inner, n, total):
 def mini(title):
     return f'<div class="mini"><img src="../assets/logo-sunari-color.png"><div class="caps">3 Hari 2 Malam di Selayar · Sehari ke Bahuluang<br><span style="color:#C0592C">{title}</span></div></div><div class="rule" style="margin:2px 0 4px"><i style="width:100%"></i></div>'
 def img(name, h, pos="center"):
-    return f'<img class="ph" src="{PH}{name}.jpg" style="height:{h}px;object-position:{pos}">'
+    return f'<img class="ph" src="{PH}g_{name}.jpg" style="height:{h}px;object-position:{pos}">'
 def card(k, v, s="", color=""):
     return f'<div class="card price"><div class="caps" style="font-size:8.5px">{k}</div><div class="v" style="font-size:19px;{color}">{v}</div><div style="font-size:10.5px;margin-top:2px">{s}</div></div>'
 def sched(rows):
