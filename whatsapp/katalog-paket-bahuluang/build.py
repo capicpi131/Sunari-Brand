@@ -177,6 +177,13 @@ CSS_ADD = """
 .c2 h3 i{color:#94532B}
 .c2 ul{list-style:none} .c2 li{font-size:20px;line-height:1.35;padding:6px 0 6px 22px;position:relative}
 .c2 li::before{content:"";position:absolute;left:2px;top:15px;width:8px;height:8px;border-radius:50%;background:#8A5F48}
+.tb{display:grid;grid-template-columns:1.25fr 1fr;gap:20px;margin-top:26px;height:350px}
+.tl2{display:flex;flex-direction:column;gap:12px}
+.tl2>div{flex:1;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 20px;border-radius:8px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px rgba(138,95,72,.3)}
+.tl2 .k{font-size:14px;font-weight:700;letter-spacing:.2em;color:#7A5038}
+.tl2 .s{font-size:17px;color:#6B4A37;margin-top:3px}
+.tl2 .v{font-family:'Playfair Display',serif;font-size:32px;white-space:nowrap}
+.tp{border-radius:8px;overflow:hidden}
 .terms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
 .terms>div{text-align:center;padding:20px 12px;border-radius:8px;background:#FFFDF9;box-shadow:inset 0 0 0 1.5px rgba(138,95,72,.3)}
 .terms .k{font-size:14px;font-weight:700;letter-spacing:.2em;color:#7A5038}
@@ -220,10 +227,9 @@ PREP = sq('<div class="pad">' + head("3 Hari 2 Malam di Selayar<br><span style=\
   + '</ul></div><div><h3>Tips <i>keselamatan</i></h3><ul>' + "".join(f"<li>{x}</li>" for x in [
       "Anak wajib pakai pelampung", "Anak selalu didampingi orang tua", "Ikuti arahan guide di goa", "Info guide bila ada yang belum bisa berenang", "Laut tidak aman: trip ditunda"])
   + '</ul></div></div>'
-  + '<div class="terms"><div><div class="k">UANG MUKA</div><div class="v">DP 50%</div><div class="s">kunci tanggal</div></div>'
-  + '<div><div class="k">GANTI JADWAL</div><div class="v">Bisa</div><div class="s">sesuai ketersediaan</div></div>'
-  + '<div><div class="k">PEMBATALAN</div><div class="v">Tanpa refund</div><div class="s">setelah DP</div></div></div>'
-  + f'<div style="height:200px;border-radius:8px;overflow:hidden;margin-top:24px"><img class="ph" src="{PH}kayak.jpg" style="object-position:center 50%"></div>'
+  + '<div class="tb"><div class="tl2">' + "".join(f'<div><div><div class="k">{k}</div><div class="s">{d}</div></div><div class="v">{v}</div></div>' for k, v, d in [
+      ("UANG MUKA", "DP 50%", "untuk kunci tanggal"), ("GANTI JADWAL", "Bisa", "sesuai ketersediaan"), ("PEMBATALAN", "Tanpa refund", "setelah DP dibayar")]) + '</div>'
+  + f'<div class="tp"><img class="ph" src="{PH}senja_siluet.jpg" style="object-position:center 72%"></div></div>'
   + '</div>' + foot())
 
 S = [S[0], S[1], S[2], ARR, S[3], DAY2, S[4], FOOD, PREP, S[5]]
