@@ -52,7 +52,7 @@ p += f'<div class="hero">{img("hero", 330, "center 55%")}<div class="tag">Pantai
 p += '<div class="grid4">' + card("Durasi", "3 Hari", "2 malam menginap") + card("Peserta", "6 Orang", "4 dewasa + 2 anak") + card("Penginapan", "Family Superior", "1 bungalow dua lantai") + card("Harga paket", "Rp 10.000.000", "seluruh rombongan", "color:#A84A24;font-size:17px") + "</div>"
 p += '<p class="lead">Anda cukup datang. <b>Penginapan, makan, antar-jemput, kapal, guide, alat snorkeling, dan dokumentasi</b> sudah kami siapkan, supaya keluarga bisa menikmati laut Selayar tanpa repot mengatur apa pun.</p>'
 p += '<div class="cols" style="margin-top:14px"><div class="card" style="text-align:center"><h4>Cocok <span class="it">untuk</span></h4><p>Keluarga dengan anak yang ingin liburan pantai, laut, dan petualangan ringan.</p></div>' \
-     '<div class="card" style="text-align:center"><h4>Sorotan <span class="it">trip</span></h4><p>Pantai Bone Bakka, Goa Lipang, dan snorkeling di Makam Karang.</p></div></div>'
+     '<div class="card" style="text-align:center"><h4>Sorotan <span class="it">trip</span></h4><p>Pantai Bone Bakka, Goa Lipang, snorkeling di Makam Karang, dan berjalan di Pasir Timbul Bahuluang.</p></div></div>'
 pages.append(p)
 
 # ---------------------------------------------------------------- 2. Yang didapat
@@ -71,12 +71,13 @@ p += '<div class="mealtbl big">' + table(["Hari", "Breakfast", "Lunch", "Afterno
 p += '<h2><span class="n">03</span>Trip sehari <span class="it">ke Pulau Bahuluang</span></h2>'
 p += '<div class="cols"><div>' + ul([
     "<b>Guide &amp; tim</b> mendampingi dari berangkat sampai kembali, termasuk saat masuk goa dan snorkeling.",
-    "<b>Tiket masuk</b> semua lokasi wisata dalam itinerary.",
+    "<b>Tiket masuk</b> semua lokasi, termasuk Pasir Timbul.",
     "<b>Alat snorkeling lengkap</b> untuk 6 orang: masker, snorkel, fins, dan pelampung."]) + '</div><div>' + ul([
     "<b>Paddleboard</b> untuk dicoba bergantian di Pantai Bone Bakka.",
     "<b>Dokumentasi lengkap:</b> foto dan video drone, kamera DSLR, serta kamera underwater.",
     "<b>Air minum</b> untuk seluruh rombongan selama trip."]) + '</div></div>'
-p += f'<div class="grid3" style="margin-top:14px"><div>{img("karang", 85, "center 55%")}<div class="cap">Makam Karang</div></div><div>{img("gua", 85, "center 60%")}<div class="cap">Goa Lipang</div></div><div>{img("pantai", 85, "center 50%")}<div class="cap">Pantai Bone Bakka</div></div></div>'
+p += '<div class="grid3" style="grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px">' + "".join(f'<div>{img(k, 85, pos)}<div class="cap">{c}</div></div>' for k, pos, c in [
+    ("pantai", "center 50%", "Pantai Bone Bakka"), ("gua", "center 60%", "Goa Lipang"), ("karang", "center 55%", "Makam Karang"), ("pasir", "center 70%", "Pasir Timbul")]) + '</div>'
 pages.append(p)
 
 # ---------------------------------------------------------------- 3. Jadwal Hari 1-2
@@ -97,6 +98,7 @@ p += sched([("06.30", "Breakfast", "Sarapan di resort"),
             ("11.00", "Goa Lipang", "Menjelajah goa bersama guide; jalan pelan dan ikuti arahan guide"),
             ("12.30", "Lunch di pulau", "Makan siang dan minum bersama rombongan"),
             ("13.30", "Makam Karang", "Snorkeling melihat karang dan ikan, didampingi tim, dokumentasi underwater"),
+            ("14.30", "Pasir Timbul Bahuluang", "Berjalan di gosong pasir putih di tengah laut; waktunya mengikuti pasang-surut, kapten memilih saat air paling pas"),
             ("15.30", "Kembali ke Selayar", "Naik kapal ke dermaga, lalu mobil ke resort"),
             ("16.30", "Afternoon tea", "Bersantai setelah seharian di laut"),
             ("19.00", "Dinner", "Makan malam di resort")])
@@ -124,7 +126,7 @@ pages.append(p)
 
 # ---------------------------------------------------------------- 5. Persiapan & tanya jawab
 p = mini("Persiapan &amp; tanya jawab")
-p += f'<div style="margin:14px 6px 0">{img("laut", 190, "center 62%")}</div>'
+p += f'<div style="margin:14px 6px 0">{img("pasir2", 190, "center 60%")}</div>'
 p += '<div class="cols"><div><h2><span class="n">07</span>Barang yang <span class="it">dibawa</span></h2>' + ul([
     "Baju renang dan baju ganti (bawa lebih untuk anak)", "Sunblock, topi, kacamata hitam", "Sandal air atau sepatu air, nyaman untuk pantai dan goa",
     "Handuk kecil dan dry bag/kantong plastik untuk baju basah", "Obat pribadi, termasuk obat anti mabuk laut bila perlu", "Kartu identitas dan uang tunai secukupnya"], "dot") + \
@@ -136,6 +138,7 @@ p += '<h2><span class="n">09</span>Tanya <span class="it">jawab</span></h2><div 
 p += '<div class="qa"><b>Apakah anak yang belum bisa berenang boleh snorkeling?</b>Boleh, dengan pelampung dan didampingi orang tua serta tim kami. Anak juga bisa bermain di pantai bila tidak ingin turun ke air.</div>'
 p += '<div class="qa"><b>Kapan hasil dokumentasi diterima?</b>Foto dan video drone, DSLR, dan underwater kami kirim setelah trip selesai.</div></div><div>'
 p += '<div class="qa"><b>Bagaimana bila cuaca buruk di hari trip?</b>Kami atur ulang jadwal, misalnya menukar kegiatan Hari 2 dengan Hari 3 bila memungkinkan.</div>'
+p += '<div class="qa"><b>Apakah Pasir Timbul selalu muncul?</b>Pasir Timbul muncul saat air surut. Kapten mengatur urutan kunjungan hari itu agar rombongan tiba saat airnya pas.</div>'
 p += '<div class="qa"><b>Apakah bisa menambah peserta?</b>Bisa, hubungi kami untuk penyesuaian harga dan kamar.</div></div></div>'
 p += '<div class="card" style="margin-top:12px;text-align:center"><h4>Siap <span class="it">berangkat?</span></h4><p>Kirim tanggal kedatangan dan jam penerbangan Anda lewat WhatsApp <b>' + WA + '</b>. Kami bantu atur sisanya, dan hari Anda berakhir dengan senja di Pantai Sunari.</p></div>'
 pages.append(p)
